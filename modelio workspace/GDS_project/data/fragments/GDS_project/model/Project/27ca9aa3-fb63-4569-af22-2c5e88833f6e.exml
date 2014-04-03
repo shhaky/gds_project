@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="GDS_project" version="3">
+  <DEPS>
+    <ID name="GDS_project" mc="Project" uid="27ca9aa3-fb63-4569-af22-2c5e88833f6e"/>
+    <COMPID name="GDS_project" mc="DiagramSet" uid="1909e139-ce02-46cc-a862-458f4168b097"/>
+    <COMPID name="gds_project" mc="Package" uid="7ab72843-b6b0-436f-919f-379711181435"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="GDS_project" mc="Project" uid="27ca9aa3-fb63-4569-af22-2c5e88833f6e"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[GDS_project]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="GDS_project" mc="DiagramSet" uid="1909e139-ce02-46cc-a862-458f4168b097"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="gds_project" mc="Package" uid="7ab72843-b6b0-436f-919f-379711181435"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
