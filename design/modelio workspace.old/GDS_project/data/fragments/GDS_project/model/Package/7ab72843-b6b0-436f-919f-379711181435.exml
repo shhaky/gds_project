@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="gds_project" version="3">
+  <DEPS>
+    <ID name="gds_project" mc="Package" uid="7ab72843-b6b0-436f-919f-379711181435"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="702127c1-87b2-4c4d-a546-c0bda8699657"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="gds_project" mc="Package" uid="7ab72843-b6b0-436f-919f-379711181435"/>
+    <PID name="GDS_project" mc="Project" uid="27ca9aa3-fb63-4569-af22-2c5e88833f6e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[gds_project]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="702127c1-87b2-4c4d-a546-c0bda8699657"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

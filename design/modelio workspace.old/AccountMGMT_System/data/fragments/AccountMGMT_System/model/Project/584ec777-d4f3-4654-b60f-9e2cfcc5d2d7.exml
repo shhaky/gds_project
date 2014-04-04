@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AccountMGMT_System" version="3">
+  <DEPS>
+    <ID name="AccountMGMT_System" mc="Project" uid="584ec777-d4f3-4654-b60f-9e2cfcc5d2d7"/>
+    <COMPID name="AccountMGMT_System" mc="DiagramSet" uid="0e317c84-3135-4ef7-9381-5a0e379265a9"/>
+    <COMPID name="accountmgmt_system" mc="Package" uid="25d6518b-a8dd-4617-a8a3-0b2b23d203dc"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="AccountMGMT_System" mc="Project" uid="584ec777-d4f3-4654-b60f-9e2cfcc5d2d7"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[AccountMGMT_System]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="AccountMGMT_System" mc="DiagramSet" uid="0e317c84-3135-4ef7-9381-5a0e379265a9"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="accountmgmt_system" mc="Package" uid="25d6518b-a8dd-4617-a8a3-0b2b23d203dc"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
