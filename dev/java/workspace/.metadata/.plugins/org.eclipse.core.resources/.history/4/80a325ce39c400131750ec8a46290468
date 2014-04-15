@@ -1,0 +1,18 @@
+package nl.fontys.cryptoexchange.core;
+
+import java.math.BigDecimal;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+		Order testOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(501), new BigDecimal(452));
+		
+		Order testOrder2 = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(453));
+		
+		System.out.println(testOrder.getPrice());
+		
+		
+		System.out.println(testOrder.getPrice().compareTo(testOrder.getPrice()));
+	}
+}

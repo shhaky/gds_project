@@ -1,0 +1,135 @@
+package nl.fontys.cryptoexchange.engine;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+import org.apache.log4j.Logger;
+
+import nl.fontys.cryptoexchange.core.Order;
+import nl.fontys.cryptoexchange.core.OrderType;
+
+/**
+ * <ul>
+ * 	<li>Here are all the pending orders stored. This class has to be able to sort
+ * its own elements when you add them</li>
+ * </ul>
+ * <ul>
+ * 	<li>The orderbook has a sorted Vector inside it will put the new Orders into
+ * the correct positon of the stack</li>
+ * </ul>
+ * @author Tobias Zobrist
+ * @version 1.0
+ * @updated 06-Apr-2014 16:21:11
+ */
+public class OrderBook {
+	
+	public OrderBook(OrderType type){
+		
+		if(type == OrderType.ASK)
+		{
+			this.bidAskModifier = 1;
+		}
+		else if(type == OrderType.BID)
+		{
+			this.bidAskModifier = -1;
+		}
+			
+		else
+		{
+			log.fatal("Orderbook type unknown, OrderType has to many elements!");
+			//is now allowed to happen OrderType must have to many elements!!!
+			this.bidAskModifier = 0;
+		}
+			
+			
+		this.orderBookType = type;
+		this.list = new ArrayList<Order>();
+	}
+	
+	/**
+	 * this will put the Order in the right order of the list by doing a binary search
+	 * or maybe top down search depends on performance... and has to be ThreadSafe!! so
+	 * synchronized
+	 * 
+	 * @param order
+	 * @return 
+	 */
+	public synchronized boolean add(Order order){
+		
+		if(this.list.isEmpty())
+		{
+			this.list.add(order);
+		}
+		
+		else
+		{
+		Iterator<Order> iterator = list.iterator();
+		
+		int arrayAddPosition = 0;
+		while(iterator.hasNext())
+		{
+			//multiply it with bidAskModifier to sort it depending on BID or ASK
+			int value =  bidAskModifier *iterator.next().compareTo(order);
+			
+			if(value == 1)
+			{
+				this.list.add(arrayAddPosition, order);
+				log.debug("new " + this.orderBookType + " added at Position " + arrayAddPosition);
+				return true;
+			}
+			
+			
+			
+			arrayAddPosition++;
+		}
+		
+		//add on last position
+		this.list.add(arrayAddPosition, order);
+		return true;
+		
+	}
+		return false;
+	}
+
+	/**
+	 * this will remove the best Offer
+	 * 
+	 * has to be synchronized!
+	 */
+	public synchronized Order getBestOffer(){
+		return null;
+	}
+
+	/**
+	 * this will not remove the offer from the list
+	 * 
+	 * has to be synchronized
+	 */
+	public Order peekBestOffer(){
+		return null;
+	}
+	
+	public OrderType getOrderBookType()
+	{
+		return this.orderBookType;
+	}
+	private final OrderType orderBookType;
+
+	private Logger log = Logger.getLogger(OrderBook.class);
+
+	private ArrayList<Order> list;
+	
+	
+	//will modify the comperator value that Orders of a BidOrderbook are sorted the opposite way than in a AskOrderbook
+	private final int bidAskModifier;
+
+
+	@Override
+	public String toString()
+	{
+		return this.list.toString();
+	}
+
+	
+}

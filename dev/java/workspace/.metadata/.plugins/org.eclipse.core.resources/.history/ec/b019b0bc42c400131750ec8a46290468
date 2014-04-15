@@ -1,0 +1,28 @@
+package nl.fontys.cryptoexchange.engine;
+
+import java.math.BigDecimal;
+
+import nl.fontys.cryptoexchange.core.CurrencyPair;
+import nl.fontys.cryptoexchange.core.Order;
+import nl.fontys.cryptoexchange.core.OrderType;
+
+public class Test {
+
+	
+	public static void main(String[] args) {
+		Order testOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(501), new BigDecimal(1));
+		
+		Order testOrder2 = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(453));
+		
+		OrderBook book = new OrderBook(OrderType.ASK);
+		
+		book.add(testOrder2);
+		
+		book.add(testOrder);
+		
+		System.out.println(	book.toString());
+		
+		System.out.println(book.getOrderBookType());
+		
+	}
+}

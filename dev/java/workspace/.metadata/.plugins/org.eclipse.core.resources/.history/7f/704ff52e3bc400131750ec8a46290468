@@ -1,0 +1,11 @@
+package nl.fontys.cryptoexchange.core.exeptions;
+
+public class NotSameOrderExeption extends Exception {
+
+	public NotSameOrderExeption() {
+
+		
+	}
+	
+	
+}
