@@ -80,7 +80,6 @@ public class OrderBook {
 				log.debug("new " + this.orderBookType + " added at Position " + arrayAddPosition);
 				return true;
 			}
-			
 			arrayAddPosition++;
 		}
 		

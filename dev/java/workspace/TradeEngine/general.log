@@ -1,0 +1,90 @@
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 5
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 6
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 7
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 8
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 9
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new ASK added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 5
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 6
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 7
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 8
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 9
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 10
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 11
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 12
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 5
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 6
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 7
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 8
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 9
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 10
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 11
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 12
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 5
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 6
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 7
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 8
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 5
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 6
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 7
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 8
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID

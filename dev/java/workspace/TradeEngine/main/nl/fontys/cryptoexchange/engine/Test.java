@@ -21,9 +21,11 @@ public class Test {
 		book.add(testOrder2);
 		
 		book.add(testOrder3);
-		
-		
-		
+		book.add(testOrder3);
+		book.add(testOrder3);
+		book.add(testOrder3);
+		book.add(testOrder3);
+	
 		
 		
 		book.add(testOrder);
@@ -43,5 +45,16 @@ public class Test {
 		System.err.println(book.peekBestOffer());
 		
 		System.out.println(book.toString());
+		
+		
+		System.err.println(book.getBestOffer());
+		System.err.println(book.getBestOffer());
+		System.err.println(book.getBestOffer());
+		System.err.println(book.getBestOffer());
+		System.err.println(book.getBestOffer());
+		
+		System.err.println(book.getBestOffer());
+		System.err.println(book.getBestOffer());
+		System.err.println(book.getBestOffer());
 	}
 }
