@@ -18,3 +18,14 @@ C:\Users\Alex\Desktop\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.Main
 C:\Users\Alex\Desktop\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.Properties.Resources.resources
 C:\Users\Alex\Desktop\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.Register.resources
 C:\Users\Alex\Desktop\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\bin\Debug\BitCoin.exe.config
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.exe
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.pdb
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\bin\Debug\BitCoin.exe
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\bin\Debug\BitCoin.pdb
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.Main.resources
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.Profile.resources
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.Properties.Resources.resources
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.Register.resources
+C:\Users\Alex\Documents\GitHub\gds_project\First Ver\First Ver\BitCoin\BitCoin\obj\Debug\BitCoin.csproj.GenerateResource.Cache

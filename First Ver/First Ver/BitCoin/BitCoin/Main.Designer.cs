@@ -32,15 +32,19 @@
             this.tradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetPasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rtb_ChatHistory = new System.Windows.Forms.RichTextBox();
             this.tb_Message = new System.Windows.Forms.TextBox();
             this.bt_SendMessage = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel_Sell = new System.Windows.Forms.Panel();
+            this.Btn_Sell = new System.Windows.Forms.Button();
+            this.Btn_Sel_Cal = new System.Windows.Forms.Button();
+            this.panel_Buy = new System.Windows.Forms.Panel();
+            this.Btn_Buy = new System.Windows.Forms.Button();
+            this.Btn_Buy_cal = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -50,18 +54,12 @@
             this.tb_Email = new System.Windows.Forms.TextBox();
             this.tb_password = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel_Buy = new System.Windows.Forms.Panel();
-            this.panel_Sell = new System.Windows.Forms.Panel();
-            this.Btn_Buy_cal = new System.Windows.Forms.Button();
-            this.Btn_Buy = new System.Windows.Forms.Button();
-            this.Btn_Sel_Cal = new System.Windows.Forms.Button();
-            this.Btn_Sell = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel_Buy.SuspendLayout();
             this.panel_Sell.SuspendLayout();
+            this.panel_Buy.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -81,8 +79,9 @@
             // tradeToolStripMenuItem
             // 
             this.tradeToolStripMenuItem.Name = "tradeToolStripMenuItem";
-            this.tradeToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.tradeToolStripMenuItem.Text = "Trade";
+            this.tradeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.tradeToolStripMenuItem.Text = "Profile";
+            this.tradeToolStripMenuItem.Click += new System.EventHandler(this.tradeToolStripMenuItem_Click);
             // 
             // newsToolStripMenuItem
             // 
@@ -92,38 +91,23 @@
             // 
             // supportToolStripMenuItem
             // 
-            this.supportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.resetPasswordToolStripMenuItem});
             this.supportToolStripMenuItem.Name = "supportToolStripMenuItem";
             this.supportToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.supportToolStripMenuItem.Text = "Support";
             // 
-            // resetPasswordToolStripMenuItem
-            // 
-            this.resetPasswordToolStripMenuItem.Name = "resetPasswordToolStripMenuItem";
-            this.resetPasswordToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.resetPasswordToolStripMenuItem.Text = "Reset Password";
-            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem1,
-            this.helpToolStripMenuItem});
+            this.aboutToolStripMenuItem1});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.aboutToolStripMenuItem.Text = "About Us";
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem1.Text = "About us";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.helpToolStripMenuItem.Text = "Help";
             // 
             // rtb_ChatHistory
             // 
@@ -174,6 +158,62 @@
             this.tabPage1.Text = "BTC/USD";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // panel_Sell
+            // 
+            this.panel_Sell.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel_Sell.Controls.Add(this.Btn_Sell);
+            this.panel_Sell.Controls.Add(this.Btn_Sel_Cal);
+            this.panel_Sell.Location = new System.Drawing.Point(298, 169);
+            this.panel_Sell.Name = "panel_Sell";
+            this.panel_Sell.Size = new System.Drawing.Size(272, 262);
+            this.panel_Sell.TabIndex = 1;
+            // 
+            // Btn_Sell
+            // 
+            this.Btn_Sell.Location = new System.Drawing.Point(163, 228);
+            this.Btn_Sell.Name = "Btn_Sell";
+            this.Btn_Sell.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Sell.TabIndex = 2;
+            this.Btn_Sell.Text = "Sell";
+            this.Btn_Sell.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Sel_Cal
+            // 
+            this.Btn_Sel_Cal.Location = new System.Drawing.Point(28, 228);
+            this.Btn_Sel_Cal.Name = "Btn_Sel_Cal";
+            this.Btn_Sel_Cal.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Sel_Cal.TabIndex = 1;
+            this.Btn_Sel_Cal.Text = "Calculate";
+            this.Btn_Sel_Cal.UseVisualStyleBackColor = true;
+            // 
+            // panel_Buy
+            // 
+            this.panel_Buy.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel_Buy.Controls.Add(this.Btn_Buy);
+            this.panel_Buy.Controls.Add(this.Btn_Buy_cal);
+            this.panel_Buy.Location = new System.Drawing.Point(6, 169);
+            this.panel_Buy.Name = "panel_Buy";
+            this.panel_Buy.Size = new System.Drawing.Size(272, 262);
+            this.panel_Buy.TabIndex = 0;
+            // 
+            // Btn_Buy
+            // 
+            this.Btn_Buy.Location = new System.Drawing.Point(169, 228);
+            this.Btn_Buy.Name = "Btn_Buy";
+            this.Btn_Buy.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Buy.TabIndex = 1;
+            this.Btn_Buy.Text = "Buy";
+            this.Btn_Buy.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Buy_cal
+            // 
+            this.Btn_Buy_cal.Location = new System.Drawing.Point(28, 228);
+            this.Btn_Buy_cal.Name = "Btn_Buy_cal";
+            this.Btn_Buy_cal.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Buy_cal.TabIndex = 0;
+            this.Btn_Buy_cal.Text = "Calculate";
+            this.Btn_Buy_cal.UseVisualStyleBackColor = true;
+            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -189,7 +229,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(576, 268);
+            this.tabPage3.Size = new System.Drawing.Size(576, 437);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "BTC/GBP";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -199,7 +239,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(576, 268);
+            this.tabPage4.Size = new System.Drawing.Size(576, 437);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "USD/EUR";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -209,7 +249,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(576, 268);
+            this.tabPage5.Size = new System.Drawing.Size(576, 437);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "GBP/USD";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -271,62 +311,6 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // panel_Buy
-            // 
-            this.panel_Buy.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel_Buy.Controls.Add(this.Btn_Buy);
-            this.panel_Buy.Controls.Add(this.Btn_Buy_cal);
-            this.panel_Buy.Location = new System.Drawing.Point(6, 169);
-            this.panel_Buy.Name = "panel_Buy";
-            this.panel_Buy.Size = new System.Drawing.Size(272, 262);
-            this.panel_Buy.TabIndex = 0;
-            // 
-            // panel_Sell
-            // 
-            this.panel_Sell.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel_Sell.Controls.Add(this.Btn_Sell);
-            this.panel_Sell.Controls.Add(this.Btn_Sel_Cal);
-            this.panel_Sell.Location = new System.Drawing.Point(298, 169);
-            this.panel_Sell.Name = "panel_Sell";
-            this.panel_Sell.Size = new System.Drawing.Size(272, 262);
-            this.panel_Sell.TabIndex = 1;
-            // 
-            // Btn_Buy_cal
-            // 
-            this.Btn_Buy_cal.Location = new System.Drawing.Point(28, 228);
-            this.Btn_Buy_cal.Name = "Btn_Buy_cal";
-            this.Btn_Buy_cal.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Buy_cal.TabIndex = 0;
-            this.Btn_Buy_cal.Text = "Calculate";
-            this.Btn_Buy_cal.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Buy
-            // 
-            this.Btn_Buy.Location = new System.Drawing.Point(169, 228);
-            this.Btn_Buy.Name = "Btn_Buy";
-            this.Btn_Buy.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Buy.TabIndex = 1;
-            this.Btn_Buy.Text = "Buy";
-            this.Btn_Buy.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Sel_Cal
-            // 
-            this.Btn_Sel_Cal.Location = new System.Drawing.Point(28, 228);
-            this.Btn_Sel_Cal.Name = "Btn_Sel_Cal";
-            this.Btn_Sel_Cal.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Sel_Cal.TabIndex = 1;
-            this.Btn_Sel_Cal.Text = "Calculate";
-            this.Btn_Sel_Cal.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Sell
-            // 
-            this.Btn_Sell.Location = new System.Drawing.Point(163, 228);
-            this.Btn_Sell.Name = "Btn_Sell";
-            this.Btn_Sell.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Sell.TabIndex = 2;
-            this.Btn_Sell.Text = "Sell";
-            this.Btn_Sell.UseVisualStyleBackColor = true;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,9 +336,9 @@
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel_Buy.ResumeLayout(false);
             this.panel_Sell.ResumeLayout(false);
+            this.panel_Buy.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,11 +352,9 @@
         private System.Windows.Forms.ToolStripMenuItem supportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.RichTextBox rtb_ChatHistory;
         private System.Windows.Forms.TextBox tb_Message;
         private System.Windows.Forms.Button bt_SendMessage;
-        private System.Windows.Forms.ToolStripMenuItem resetPasswordToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;

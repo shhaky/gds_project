@@ -65,5 +65,11 @@ namespace BitCoin
                 tb_password.PasswordChar = '\0' ;
             }
         }
+
+        private void tradeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form profile = new Profile();
+            profile.Show();
+        }
     }
 }
