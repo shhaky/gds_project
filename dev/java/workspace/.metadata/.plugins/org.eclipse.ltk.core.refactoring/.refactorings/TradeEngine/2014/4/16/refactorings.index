@@ -13,3 +13,7 @@
 1397614738835	Move fields
 1397649608806	Move compilation unit
 1397649775576	Delete element
+1397661934373	Delete element
+1397662632814	Rename type 'OrderBook'
+1397662705291	Rename type 'AskOrderBook'
+1397663328573	Move fields

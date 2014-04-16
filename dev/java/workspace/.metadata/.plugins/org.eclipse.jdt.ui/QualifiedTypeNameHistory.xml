@@ -1,55 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.TreeMap"/>
-<fullyQualifiedTypeName name="java.util.TreeSet"/>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.Test"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TreadyThread"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="java.lang.Comparable"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Currency"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exeptions.NotSameCurrencyPairExeption"/>
-<fullyQualifiedTypeName name="java.util.logging.Logger"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="java.lang.TypeNotPresentException"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.json.JSONArray"/>
-<fullyQualifiedTypeName name="org.json.JSONObject"/>
-<fullyQualifiedTypeName name="java.util.Observer"/>
-<fullyQualifiedTypeName name="java.util.Observable"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.OrderBook"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.AskOrderBook"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.BidOrderBook"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.TradeIdGenerator"/>
-<fullyQualifiedTypeName name="org.junit.experimental.theories.Theories"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.IdGeneratorTestAgent"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.IdGeneratorTest"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="org.junit.runners.Suite"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.junit.runners.Suite.SuiteClasses"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.OrderBookTest"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.TradeTest"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.IdGeneratorTest"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Order"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.CurrencyPair"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.IdGenerator"/>
-<fullyQualifiedTypeName name="java.math.BigInteger"/>
-<fullyQualifiedTypeName name="java.math.BigDecimal"/>
-<fullyQualifiedTypeName name="org.junit.Before"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Trade"/>
-<<<<<<< HEAD
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.OrderBook"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.OrderList"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.AskOrderList"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.BidOrderList"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.OrderType"/>
-=======
->>>>>>> added AskOrder and SellOrder as subtype to the core
 <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
-<fullyQualifiedTypeName name="java.lang.Deprecated"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exeptions.IllegalTradeExeption"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exeptions.NoMatchingPriceExeption"/>
-<<<<<<< HEAD
-=======
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.OrderType"/>
->>>>>>> added AskOrder and SellOrder as subtype to the core
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.OrderBookArrayList"/>
 </qualifiedTypeNameHistroy>
