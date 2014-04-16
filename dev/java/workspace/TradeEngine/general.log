@@ -115,3 +115,7 @@ INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 1000000100
 INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 1050ms with 50 Threads
 INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 977ms with 50 Threads
 INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 1143ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=BUY, volume=20, currencyPair=LTC/BTC, price=10, timestamp=Wed Apr 16 17:22:53 CEST 2014, trade ID=1000000, order ID sell=1000000002 , order ID buy=1000000001]
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=SELL, volume=20, currencyPair=LTC/BTC, price=50, timestamp=Wed Apr 16 17:22:53 CEST 2014, trade ID=1000002, order ID sell=1000000012 , order ID buy=1000000011]
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Order IDs in 783ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Trade IDs in 920ms with 50 Threads

@@ -1,9 +1,8 @@
 package nl.fontys.cryptoexchange.engine;
 
-import static org.junit.Assert.*;
-import nl.fontys.cryptoexchange.core.OrderType;
 
-import org.junit.Before;
+
+
 import org.junit.Test;
 
 
@@ -16,25 +15,31 @@ import org.junit.Test;
  */
 public class OrderBookTest {
 
-	private OrderBook bidOrderBook;
+	private OrderList bidOrderBook;
 	
-	private OrderBook askOrderBook;
+	private OrderList askOrderBook;
 	
-	 @Before
+/**	 @Before
 	  public void setUp() throws Exception {
 
 		bidOrderBook = new BidOrderBook();
-		askOrderBook = new AskOrderBook();
+		askOrderBook = new AskOrderList();
 		
-			
+Order highOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(501), new BigDecimal(10));
+		
+		Order mediumOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(500), new BigDecimal(5));
+		
+		Order lowOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(500), new BigDecimal(2));
 
 	  }
 	
 	
-	
+	*/
 
 	@Test
 	public void test() {
+		
+		
 	}
 
 }

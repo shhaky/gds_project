@@ -8,21 +8,21 @@ import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 /**
- * Data object representing an order, an order is not executed yet!
+ * Data object representing an order, an order that is not executed yet!
+ * 
+ * 
  * @author Tobias Zobrist
  * @version 1.0
  * @updated 15-Apr-2014 02:43
  */
-public class Order implements Comparable<Order> {
+public abstract class Order implements Comparable<Order> {
 	
-	public Order(CurrencyPair currencyPair, long orderId, OrderType type, BigDecimal volume, BigDecimal price, long userId) {
+	public Order(CurrencyPair currencyPair, long orderId, BigDecimal volume, BigDecimal price) {
 		
 		this.currencyPair = currencyPair;
 		this.orderId = orderId;
-		this.type = type;
 		this.volume = volume;
 		this.price = price;
-		this.userId = userId;
 		
 		this.timeStamp = Calendar.getInstance().getTime();
 		
@@ -37,16 +37,11 @@ public class Order implements Comparable<Order> {
 	 * creation date of the instance
 	 */
 	private final Date timeStamp;
-	private final OrderType type;
 	private final BigDecimal volume;
 	private final BigDecimal price;
-	private final long userId;
 
 
-	public long getUserId(){
-		return this.userId;
-	}
-	
+
 	public CurrencyPair getCurrencyPair(){
 		return this.currencyPair;
 	}
@@ -55,7 +50,7 @@ public class Order implements Comparable<Order> {
 		return this.price;
 	}
 
-	public long getId(){
+	public long getOrderId(){
 		return this.orderId;
 	}
 
@@ -63,9 +58,7 @@ public class Order implements Comparable<Order> {
 		return this.timeStamp;
 	}
 
-	public OrderType getType(){
-		return this.type;
-	}
+	public abstract OrderType getType();
 
 	public BigDecimal getVolume(){
 		return this.volume;
@@ -79,7 +72,7 @@ public class Order implements Comparable<Order> {
 		  @Override
 		  public String toString() {
 
-		    return "Order [type=" + type + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
+		    return "Order [type=" + this.getType() + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
 		  }
 	
 
