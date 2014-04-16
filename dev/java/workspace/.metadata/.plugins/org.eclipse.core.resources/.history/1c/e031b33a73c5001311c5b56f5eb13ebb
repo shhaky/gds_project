@@ -6,13 +6,8 @@ import java.util.Date;
 
 import org.apache.log4j.Logger;
 
-<<<<<<< HEAD
-import nl.fontys.cryptoexchange.core.exeptions.IllegalTradeExeption;
-import nl.fontys.cryptoexchange.core.exeptions.NoMatchingPriceExeption;
-=======
-import nl.fontys.cryptoexchange.core.exception.IllegalTradeExeption;
-import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
->>>>>>> added AskOrder and SellOrder as subtype to the core
+import nl.fontys.cryptoexchange.core.exceptions.IllegalTradeExeption;
+import nl.fontys.cryptoexchange.core.exceptions.NoMatchingPriceExeption;
 
 /**
  * 

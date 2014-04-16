@@ -25,3 +25,8 @@
 1397655890661	Rename field 'orderBIDlow'
 1397655895442	Rename field 'orderASKlow'
 1397655900466	Rename field 'orderASKhigh'
+<<<<<<< HEAD
+=======
+1397658441690	Rename package 'nl.fontys.cryptoexchange.core.exeptions'
+1397658445570	Rename package 'nl.fontys.cryptoexchange.core.exceptions'
+>>>>>>> added AskOrder and SellOrder as subtype to the core

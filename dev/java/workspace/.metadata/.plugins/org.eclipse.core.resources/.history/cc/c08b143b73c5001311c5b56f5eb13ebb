@@ -4,13 +4,8 @@ import static org.junit.Assert.*;
 
 import java.math.BigDecimal;
 
-<<<<<<< HEAD
-import nl.fontys.cryptoexchange.core.exeptions.IllegalTradeExeption;
-import nl.fontys.cryptoexchange.core.exeptions.NoMatchingPriceExeption;
-=======
-import nl.fontys.cryptoexchange.core.exception.IllegalTradeExeption;
-import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
->>>>>>> added AskOrder and SellOrder as subtype to the core
+import nl.fontys.cryptoexchange.core.exceptions.IllegalTradeExeption;
+import nl.fontys.cryptoexchange.core.exceptions.NoMatchingPriceExeption;
 
 import org.apache.log4j.Logger;
 import org.junit.Before;
@@ -49,7 +44,6 @@ public class TradeTest {
 	@Before
 	public void setUp()
 	{
-<<<<<<< HEAD
 		 orderBUYlow = new Order(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), OrderType.BUY, new BigDecimal(LOW_VOLUME), new BigDecimal(10));
 		 orderBUYhigh = new Order(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), OrderType.BUY, new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
 			
@@ -57,15 +51,6 @@ public class TradeTest {
 		 orderSELLhigh = new Order(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), OrderType.SELL, new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
 	
 		 orderOtherCurrency = new Order(CurrencyPair.DOGE_BTC, IdGenerator.getInstance().getOrderId(), OrderType.BUY, new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
-=======
-		 orderBUYlow = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10));
-		 orderBUYhigh = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
-			
-		 orderSELLlow = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10));
-		 orderSELLhigh = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(),  new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
-	
-		 orderOtherCurrency = new BuyOrder(CurrencyPair.DOGE_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
->>>>>>> added AskOrder and SellOrder as subtype to the core
 	
 	}
 	

@@ -1,6 +1,10 @@
 INDEX VERSION 1.126+D:\Development\GitHub\gds_project\dev\java\workspace\.metadata\.plugins\org.eclipse.jdt.core
 3310274911.index
 1115467115.index
+<<<<<<< HEAD
+=======
+3353442650.index
+>>>>>>> added AskOrder and SellOrder as subtype to the core
 3767454749.index
 305854171.index
 3133528496.index
@@ -10,11 +14,20 @@ INDEX VERSION 1.126+D:\Development\GitHub\gds_project\dev\java\workspace\.metada
 3065916431.index
 1299022128.index
 1498219845.index
+<<<<<<< HEAD
 1697886153.index
 56151360.index
 4108727661.index
 4041092966.index
 2615362626.index
+=======
+4108727661.index
+1697886153.index
+56151360.index
+4041092966.index
+2615362626.index
+2845285434.index
+>>>>>>> added AskOrder and SellOrder as subtype to the core
 3974580528.index
 163172794.index
 4155206848.index

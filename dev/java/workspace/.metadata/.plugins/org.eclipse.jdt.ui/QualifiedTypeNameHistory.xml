@@ -40,9 +40,16 @@
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Trade"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.OrderType"/>
+=======
+>>>>>>> added AskOrder and SellOrder as subtype to the core
 <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
 <fullyQualifiedTypeName name="java.lang.Deprecated"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exeptions.IllegalTradeExeption"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exeptions.NoMatchingPriceExeption"/>
+<<<<<<< HEAD
+=======
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.OrderType"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
 </qualifiedTypeNameHistroy>

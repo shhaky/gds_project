@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_XqzgobvwEeO4xMqtwIOByg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_XqzgorvwEeO4xMqtwIOByg" bindingContexts="_XqzgpLvwEeO4xMqtwIOByg">
+<<<<<<< HEAD
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Trade.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IllegalTradeExeption.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/IllegalTradeExeption.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/IllegalTradeExeption.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NoMatchingPriceExeption.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NoMatchingPriceExeption.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NoMatchingPriceExeption.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TradeTest.java&quot; tooltip=&quot;GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;OrderType.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/OrderType.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/OrderType.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NotSameCurrencyPairExeption.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NotSameCurrencyPairExeption.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NotSameCurrencyPairExeption.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;general.log&quot; tooltip=&quot;TradeEngine/general.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TradeEngine/general.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;OrderBookTest.java&quot; tooltip=&quot;TradeEngine/test/nl/fontys/cryptoexchange/engine/OrderBookTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TradeEngine/test/nl/fontys/cryptoexchange/engine/OrderBookTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IdGeneratorTest.java&quot; tooltip=&quot;GDS_core/test/nl/fontys/cryptoexchange/core/IdGeneratorTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/test/nl/fontys/cryptoexchange/core/IdGeneratorTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;dd.java&quot; tooltip=&quot;GDS_core/test/dd.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/test/dd.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IdGenerator.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/IdGenerator.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/IdGenerator.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;ReflectiveCallable.class&quot; tooltip=&quot;org.junit.internal.runners.model.ReflectiveCallable&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=TradeEngine/C:\/Program Files\/eclipse\/plugins\/org.junit_4.11.0.v201303080030\/junit.jar&amp;lt;org.junit.internal.runners.model(ReflectiveCallable.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IdGeneratorTest.java&quot; tooltip=&quot;TradeEngine/test/nl/fontys/cryptoexchange/engine/IdGeneratorTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TradeEngine/test/nl/fontys/cryptoexchange/engine/IdGeneratorTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TradeIdGenerator.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/TradeIdGenerator.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/TradeIdGenerator.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AskOrderBook.java&quot; tooltip=&quot;TradeEngine/main/nl/fontys/cryptoexchange/engine/AskOrderBook.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TradeEngine/main/nl/fontys/cryptoexchange/engine/AskOrderBook.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+=======
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BuyOrder.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/BuyOrder.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/BuyOrder.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SellOrder.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/SellOrder.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/SellOrder.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Trade.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IllegalTradeExeption.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/IllegalTradeExeption.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/IllegalTradeExeption.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NoMatchingPriceExeption.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NoMatchingPriceExeption.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NoMatchingPriceExeption.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TradeTest.java&quot; tooltip=&quot;GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;OrderType.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/OrderType.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/OrderType.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NotSameCurrencyPairExeption.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NotSameCurrencyPairExeption.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/exeptions/NotSameCurrencyPairExeption.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;general.log&quot; tooltip=&quot;TradeEngine/general.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TradeEngine/general.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;OrderBookTest.java&quot; tooltip=&quot;TradeEngine/test/nl/fontys/cryptoexchange/engine/OrderBookTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TradeEngine/test/nl/fontys/cryptoexchange/engine/OrderBookTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IdGeneratorTest.java&quot; tooltip=&quot;GDS_core/test/nl/fontys/cryptoexchange/core/IdGeneratorTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/test/nl/fontys/cryptoexchange/core/IdGeneratorTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;dd.java&quot; tooltip=&quot;GDS_core/test/dd.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/test/dd.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IdGenerator.java&quot; tooltip=&quot;GDS_core/main/nl/fontys/cryptoexchange/core/IdGenerator.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/IdGenerator.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;ReflectiveCallable.class&quot; tooltip=&quot;org.junit.internal.runners.model.ReflectiveCallable&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=TradeEngine/C:\/Program Files\/eclipse\/plugins\/org.junit_4.11.0.v201303080030\/junit.jar&amp;lt;org.junit.internal.runners.model(ReflectiveCallable.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IdGeneratorTest.java&quot; tooltip=&quot;TradeEngine/test/nl/fontys/cryptoexchange/engine/IdGeneratorTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/TradeEngine/test/nl/fontys/cryptoexchange/engine/IdGeneratorTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_XqzgorvwEeO4xMqtwIOByg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_X_Ix4rvwEeO4xMqtwIOByg" label="%trimmedwindow.label.eclipseSDK" x="314" y="-8" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_XqzgorvwEeO4xMqtwIOByg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_X_Ix4rvwEeO4xMqtwIOByg" label="%trimmedwindow.label.eclipseSDK" x="358" y="-14" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
@@ -328,19 +332,23 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_YK25sLvwEeO4xMqtwIOByg" elementId="org.eclipse.ui.editorss" selectedElement="_YK25sbvwEeO4xMqtwIOByg">
+<<<<<<< HEAD
       <children xsi:type="basic:PartStack" xmi:id="_YK25sbvwEeO4xMqtwIOByg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_8q2h8MVeEeOk5v34hVvouQ">
+=======
+      <children xsi:type="basic:PartStack" xmi:id="_YK25sbvwEeO4xMqtwIOByg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_-df5YMVgEeOk5v34hVvouQ">
+>>>>>>> added AskOrder and SellOrder as subtype to the core
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_Mld_gMQ2EeOsD5-GqbnnsA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Order.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/main/nl/fontys/cryptoexchange/core/Order.java" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/Order.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1746&quot; selectionTopPixel=&quot;464&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/Order.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1516&quot; selectionTopPixel=&quot;494&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_b169oMTtEeOiyapkpVGT9Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="OrderBook.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="TradeEngine/main/nl/fontys/cryptoexchange/engine/OrderBook.java" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TradeEngine/main/nl/fontys/cryptoexchange/engine/OrderBook.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;3&quot; selectionOffset=&quot;911&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TradeEngine/main/nl/fontys/cryptoexchange/engine/OrderBook.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;700&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -351,22 +359,39 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_F5tnMMT8EeOiyapkpVGT9Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="IdGenerator.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/main/nl/fontys/cryptoexchange/core/IdGenerator.java" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/IdGenerator.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1530&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_8q2h8MVeEeOk5v34hVvouQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Trade.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;162&quot; selectionOffset=&quot;306&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_-df5YMVgEeOk5v34hVvouQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TradeTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1721&quot; selectionTopPixel=&quot;251&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
         </children>
+<<<<<<< HEAD
+        <children xsi:type="basic:Part" xmi:id="_8q2h8MVeEeOk5v34hVvouQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Trade.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/Trade.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;162&quot; selectionOffset=&quot;306&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_-gMQ8MV0EeO_p9dNUfvc_w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SellOrder.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/main/nl/fontys/cryptoexchange/core/SellOrder.java" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/SellOrder.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;337&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
+        </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_-df5YMVgEeOk5v34hVvouQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TradeTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/test/nl/fontys/cryptoexchange/core/TradeTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;480&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+=======
+        <children xsi:type="basic:Part" xmi:id="_F14FEMV1EeO_p9dNUfvc_w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BuyOrder.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" tooltip="GDS_core/main/nl/fontys/cryptoexchange/core/BuyOrder.java" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GDS_core/main/nl/fontys/cryptoexchange/core/BuyOrder.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;261&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -592,6 +617,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YB7AILvwEeO4xMqtwIOByg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lPlKUMVeEeOk5v34hVvouQ" elementId="new.group"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lPlKUcVeEeOk5v34hVvouQ" elementId="newWizardDropDown"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lPlKUsVeEeOk5v34hVvouQ" elementId="new.ext" visible="false"/>
@@ -604,6 +630,20 @@
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP2QEMVeEeOk5v34hVvouQ" elementId="build.group"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP2QEcVeEeOk5v34hVvouQ" elementId="build.ext" visible="false"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP2QEsVeEeOk5v34hVvouQ" elementId="additions"/>
+=======
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yFsIMVyEeO_p9dNUfvc_w" elementId="new.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yGTMMVyEeO_p9dNUfvc_w" elementId="newWizardDropDown"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yGTMcVyEeO_p9dNUfvc_w" elementId="new.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yGTMsVyEeO_p9dNUfvc_w" elementId="save.group" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yGTM8VyEeO_p9dNUfvc_w" elementId="save"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yGTNMVyEeO_p9dNUfvc_w" elementId="saveAll"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yGTNcVyEeO_p9dNUfvc_w" elementId="save.ext" visible="false"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_3yG6QMVyEeO_p9dNUfvc_w" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.gif" tooltip="Print" command="_Xs8OtbvwEeO4xMqtwIOByg"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yJ9kMVyEeO_p9dNUfvc_w" elementId="print.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yJ9kcVyEeO_p9dNUfvc_w" elementId="build.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yJ9ksVyEeO_p9dNUfvc_w" elementId="build.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yJ9k8VyEeO_p9dNUfvc_w" elementId="additions"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YB7AIbvwEeO4xMqtwIOByg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -611,6 +651,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YO4eELvwEeO4xMqtwIOByg" elementId="com.objectaid.uml.addon.cls.alignment">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lX_fcMVeEeOk5v34hVvouQ" elementId="objectaid"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lX_fccVeEeOk5v34hVvouQ" elementId="com.objectaid.uml.align.LEFT"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lX_fcsVeEeOk5v34hVvouQ" elementId="com.objectaid.uml.align.CENTER"/>
@@ -664,6 +705,61 @@
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lYB7tMVeEeOk5v34hVvouQ" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lYB7tcVeEeOk5v34hVvouQ" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lYB7tsVeEeOk5v34hVvouQ" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+=======
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_306WoMVyEeO_p9dNUfvc_w" elementId="objectaid"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_306WocVyEeO_p9dNUfvc_w" elementId="com.objectaid.uml.align.LEFT"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_306WosVyEeO_p9dNUfvc_w" elementId="com.objectaid.uml.align.CENTER"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_306Wo8VyEeO_p9dNUfvc_w" elementId="com.objectaid.uml.align.RIGHT"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_306WpMVyEeO_p9dNUfvc_w" elementId="com.objectaid.uml.align.TOP"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_306WpcVyEeO_p9dNUfvc_w" elementId="com.objectaid.uml.align.MIDDLE"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_306WpsVyEeO_p9dNUfvc_w" elementId="com.objectaid.uml.align.BOTTOM"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_YPXmQLvwEeO4xMqtwIOByg" elementId="com.objectaid.uml.addon.cls.display">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069sMVyEeO_p9dNUfvc_w" elementId="objectaid"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069scVyEeO_p9dNUfvc_w" elementId="show-public-operations"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069ssVyEeO_p9dNUfvc_w" elementId="show-protected-operations"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069s8VyEeO_p9dNUfvc_w" elementId="show-package-operations"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069tMVyEeO_p9dNUfvc_w" elementId="show-private-operations"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069tcVyEeO_p9dNUfvc_w" elementId="show-static-operations"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069tsVyEeO_p9dNUfvc_w" elementId="show-property-accessors"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3069t8VyEeO_p9dNUfvc_w" elementId="show-public-attributes"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kwMVyEeO_p9dNUfvc_w" elementId="show-protected-attributes"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kwcVyEeO_p9dNUfvc_w" elementId="show-package-attributes"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kwsVyEeO_p9dNUfvc_w" elementId="show-private-attributes"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kw8VyEeO_p9dNUfvc_w" elementId="show-static-attributes"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_Fhxp8MScEeOgyr68ha--kQ" elementId="org.eclipse.debug.ui.debugActionSet">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kxMVyEeO_p9dNUfvc_w" elementId="renderGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kxcVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.DropToFrame"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kxsVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.ToggleStepFilters"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kx8VyEeO_p9dNUfvc_w" elementId="emptyStepGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kyMVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.RunToLine"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kycVyEeO_p9dNUfvc_w" elementId="stepReturnGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307kysVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.StepReturn"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_307ky8VyEeO_p9dNUfvc_w" elementId="stepOverGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L0MVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.StepOver"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L0cVyEeO_p9dNUfvc_w" elementId="stepIntoGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L0sVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.StepInto"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L08VyEeO_p9dNUfvc_w" elementId="threadGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L1MVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.Resume"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L1cVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.Suspend"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L1sVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.Terminate"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L18VyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.toolbar.Disconnect"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_AB8QcL2GEeO0o92QA7SwJA" elementId="org.eclipse.debug.ui.breakpointActionSet">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L2MVyEeO_p9dNUfvc_w" elementId="breakpointGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L2cVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.ui.actions.SkipAllBreakpoints"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_YP5xwLvwEeO4xMqtwIOByg" elementId="org.eclipse.debug.ui.launchActionSet">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L2sVyEeO_p9dNUfvc_w" elementId="debug"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308L28VyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y4MVyEeO_p9dNUfvc_w" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y4cVyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_pIlmILvwEeO4xMqtwIOByg" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet" visible="false">
         <tags>Draggable</tags>
@@ -674,6 +770,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YQzJoLvwEeO4xMqtwIOByg" elementId="org.eclipse.jst.j2ee.J2eeMainActionSet">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_YSl5YLvwEeO4xMqtwIOByg" elementId="J2EEMain"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_YSnHgLvwEeO4xMqtwIOByg" elementId="org.eclipse.jst.j2ee.internal.actions.NewJavaEEProject"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_YSoVoLvwEeO4xMqtwIOByg" elementId="org.eclipse.jst.j2ee.internal.actions.NewJavaEEArtifact"/>
@@ -725,6 +822,38 @@
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_gIGTwMUJEeOiyapkpVGT9Q" elementId="org.eclipse.wst.ws.internal.explorer.action.LaunchWSEAction"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_vhoEEMVtEeOk5v34hVvouQ" elementId="additions"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_vhorIMVtEeOk5v34hVvouQ" elementId="org.eclipse.wst.ws.internal.explorer.action.LaunchWSEAction"/>
+=======
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y4sVyEeO_p9dNUfvc_w" elementId="J2EEMain"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y48VyEeO_p9dNUfvc_w" elementId="org.eclipse.jst.j2ee.internal.actions.NewJavaEEProject"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y5MVyEeO_p9dNUfvc_w" elementId="org.eclipse.jst.j2ee.internal.actions.NewJavaEEArtifact"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_YQQ-ILvwEeO4xMqtwIOByg" elementId="org.eclipse.search.searchActionSet">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y5cVyEeO_p9dNUfvc_w" elementId="Search"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y5sVyEeO_p9dNUfvc_w" elementId="openType"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y58VyEeO_p9dNUfvc_w" elementId="org.eclipse.mylyn.tasks.ui.openTask"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y6MVyEeO_p9dNUfvc_w" elementId="org.eclipse.search.OpenSearchDialogPage"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_AlZi0L2GEeO0o92QA7SwJA" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_4LOk4MVyEeO_p9dNUfvc_w" elementId="Presentation"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_4LOk4cVyEeO_p9dNUfvc_w" elementId="org.eclipse.jdt.ui.edit.text.java.toggleBreadcrumb"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_4LOk4sVyEeO_p9dNUfvc_w" elementId="org.eclipse.jdt.ui.edit.text.java.toggleMarkOccurrences"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_4LOk48VyEeO_p9dNUfvc_w" elementId="org.eclipse.mylyn.java.ui.editor.folding.auto"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_4LOk5MVyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_4LPL8MVyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_4LPL8cVyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_YQoKgLvwEeO4xMqtwIOByg" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y6cVyEeO_p9dNUfvc_w" elementId="browser"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y6sVyEeO_p9dNUfvc_w" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_YPMnILvwEeO4xMqtwIOByg" elementId="org.eclipse.wst.ws.explorer.explorer">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_308y68VyEeO_p9dNUfvc_w" elementId="additions"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_309Z8MVyEeO_p9dNUfvc_w" elementId="org.eclipse.wst.ws.internal.explorer.action.LaunchWSEAction"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YB7AI7vwEeO4xMqtwIOByg" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -732,6 +861,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YB7nMLvwEeO4xMqtwIOByg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP23IMVeEeOk5v34hVvouQ" elementId="history.group"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP23IcVeEeOk5v34hVvouQ" elementId="group.application" visible="false"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP3eMMVeEeOk5v34hVvouQ" elementId="backardHistory"/>
@@ -741,6 +871,17 @@
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lYCixMVeEeOk5v34hVvouQ" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lYCixcVeEeOk5v34hVvouQ" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lYCixsVeEeOk5v34hVvouQ" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
+=======
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yJ9lMVyEeO_p9dNUfvc_w" elementId="history.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yJ9lcVyEeO_p9dNUfvc_w" elementId="group.application" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yKkoMVyEeO_p9dNUfvc_w" elementId="backardHistory"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yKkocVyEeO_p9dNUfvc_w" elementId="forwardHistory"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yKkosVyEeO_p9dNUfvc_w" elementId="pin.group"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_3yKko8VyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.gif" tooltip="Pin Editor" enabled="false" command="_Xs2vLrvwEeO4xMqtwIOByg"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_309Z8cVyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_309Z8sVyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_309Z88VyEeO_p9dNUfvc_w" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YB7nMbvwEeO4xMqtwIOByg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -752,8 +893,13 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_YB8OQLvwEeO4xMqtwIOByg" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP4sUMVeEeOk5v34hVvouQ" elementId="group.help"/>
         <children xsi:type="menu:OpaqueToolItem" xmi:id="_lP5TYMVeEeOk5v34hVvouQ" elementId="group.application" visible="false"/>
+=======
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yLLsMVyEeO_p9dNUfvc_w" elementId="group.help"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_3yLLscVyEeO_p9dNUfvc_w" elementId="group.application" visible="false"/>
+>>>>>>> added AskOrder and SellOrder as subtype to the core
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_YHdAYLvwEeO4xMqtwIOByg" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -794,6 +940,15 @@
         <tags>TrimStack</tags>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_ylHVgLvxEeO4xMqtwIOByg" elementId="bottom(org.eclipse.jdt.ui.JavaPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="__6Mw0MV0EeO_p9dNUfvc_w" elementId="topRight(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="__7Ru4MV0EeO_p9dNUfvc_w" elementId="bottomRight(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="__7l38MV0EeO_p9dNUfvc_w" elementId="org.eclipse.ui.editorss(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
       </children>
     </trimBars>
