@@ -104,7 +104,7 @@ public abstract class OrderBook  {
 
 	private Logger log = Logger.getLogger(OrderBook.class);
 
-	private ArrayList<Order> list;
+	public ArrayList<Order> list;
 	
 	
 	//will modify the comparator value that Orders of a BidOrderbook are sorted the opposite way than in a AskOrderbook

@@ -15,13 +15,14 @@ import org.json.JSONObject;
  */
 public class Order implements Comparable<Order> {
 	
-	public Order(CurrencyPair currencyPair, long orderId, OrderType type, BigDecimal volume, BigDecimal price) {
+	public Order(CurrencyPair currencyPair, long orderId, OrderType type, BigDecimal volume, BigDecimal price, long userId) {
 		
 		this.currencyPair = currencyPair;
 		this.orderId = orderId;
 		this.type = type;
 		this.volume = volume;
 		this.price = price;
+		this.userId = userId;
 		
 		this.timeStamp = Calendar.getInstance().getTime();
 		
@@ -39,9 +40,13 @@ public class Order implements Comparable<Order> {
 	private final OrderType type;
 	private final BigDecimal volume;
 	private final BigDecimal price;
+	private final long userId;
 
 
-
+	public long getUserId(){
+		return this.userId;
+	}
+	
 	public CurrencyPair getCurrencyPair(){
 		return this.currencyPair;
 	}
