@@ -6,13 +6,9 @@ import java.util.Date;
 
 import org.apache.log4j.Logger;
 
-<<<<<<< HEAD
-import nl.fontys.cryptoexchange.core.exeptions.IllegalTradeExeption;
-import nl.fontys.cryptoexchange.core.exeptions.NoMatchingPriceExeption;
-=======
+
 import nl.fontys.cryptoexchange.core.exception.IllegalTradeExeption;
 import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
->>>>>>> added AskOrder and SellOrder as subtype to the core
 
 /**
  * 
@@ -31,7 +27,6 @@ public final class Trade {
 	private final BigDecimal price;
 	private final BigDecimal volume;
 	
-	private Logger log = Logger.getLogger(Trade.class);
 	private final Date timeStamp;
 	
 	

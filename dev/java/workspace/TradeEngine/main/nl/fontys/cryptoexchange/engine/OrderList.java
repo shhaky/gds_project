@@ -1,13 +1,11 @@
 package nl.fontys.cryptoexchange.engine;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 
 import nl.fontys.cryptoexchange.core.Order;
-import nl.fontys.cryptoexchange.core.OrderType;
 
 /**
  * <ul>
@@ -15,35 +13,17 @@ import nl.fontys.cryptoexchange.core.OrderType;
  * its own elements when you add them</li>
  * </ul>
  * <ul>
- * 	<li>The orderbook has a sorted Vector inside it will put the new Orders into
+ * 	<li>The orderList has a sorted Vector inside it will put the new Orders into
  * the correct positon of the stack</li>
  * </ul>
  * @author Tobias Zobrist
  * @version 1.0
- * @updated 06-Apr-2014 16:21:11
+ * @updated 16-Apr-2014 01:58
  */
-public class OrderBook {
+public abstract class OrderList  {
 	
-	public OrderBook(OrderType type){
+	public OrderList(){
 		
-		if(type == OrderType.ASK)
-		{
-			this.bidAskModifier = 1;
-		}
-		else if(type == OrderType.BID)
-		{
-			this.bidAskModifier = -1;
-		}
-			
-		else
-		{
-			log.fatal("Orderbook type unknown, OrderType has to many elements!");
-			//is now allowed to happen OrderType must have to many elements!!!
-			this.bidAskModifier = 0;
-		}
-			
-			
-		this.orderBookType = type;
 		this.list = new ArrayList<Order>();
 	}
 	
@@ -58,12 +38,9 @@ public class OrderBook {
 		
 		
 		
-		
-		
-		//no matching order found for the whole or a part of the order
 		if(this.list.isEmpty())
 		{
-			log.debug("new " + this.orderBookType + " added at Position " + 0);
+			log.trace("new order added at Position " + 0);
 			this.list.add(order);
 		}
 		else
@@ -78,16 +55,15 @@ public class OrderBook {
 			if(value == 1)
 			{
 				this.list.add(arrayAddPosition, order);
-				log.debug("new " + this.orderBookType + " added at Position " + arrayAddPosition);
+				log.trace("new order added at Position " + arrayAddPosition);
 				return true;
 			}
-			
 			arrayAddPosition++;
 		}
 		
 		//add on last position
 		this.list.add(arrayAddPosition, order);
-		log.debug("new " + this.orderBookType + " added at Position " + arrayAddPosition);
+		log.trace("new order added at Position " + arrayAddPosition);
 		return true;
 		
 	}
@@ -99,12 +75,12 @@ public class OrderBook {
 	 * 
 	 * has to be synchronized!
 	 */
-	public synchronized Order getBestOffer(){
+	public Order getBestOffer(){
 		
 		Order bestOrder = list.get(0);
 		list.remove(0);
 		
-		
+		log.trace("Best Offer removed");
 		return bestOrder;
 	}
 
@@ -114,30 +90,31 @@ public class OrderBook {
 	 * has to be synchronized
 	 */
 	public Order peekBestOffer(){
-		return null;
+		return list.get(0);
 	}
 	
-	public OrderType getOrderBookType()
-	{
-		return this.orderBookType;
-	}
-	private final OrderType orderBookType;
-
-	private Logger log = Logger.getLogger(OrderBook.class);
-
-	private ArrayList<Order> list;
-	
-	
-	//will modify the comperator value that Orders of a BidOrderbook are sorted the opposite way than in a AskOrderbook
-	private final int bidAskModifier;
-
-
 	@Override
 	public String toString()
 	{
 		return this.list.toString();
 	}
+
+	private Logger log = Logger.getLogger(OrderList.class);
+
+	private ArrayList<Order> list;
 	
+	
+	//will modify the comparator value that Orders of a BidOrderbook are sorted the opposite way than in a AskOrderbook
+	protected int bidAskModifier;
+
+	/**
+	 * modifier to sort the list top down
+	 */
+	protected static int BID = 1;
+	/**
+	 * modifier to sort the list bottom up
+	 */
+	protected static int ASK = -1;
 	
 	
 

@@ -12,20 +12,24 @@ import nl.fontys.cryptoexchange.core.Trade;
  * has a stack of threads and is doing the management of the TradeAgents
  * @author Tobias Zobrist
  * @version 1.0
- * @created 15-Apr-2014 15:53:09
+ * @updated 16-Apr-2014 17:54:54
  */
 public class TradeEngineImplementation implements TradingEngine {
 
 	/**
 	 * collection of ask orders
 	 */
-	private OrderBook askOrderBook;
+	private OrderList askOrderBook;
 	/**
 	 * This is a collection of the bidOrders
 	 */
-	private OrderBook bidOrderBook;
+	private OrderList bidOrderBook;
 	
 	private TemporaryTradeHistory temporaryTradeHistory;
+	/**
+	 * This is a collection of the bidOrders
+	 */
+	private OrderBook orderBook;
 
 	public TradeEngineImplementation(){
 
@@ -92,6 +96,10 @@ public class TradeEngineImplementation implements TradingEngine {
 		return false;
 	}
 
+	/**
+	 * this will return you the last executed trade and from the trade you can get the
+	 * price
+	 */
 	@Override
 	public Trade getLastTrade() {
 		// TODO Auto-generated method stub
