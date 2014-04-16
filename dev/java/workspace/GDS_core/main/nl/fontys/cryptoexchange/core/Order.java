@@ -50,7 +50,7 @@ public class Order implements Comparable<Order> {
 		return this.price;
 	}
 
-	public long getId(){
+	public long getOrderId(){
 		return this.orderId;
 	}
 

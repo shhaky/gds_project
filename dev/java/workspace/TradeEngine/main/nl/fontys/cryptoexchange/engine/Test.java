@@ -10,11 +10,11 @@ public class Test {
 
 	
 	public static void main(String[] args) {
-		Order highOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(501), new BigDecimal(10));
+		Order highOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(501), new BigDecimal(10));
 		
-		Order mediumOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(5));
+		Order mediumOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(500), new BigDecimal(5));
 		
-		Order lowOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(2));
+		Order lowOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(500), new BigDecimal(2));
 		
 		OrderBook book = new BidOrderBook();
 		

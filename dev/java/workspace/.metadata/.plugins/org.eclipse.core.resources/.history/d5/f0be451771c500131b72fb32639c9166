@@ -1,0 +1,5 @@
+package nl.fontys.cryptoexchange.core.exeptions;
+
+public class NoMatchingPriceExeption {
+
+}
