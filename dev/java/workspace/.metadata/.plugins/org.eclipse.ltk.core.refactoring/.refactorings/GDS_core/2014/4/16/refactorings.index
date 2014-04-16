@@ -3,3 +3,12 @@
 1397526044430	Infer generic type arguments
 1397526646177	Move fields
 1397527075527	Move compilation unit
+1397607636740	Rename field 'count'
+1397607667138	Rename type 'TradeIdGenerator'
+1397607900521	Move fields
+1397607905084	Move method
+1397610319468	Rename type 'Holder'
+1397610718025	Move field
+1397610724432	Move fields
+1397611948692	Delete element
+1397611951162	Delete element

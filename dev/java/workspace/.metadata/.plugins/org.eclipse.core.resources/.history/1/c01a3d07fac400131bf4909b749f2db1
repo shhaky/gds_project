@@ -1,0 +1,13 @@
+package nl.fontys.cryptoexchange.engine;
+
+import nl.fontys.cryptoexchange.core.OrderType;
+
+public class AskOrderBook extends OrderBook {
+
+	public AskOrderBook() {
+		super();
+		
+		
+	}
+
+}

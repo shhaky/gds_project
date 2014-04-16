@@ -2,6 +2,8 @@ package nl.fontys.cryptoexchange.engine;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Observable;
+import java.util.Observer;
 
 import org.apache.log4j.Logger;
 
@@ -19,30 +21,12 @@ import nl.fontys.cryptoexchange.core.OrderType;
  * </ul>
  * @author Tobias Zobrist
  * @version 1.0
- * @updated 06-Apr-2014 16:21:11
+ * @updated 16-Apr-2014 01:58
  */
-public class OrderBook {
+public abstract class OrderBook  {
 	
-	public OrderBook(OrderType type){
+	public OrderBook(){
 		
-		if(type == OrderType.ASK)
-		{
-			this.bidAskModifier = 1;
-		}
-		else if(type == OrderType.BID)
-		{
-			this.bidAskModifier = -1;
-		}
-			
-		else
-		{
-			log.fatal("Orderbook type unknown, OrderType has to many elements!");
-			//is now allowed to happen OrderType must have to many elements!!!
-			this.bidAskModifier = 0;
-		}
-			
-			
-		this.orderBookType = type;
 		this.list = new ArrayList<Order>();
 	}
 	
@@ -55,14 +39,11 @@ public class OrderBook {
 	 */
 	public boolean add(Order order){
 		
-		//TODO EXECUTION AND PARTIAL EXECUTION
 		
 		
-		
-		//no matching order found for the whole or a part of the order
 		if(this.list.isEmpty())
 		{
-			log.debug("new " + this.orderBookType + " added at Position " + 0);
+			log.trace("new order added at Position " + 0);
 			this.list.add(order);
 		}
 		else
@@ -77,7 +58,7 @@ public class OrderBook {
 			if(value == 1)
 			{
 				this.list.add(arrayAddPosition, order);
-				log.debug("new " + this.orderBookType + " added at Position " + arrayAddPosition);
+				log.trace("new order added at Position " + arrayAddPosition);
 				return true;
 			}
 			arrayAddPosition++;
@@ -85,7 +66,7 @@ public class OrderBook {
 		
 		//add on last position
 		this.list.add(arrayAddPosition, order);
-		log.debug("new " + this.orderBookType + " added at Position " + arrayAddPosition);
+		log.trace("new order added at Position " + arrayAddPosition);
 		return true;
 		
 	}
@@ -102,7 +83,7 @@ public class OrderBook {
 		Order bestOrder = list.get(0);
 		list.remove(0);
 		
-		log.debug("Best Offer removed from " + orderBookType);
+		log.trace("Best Offer removed");
 		return bestOrder;
 	}
 
@@ -115,16 +96,11 @@ public class OrderBook {
 		return list.get(0);
 	}
 	
-	public OrderType getOrderBookType()
-	{
-		return this.orderBookType;
-	}
 	@Override
 	public String toString()
 	{
 		return this.list.toString();
 	}
-	private final OrderType orderBookType;
 
 	private Logger log = Logger.getLogger(OrderBook.class);
 
@@ -132,8 +108,16 @@ public class OrderBook {
 	
 	
 	//will modify the comparator value that Orders of a BidOrderbook are sorted the opposite way than in a AskOrderbook
-	private final int bidAskModifier;
-	
+	protected int bidAskModifier;
+
+	/**
+	 * modifier to sort the list top down
+	 */
+	protected static int BID = 1;
+	/**
+	 * modifier to sort the list bottom up
+	 */
+	protected static int ASK = -1;
 	
 	
 

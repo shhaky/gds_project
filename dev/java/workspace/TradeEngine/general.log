@@ -88,3 +88,30 @@ DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from B
 DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
 DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
 DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 5
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 6
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 7
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 8
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 903ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 974ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 775ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 912ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 819ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 907ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 993ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 1050ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 977ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 1143ms with 50 Threads

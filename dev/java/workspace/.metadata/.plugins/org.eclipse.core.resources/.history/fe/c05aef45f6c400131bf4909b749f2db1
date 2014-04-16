@@ -1,0 +1,30 @@
+package nl.fontys.cryptoexchange.engine;
+
+import static org.junit.Assert.*;
+import nl.fontys.cryptoexchange.core.OrderType;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class OrderBookTest {
+
+	private OrderBook bidOrderBook;
+	
+	private OrderBook askorderbook;
+	
+	 @Before
+	  public void setUp() throws Exception {
+
+		bidOrderBook = new OrderBook(OrderType.BID);
+		 askOrderBook = new OrderBook(OrderType.ASK);
+
+	  }
+	
+	
+	
+
+	@Test
+	public void test() {
+	}
+
+}

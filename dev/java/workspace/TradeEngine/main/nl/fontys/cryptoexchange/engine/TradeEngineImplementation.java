@@ -24,6 +24,7 @@ public class TradeEngineImplementation implements TradingEngine {
 	 * This is a collection of the bidOrders
 	 */
 	private OrderBook bidOrderBook;
+	
 	private TemporaryTradeHistory temporaryTradeHistory;
 
 	public TradeEngineImplementation(){
@@ -77,7 +78,11 @@ public class TradeEngineImplementation implements TradingEngine {
 
 	@Override
 	public void placeOrder(Order order) {
-		// TODO Auto-generated method stub
+
+		
+		
+		
+		
 		
 	}
 

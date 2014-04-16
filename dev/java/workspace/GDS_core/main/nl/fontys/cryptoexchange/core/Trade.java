@@ -27,7 +27,7 @@ public Trade(CurrencyPair currencyPair, OrderType type, BigDecimal price, long b
 	this.sellOrderId = sellOrderId;
 	
 	
-	this.tradeId = TradeIdGenerator.getInstance().getTradeId();
+	this.tradeId = IdGenerator.getInstance().getTradeId();
 	
 	
 }

@@ -10,51 +10,22 @@ public class Test {
 
 	
 	public static void main(String[] args) {
-		Order testOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(501), new BigDecimal(1));
+		Order highOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(501), new BigDecimal(10));
 		
-		Order testOrder2 = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(453));
+		Order mediumOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(5));
 		
-		Order testOrder3 = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(453));
+		Order lowOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.ASK, new BigDecimal(500), new BigDecimal(2));
 		
-		OrderBook book = new OrderBook(OrderType.BID);
+		OrderBook book = new BidOrderBook();
 		
-		book.add(testOrder2);
+		book.add(lowOrder);
 		
-		book.add(testOrder3);
-		book.add(testOrder3);
-		book.add(testOrder3);
-		book.add(testOrder3);
-		book.add(testOrder3);
-	
+		book.add(mediumOrder);
 		
+		book.add(highOrder);
 		
-		book.add(testOrder);
-		
-		book.add(testOrder);
-		
-		book.add(testOrder);
-		
-		System.out.println(	book.toString());
-		
-		System.out.println(book.getOrderBookType());
+		System.out.println(book);
 		
 		
-		
-		
-		
-		System.err.println(book.peekBestOffer());
-		
-		System.out.println(book.toString());
-		
-		
-		System.err.println(book.getBestOffer());
-		System.err.println(book.getBestOffer());
-		System.err.println(book.getBestOffer());
-		System.err.println(book.getBestOffer());
-		System.err.println(book.getBestOffer());
-		
-		System.err.println(book.getBestOffer());
-		System.err.println(book.getBestOffer());
-		System.err.println(book.getBestOffer());
 	}
 }

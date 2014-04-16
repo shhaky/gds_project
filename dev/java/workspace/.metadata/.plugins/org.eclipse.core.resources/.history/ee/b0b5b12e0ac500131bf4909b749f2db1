@@ -1,0 +1,126 @@
+package nl.fontys.cryptoexchange.engine;
+
+import static org.junit.Assert.*;
+import nl.fontys.cryptoexchange.core.IdGenerator;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.experimental.theories.Theories;
+
+/**
+ * 
+ * @author Tobias Zobrist
+ * 
+ * will test the class nl.fontys.cyrptoexchange.engine.IdGenerator
+ *	
+ *	it will test the thread safety of the IdGenerator
+ */
+public class IdGeneratorTest {
+
+	
+	private final static int NUMBER_OF_THREADS = 20;
+
+	private final static int NUMBER_OF_ID_REQUESTS = 20;
+
+	@Before
+	  public void setUp() throws Exception {
+		 threadAgentHolderTrade = new Thread[NUMBER_OF_THREADS];
+		 threadAgentHolderOrder = new Thread[NUMBER_OF_THREADS];
+		
+		for (int i = 0; i < NUMBER_OF_THREADS; i++)
+		{
+			threadAgentHolderTrade[i] = new Thread(new IdGeneratorTestAgent(NUMBER_OF_ID_REQUESTS, IdGeneratorTestAgent.TRADE));
+			threadAgentHolderOrder[i] = new Thread(new IdGeneratorTestAgent(NUMBER_OF_ID_REQUESTS, IdGeneratorTestAgent.ORDER));
+		}
+			
+
+	  }
+	
+	
+	@Test
+	public void testThreadSafetyTradeIDs() throws InterruptedException {
+		
+		for(int i = 0; i < threadAgentHolderTrade.length; i++ )
+		{
+			threadAgentHolderTrade[i].start();
+		}
+		
+		for(int i = 0; i < threadAgentHolderTrade.length; i++ )
+				threadAgentHolderTrade[i].join();
+			
+		
+		
+		// threads times their requests plus the starting value should equals the current ID
+		
+		assertEquals(IdGenerator.TRADE_ID_START_VALUE + NUMBER_OF_THREADS* NUMBER_OF_ID_REQUESTS, IdGenerator.getInstance().getTradeId());
+		
+		
+		
+	}
+	@Test
+	public void testThreadSafetyOrderIDs() throws InterruptedException {
+		
+		for(int i = 0; i < threadAgentHolderOrder.length; i++ )
+			threadAgentHolderOrder[i].start();
+		
+		for(int i = 0; i < threadAgentHolderOrder.length; i++ )
+				threadAgentHolderOrder[i].join();
+					
+		
+		Thread.sleep(2000);
+		// threads times their requests plus the starting value should equals the current ID
+	
+		assertEquals(IdGenerator.ORDER_ID_START_VALUE + NUMBER_OF_THREADS* NUMBER_OF_ID_REQUESTS, IdGenerator.getInstance().getOrderId());
+		
+		
+		
+	}
+	private Thread[] threadAgentHolderTrade;
+	private Thread[] threadAgentHolderOrder;
+
+}
+
+
+/**
+ * 
+ * @author Tobias Zobrist
+ * 
+ * this Agent will request Order IDs and Trade IDs.
+ *
+ */
+class IdGeneratorTestAgent implements Runnable{
+public IdGeneratorTestAgent(final int idRequests, int type) {
+	this.idRequests = idRequests;
+	this.type = type;
+}
+
+public static int TRADE = 0;
+
+public static int ORDER = 1;
+
+@Override
+public void run() {
+	
+	for(int i = 0; i < idRequests; i++)
+	{
+		if(type == TRADE)
+		{
+			IdGenerator.getInstance().getTradeId();
+		}
+		else if(type == ORDER)
+		{
+			IdGenerator.getInstance().getOrderId();
+			
+		}
+		
+	}
+	System.out.println("on se road");
+	
+}
+
+private int type;
+
+
+private int idRequests;
+	
+}

@@ -2,3 +2,12 @@
 1397526979172	Rename local variable 'index'
 1397529230386	Move method
 1397570266872	Delete elements
+1397604560238	Delete element
+1397606868416	Rename local variable 'testOrder'
+1397609645123	Move field
+1397609651723	Move fields
+1397610993396	Move fields
+1397611581970	Rename field 'threadHolder'
+1397613099751	Move method
+1397614732236	Move method
+1397614738835	Move fields

@@ -1,0 +1,12 @@
+package nl.fontys.cryptoexchange.engine;
+
+import nl.fontys.cryptoexchange.core.OrderType;
+
+public class BidOrderBook extends OrderBook{
+
+	public BidOrderBook() {
+		super();
+		super.bidAskModifier = BID;
+	}
+
+}

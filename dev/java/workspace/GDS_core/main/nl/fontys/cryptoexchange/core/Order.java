@@ -71,10 +71,11 @@ public class Order implements Comparable<Order> {
 		
 		return null;
 	}
-//TODO
-	public String toString(){
-		return price.toString();
-	}
+		  @Override
+		  public String toString() {
+
+		    return "Order [type=" + type + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
+		  }
 	
 
 	@Override

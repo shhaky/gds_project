@@ -1,0 +1,77 @@
+package nl.fontys.cryptoexchange.core;
+
+import org.apache.log4j.Logger;
+
+/**
+ * 
+ * @author Tobias Zobrist
+ * @version 1.0
+ * @updated 16-Apr-2014 02:14
+ */
+public class IdGenerator {
+	
+
+	    
+	 
+	public static final long TRADE_ID_START_VALUE = 1000000;
+	
+	public static final long ORDER_ID_START_VALUE = 10000000;
+	
+	public long getTradeId()
+	{
+		
+		if(tradeIdCount == Long.MAX_VALUE)
+		{
+			log.info("no Trade IDs left, starting @ " + TRADE_ID_START_VALUE + " again");
+			
+			this.tradeIdCount = TRADE_ID_START_VALUE;
+		}
+		
+		long id = tradeIdCount;
+		
+		tradeIdCount++;
+		
+		return id;
+		
+	}
+	
+	public long getOrderId()
+	{
+		if(orderIdCount == Long.MAX_VALUE)
+		{
+			log.info("no Order IDs left, starting @ " + ORDER_ID_START_VALUE + " again");
+			
+			this.orderIdCount = ORDER_ID_START_VALUE;
+		}
+		
+		long id = orderIdCount;
+		
+		orderIdCount++;
+		
+		return id;
+	}
+	
+
+
+	private IdGenerator() {
+		
+		this.tradeIdCount = TRADE_ID_START_VALUE;
+		
+		this.orderIdCount = ORDER_ID_START_VALUE;
+		
+	}
+
+
+	
+	private long tradeIdCount;
+
+	private long orderIdCount;
+
+	private Logger log = Logger.getLogger(IdGenerator.class);
+	
+	
+	
+	
+}
+
+
