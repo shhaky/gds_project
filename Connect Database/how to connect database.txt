@@ -1,5 +1,3 @@
-gds_project
-===========
 step1: go to https://portal.fhict.nl/Studentenplein/SitePages/Home.aspx, then download "VPN Anyconnect Windows 8"
 
 step2: install and use your i-account to log on
