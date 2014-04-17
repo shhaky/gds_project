@@ -77,7 +77,7 @@ public abstract class Order implements Comparable<Order> {
 		  @Override
 		  public String toString() {
 
-		    return "Order [type=" + this.getType() + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
+		    return "Order [type=" + this.getType() + ", price=" + price + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
 		  }
 	
 

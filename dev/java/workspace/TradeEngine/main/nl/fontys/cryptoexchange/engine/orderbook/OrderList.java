@@ -71,6 +71,10 @@ public abstract class OrderList  {
 	}
 		return false;
 	}
+	public int size()
+	{
+		return list.size();
+	}
 	
 	public boolean removeOrderById(long orderId)
 	{
@@ -90,7 +94,7 @@ public abstract class OrderList  {
 	/**
 	 * this will remove the best Offer
 	 * 
-	 * has to be synchronized!
+	 *
 	 */
 	public Order getBestOffer(){
 		

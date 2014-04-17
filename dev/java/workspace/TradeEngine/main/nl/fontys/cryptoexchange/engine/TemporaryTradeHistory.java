@@ -45,8 +45,8 @@ public class TemporaryTradeHistory extends Observable {
 	public void addTrade(Trade trade)
 	{
 		// push new the trade to the observer
+		this.setChanged();
 		this.notifyObservers(trade);
-		
 		// add it to the temporary storage
 		this.list.add(trade);
 		
@@ -66,7 +66,7 @@ public class TemporaryTradeHistory extends Observable {
 			return null;
 		}
 		
-		return list.get(0);
+		return list.get(list.size()-1);
 	}
 
 	public int getNumberOfTradesStored() {

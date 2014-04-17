@@ -24,11 +24,7 @@ import org.junit.Test;
 public class TradeTest {
 
 	private Trade trade;
-	
-	
 	private Logger log = Logger.getLogger(TradeTest.class);
-	
-	
 	
 	@Before
 	public void setUp()
@@ -41,7 +37,7 @@ public class TradeTest {
 	public void testConstructorBuyOrderInMarket() {
 		
 		try {
-			trade = new Trade(OrderTest.ORDER_BUY_HIGH_USER_1,OrderTest.ORDER_SELL_LOW_USER2);
+			trade = new Trade(OrderTest.ORDER_BUY_HIGH_USER1,OrderTest.ORDER_SELL_LOW_USER2);
 		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
 			
 			e.printStackTrace();
@@ -59,7 +55,7 @@ public class TradeTest {
 	public void testConstructorSellOrderInMarket() {
 		
 		try {
-			trade = new Trade(OrderTest.ORDER_SELL_LOW_USER1,OrderTest.ORDER_BUY_HIGH_USER_2);
+			trade = new Trade(OrderTest.ORDER_SELL_LOW_USER1,OrderTest.ORDER_BUY_HIGH_USER2);
 		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
 			
 			e.printStackTrace();
@@ -90,7 +86,7 @@ public class TradeTest {
 	public void testIllegalTradeNoMatchingPricesSell() {
 		
 		try {
-			trade = new Trade(OrderTest.ORDER_SELL_HIGH_USER1,OrderTest.ORDER_BUY_LOW_USER_2);
+			trade = new Trade(OrderTest.ORDER_SELL_HIGH_USER1,OrderTest.ORDER_BUY_LOW_USER2);
 		} catch (IllegalTradeExeption e) {
 			assertTrue(false);
 			e.printStackTrace();
@@ -118,7 +114,7 @@ public class TradeTest {
 	public void testIllegalOrders2BuyOrders() {
 		
 		try {
-			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER_1,OrderTest.ORDER_BUY_HIGH_USER_2);
+			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER_1,OrderTest.ORDER_BUY_HIGH_USER2);
 		} catch (IllegalTradeExeption e) {
 			assertTrue(false);
 			e.printStackTrace();
@@ -141,5 +137,40 @@ public class TradeTest {
 		}
 		
 	}
+	
+	/**
+	 * Test sell trade
+	 * @return
+	 */
+	public static Trade getTradeSell()
+	{
+	Trade TRADE_SELL = null;
+		try {
+			TRADE_SELL= new Trade(OrderTest.ORDER_SELL_LOW_USER1, OrderTest.ORDER_BUY_HIGH_USER2);
+		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return TRADE_SELL;
 
+	}
+	/**
+	 * Test buy trade
+	 * @return
+	 */
+	public static Trade getTradeBuy()
+	{
+	Trade TRADE_BUY = null;
+		try {
+			TRADE_BUY= new Trade(OrderTest.ORDER_BUY_HIGH_USER1, OrderTest.ORDER_SELL_LOW_USER2);
+		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return TRADE_BUY;
+
+	}
+	
 }

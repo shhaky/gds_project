@@ -24,6 +24,10 @@ public interface OrderBook {
 	
 	public Iterator<Order> iteratorBid();
 	
+	public int getAskOrderLength();
+	
+	public int getBidOrderLength();
+	
 	public boolean cancelOrderById(long OrderId);
 	@Override
 	public String toString();

@@ -13,7 +13,7 @@ import nl.fontys.cryptoexchange.core.Trade;
  * @version 1.0
  * @created 15-Apr-2014 15:53:19
  */
-public interface TradingEngine {
+public interface TradeEngine {
 
 	/**
 	 * 

@@ -24,7 +24,7 @@ import nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList;
  * @version 1.0
  * @updated 17-Apr-2014 03:54:54
  */
-public class TradeEngineImplementation implements TradingEngine {
+public class TradeEngineImplementation implements TradeEngine {
 
 	
 	public TradeEngineImplementation(){
@@ -33,43 +33,7 @@ public class TradeEngineImplementation implements TradingEngine {
 		this.history = new TemporaryTradeHistory(200);
 
 	}
-public static void main(String[] args) {
-	TradingEngine t = new TradeEngineImplementation();
-	Order order = new BuyOrder(CurrencyPair.DOGE_BTC,46464,new BigDecimal(5646), new BigDecimal(44),1);
-	
-	
-	Order orderSell = new SellOrder(CurrencyPair.DOGE_BTC,46464,new BigDecimal(5646), new BigDecimal(44),1);
-	
-	t.placeOrder(order);
-	t.placeOrder(order);
-	t.placeOrder(order);
-	t.placeOrder(order);
-	t.placeOrder(order);
-	t.placeOrder(order);
-	t.placeOrder(order);
-	
-	t.placeOrder(order);
-	t.placeOrder(order);
-
-	t.placeOrder(orderSell);
-	t.placeOrder(orderSell);
-	
-	t.placeOrder(orderSell);
-	
-	t.placeOrder(orderSell);
-	
-	t.placeOrder(orderSell);
-	
-	
-	Iterator<Order> orders = t.getPendingOrdersByUserId(1);
-	
-	while(orders.hasNext())
-	System.err.println(orders.next());
-	
-	
-}
-	
-	/**
+/**
 	 * @return will return an Iterator of the pening orders by User ID
 	 */
 
@@ -107,6 +71,7 @@ public static void main(String[] args) {
 
 	@Override
 	public Iterator<Order> getBidDepth() {
+		
 		return orderBook.iteratorBid();
 	}
 
@@ -186,6 +151,7 @@ public static void main(String[] args) {
 				history.addTrade(trade);
 				
 				//add restorder to the Orderbook
+				if(restOrder!= null)
 				orderBook.add(restOrder);
 				
 			}

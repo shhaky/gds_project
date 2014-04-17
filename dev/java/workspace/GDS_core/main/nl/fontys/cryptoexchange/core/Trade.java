@@ -54,10 +54,11 @@ public final class Trade {
 	 */
 	public Trade( Order newOrder, Order orderInOrderBook) throws IllegalTradeExeption, NoMatchingPriceExeption
 	{
+		
 		this.timeStamp = Calendar.getInstance().getTime();
 		
 		this.tradeId = IdGenerator.getInstance().getTradeId();
-		
+		log.debug("Trade executed ID=" + tradeId);
 		this.type = newOrder.getType();
 		
 		//check witch volume is bigger the trade volume will be the smaller one
@@ -107,7 +108,8 @@ public final class Trade {
 				if(newOrder.getPrice().subtract(orderInOrderBook.getPrice()).signum() == 1 
 						&& this.type == OrderType.SELL 
 						|| newOrder.getPrice().subtract(orderInOrderBook.getPrice()).signum() == -1 
-								&& this.type == OrderType.BUY)
+								&& this.type == OrderType.BUY
+						)
 				{
 				throw new NoMatchingPriceExeption();
 				}
@@ -175,6 +177,8 @@ public final class Trade {
 	private final long tradeId;
 	private final long buyOrderId;
 	private final long sellOrderId;
+	
+	private final Logger log = Logger.getLogger(Trade.class);
 	
 	
 }//end Trade

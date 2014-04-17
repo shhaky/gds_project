@@ -37,3 +37,10 @@
 1397701486455	Move method
 1397701489588	Move fields
 1397726905029	Delete element
+1397728903251	Move methods
+1397730028944	Rename type 'TradingEngine'
+1397730323629	Move compilation unit
+1397736604836	Rename field 'list'
+1397736800832	Rename field 'queue'
+1397737864542	Rename method 'testSubscriber'
+1397738158218	Delete element

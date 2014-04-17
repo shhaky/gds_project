@@ -21,22 +21,27 @@ public class OrderTest {
 	
 	public static final int HIGH_VOLUME = 50;
 	public static final int LOW_VOLUME = 20;
+	
+	
+	public static final int PRICE_HIGH = 50;
+
+	public static final int PRICE_LOW = 10;
 	//User 1
-	public final static Order ORDER_BUY_LOW_USER_1 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10),USER1_ID);
-	public final static Order ORDER_BUY_HIGH_USER_1 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50),USER1_ID);
+	public final static Order ORDER_BUY_LOW_USER_1 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(PRICE_LOW),USER1_ID);
+	public final static Order ORDER_BUY_HIGH_USER1 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(PRICE_HIGH),USER1_ID);
 	
-	public final static Order ORDER_SELL_LOW_USER1 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10),USER1_ID);
-	public final static Order ORDER_SELL_HIGH_USER1 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(),  new BigDecimal(HIGH_VOLUME), new BigDecimal(50),USER1_ID);
+	public final static Order ORDER_SELL_LOW_USER1 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(PRICE_LOW),USER1_ID);
+	public final static Order ORDER_SELL_HIGH_USER1 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(),  new BigDecimal(HIGH_VOLUME), new BigDecimal(PRICE_HIGH),USER1_ID);
 	
-	public final static Order ORDER_BUY_OTHER_CURRECNY_USER1 = new BuyOrder(CurrencyPair.DOGE_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50),USER1_ID);
+	public final static Order ORDER_BUY_OTHER_CURRECNY_USER1 = new BuyOrder(CurrencyPair.DOGE_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(PRICE_HIGH),USER1_ID);
 	//User2
-	public final static Order ORDER_BUY_LOW_USER_2 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10),USER2_ID);
-	public final static Order ORDER_BUY_HIGH_USER_2 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50),USER2_ID);
+	public final static Order ORDER_BUY_LOW_USER2 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(PRICE_LOW),USER2_ID);
+	public final static Order ORDER_BUY_HIGH_USER2 = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(PRICE_HIGH),USER2_ID);
 	
-	public final static Order ORDER_SELL_LOW_USER2 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10),USER2_ID);
-	public final static Order ORDER_SELL_HIGH_USER2 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(),  new BigDecimal(HIGH_VOLUME), new BigDecimal(50),USER2_ID);
+	public final static Order ORDER_SELL_LOW_USER2 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(PRICE_LOW),USER2_ID);
+	public final static Order ORDER_SELL_HIGH_USER2 = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(),  new BigDecimal(HIGH_VOLUME), new BigDecimal(PRICE_HIGH),USER2_ID);
 	
-	public final static Order ORDER_BUY_OTHER_CURRECNY_USER2 = new BuyOrder(CurrencyPair.DOGE_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50),USER2_ID);
+	public final static Order ORDER_BUY_OTHER_CURRECNY_USER2 = new BuyOrder(CurrencyPair.DOGE_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(PRICE_HIGH),USER2_ID);
 
 	
 	
