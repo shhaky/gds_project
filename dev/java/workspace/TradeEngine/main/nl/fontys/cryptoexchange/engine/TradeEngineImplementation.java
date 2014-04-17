@@ -41,8 +41,25 @@ public static void main(String[] args) {
 	Order orderSell = new SellOrder(CurrencyPair.DOGE_BTC,46464,new BigDecimal(5646), new BigDecimal(44),1);
 	
 	t.placeOrder(order);
+	t.placeOrder(order);
+	t.placeOrder(order);
+	t.placeOrder(order);
+	t.placeOrder(order);
+	t.placeOrder(order);
+	t.placeOrder(order);
+	
+	t.placeOrder(order);
+	t.placeOrder(order);
 
 	t.placeOrder(orderSell);
+	t.placeOrder(orderSell);
+	
+	t.placeOrder(orderSell);
+	
+	t.placeOrder(orderSell);
+	
+	t.placeOrder(orderSell);
+	
 	
 	Iterator<Order> orders = t.getPendingOrdersByUserId(1);
 	
@@ -202,14 +219,13 @@ public static void main(String[] args) {
 				orderBook.add(restOrder);
 				
 			}
-			else
-			{
-				orderBook.add(order);
-			}
+		
 		}
 		else
 		{
+			
 			log.debug("orderBook is empty");
+			orderBook.add(order);
 		}
 		
 		

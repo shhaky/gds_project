@@ -3,8 +3,11 @@ package nl.fontys.cryptoexchange.engine;
 
 
 
-import nl.fontys.cryptoexchange.engine.orderbook.OrderList;
+import nl.fontys.cryptoexchange.core.OrderTest;
+import nl.fontys.cryptoexchange.engine.orderbook.OrderBook;
+import nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList;
 
+import org.junit.Before;
 import org.junit.Test;
 
 
@@ -17,29 +20,30 @@ import org.junit.Test;
  */
 public class OrderBookTest {
 
-	private OrderList bidOrderBook;
+	private OrderBook orderbook;
 	
-	private OrderList askOrderBook;
 	
-/**	 @Before
-	  public void setUp() throws Exception {
+	@Before
+	public void setUp()
+	{
+		this.orderbook = new OrderBookArrayList();
+	}
+	
 
-		bidOrderBook = new BidOrderBook();
-		askOrderBook = new AskOrderList();
-		
-Order highOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(501), new BigDecimal(10));
-		
-		Order mediumOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(500), new BigDecimal(5));
-		
-		Order lowOrder = new Order(CurrencyPair.DOGE_BTC, 545445, OrderType.SELL, new BigDecimal(500), new BigDecimal(2));
-
-	  }
-	
-	
-	*/
 
 	@Test
-	public void test() {
+	public void testAddOrders() {
+		
+		this.orderbook.add(OrderTest.ORDER_BUY_HIGH_USER_1);
+		this.orderbook.add(OrderTest.ORDER_SELL_HIGH_USER2);
+		
+		this.orderbook.add(OrderTest.ORDER_BUY_HIGH_USER_2);
+		this.orderbook.add(OrderTest.ORDER_SELL_HIGH_USER1);
+		
+		this.orderbook.add(OrderTest.ORDER_BUY_HIGH_USER_2);
+		this.orderbook.add(OrderTest.ORDER_SELL_HIGH_USER1);
+		
+		System.out.println(orderbook);
 		
 		
 	}
