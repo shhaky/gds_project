@@ -57,15 +57,15 @@ public class OrderBookTest {
 	}
 	
 	@Test
-	public void getBestBidOrderTest()
+	public void testGetBestBidOrder()
 	{
 		orderbook.add(OrderTest.ORDER_BUY_HIGH_USER1);
-		orderbook.add(OrderTest.ORDER_BUY_LOW_USER_1);
+		orderbook.add(OrderTest.ORDER_BUY_LOW_USER1);
 		
 		assertEquals(OrderTest.PRICE_LOW, orderbook.getBestBidOffer().getPrice().intValue());
 	}
 	@Test
-	public void getBestAskOrderTest()
+	public void testGetBestAskOrder()
 	{
 		orderbook.add(OrderTest.ORDER_SELL_HIGH_USER1);
 		orderbook.add(OrderTest.ORDER_SELL_LOW_USER1);

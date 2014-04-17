@@ -19,16 +19,10 @@ import nl.fontys.cryptoexchange.core.Trade;
  */
 public class TemporaryTradeHistory extends Observable {
 
-	
-	
-	
-	
-	
 	public TemporaryTradeHistory(int numberOfTradesStored){
 		
 		this.setNumberOfTradesStored(numberOfTradesStored);
 		this.list = new ArrayList<Trade>();
-		
 		
 	}
 	

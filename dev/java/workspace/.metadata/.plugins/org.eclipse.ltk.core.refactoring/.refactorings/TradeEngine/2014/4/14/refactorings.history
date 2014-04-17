@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename source folder &apos;TradeEngine/src&apos; to &apos;main&apos;&#x0D;&#x0A;- Original project: &apos;TradeEngine&apos;&#x0D;&#x0A;- Original element: &apos;TradeEngine/src&apos;&#x0D;&#x0A;- Renamed element: &apos;src&apos;" description="Rename source folder &apos;src&apos;" id="org.eclipse.jdt.ui.rename.source.folder" input="/src" name="main" stamp="1396612900737" version="1.0"/>
-</session>

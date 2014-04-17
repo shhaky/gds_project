@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 
+import nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption;
+
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
@@ -84,11 +86,12 @@ public abstract class Order implements Comparable<Order> {
 	@Override
 	public int compareTo(Order order) {
 		
-		
 		//TODO we should find a more proper solution here, problem cause of override we cant declare that this method should throw an exeption!
 		if(!this.currencyPair.equals(order.getCurrencyPair()))
 		{
-			log.error("orders with different CurrencyPairs have been compared!");
+			
+			log.warn("orders with different CurrencyPairs have been compared!");
+			
 		}
 		
 		
@@ -104,9 +107,16 @@ public abstract class Order implements Comparable<Order> {
 	 * @param order1
 	 * @param order2
 	 * @return clone of the bigger order with the rest volume left
+	 * @throws IllegalOrderCloneExeption when there is a try to clone a rest order form 2 Orders of a different CurrencyPair Type
 	 */
-	public static Order cloneRestOrder(Order order1, Order order2)
+	public static Order cloneRestOrder(Order order1, Order order2) throws IllegalOrderCloneExeption
 	{
+		
+		if(!order1.getCurrencyPair().equals(order2.getCurrencyPair()))
+		{
+			throw new IllegalOrderCloneExeption(order1, order2);
+		}
+		
 		Order orders[] = {order1, order2};
 		
 		int index = 0;
@@ -117,20 +127,20 @@ public abstract class Order implements Comparable<Order> {
 		if(volume.signum() == 1)
 		{
 			//Order1 has bigger volumes
-			sLog.trace("Order 1 has bigger volume Order1:"  + order1 + " Order2:" + order2);
+			sLog.debug("Order 1 has bigger volume Order1:"  + order1 + " Order2:" + order2);
 			index = 0;
 		}
 		else
 		if(volume.signum() == -1)
 		{
-			sLog.trace("Order 2 has bigger volume Order1:"  + order1 + " Order2:" + order2);
+			sLog.debug("Order 2 has bigger volume Order1:"  + order1 + " Order2:" + order2);
 			//Order2 has bigger volume
 			index = 1;
 		}
 		else
 			if(volume.signum() == 0)
 			{
-				sLog.info("orders have the same volume " + order1 + "  " + order2);
+				sLog.debug("orders have the same volume " + order1 + "  " + order2);
 				return null;
 			}
 		

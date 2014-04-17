@@ -2,11 +2,8 @@ package nl.fontys.cryptoexchange.engine;
 
 import static org.junit.Assert.*;
 
-import java.util.Observable;
-import java.util.Observer;
 
 import nl.fontys.cryptoexchange.core.OrderTest;
-import nl.fontys.cryptoexchange.core.Trade;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -56,7 +53,7 @@ public class TradeEngineTest {
 		
 		engine.placeOrder(OrderTest.ORDER_BUY_LOW_USER2);
 		
-		System.err.println(engine.getAskDepth().next());
+		//System.err.println(engine.getAskDepth().next());
 		
 		//System.err.println(engine.getBidDepth().next());
 		

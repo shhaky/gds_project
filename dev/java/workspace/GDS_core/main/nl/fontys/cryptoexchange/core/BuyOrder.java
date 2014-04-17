@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  * @version 1.0
  * @created 16-Apr-2014 16:34:41
  */
-public class BuyOrder extends Order {
+public final class BuyOrder extends Order {
 
 
 

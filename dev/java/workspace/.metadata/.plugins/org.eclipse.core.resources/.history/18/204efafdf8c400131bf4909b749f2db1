@@ -1,5 +1,0 @@
-package nl.fontys.cryptoexchange.engine;
-
-public class BidOrderBook {
-
-}

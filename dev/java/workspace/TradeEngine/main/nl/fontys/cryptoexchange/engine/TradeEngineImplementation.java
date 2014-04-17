@@ -1,18 +1,15 @@
 package nl.fontys.cryptoexchange.engine;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
-import nl.fontys.cryptoexchange.core.BuyOrder;
-import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.OrderType;
-import nl.fontys.cryptoexchange.core.SellOrder;
 import nl.fontys.cryptoexchange.core.Trade;
+import nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption;
 import nl.fontys.cryptoexchange.core.exception.IllegalTradeExeption;
 import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBook;
@@ -136,7 +133,15 @@ public class TradeEngineImplementation implements TradeEngine {
 			{
 				Order counterOrder = orderBook.getBestAskOffer();
 				
-				Order restOrder = Order.cloneRestOrder(order, counterOrder);
+				Order restOrder = null;
+				try {
+					restOrder = Order.cloneRestOrder(order, counterOrder);
+				} catch (IllegalOrderCloneExeption e1) {
+					e1.printStackTrace();
+					//can not happen!
+					log.fatal("some serious error just happened!");
+					
+				}
 				
 				Trade trade = null;
 				//create trade
@@ -144,7 +149,12 @@ public class TradeEngineImplementation implements TradeEngine {
 					trade = new Trade(order, counterOrder);
 				} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
 					log.error("unable to place Order");
+					//put the Order back to the Orderbook
+					
+					orderBook.add(counterOrder);
+					
 					e.printStackTrace();
+					return;
 				}
 			
 				//add trade to history
@@ -166,36 +176,38 @@ public class TradeEngineImplementation implements TradeEngine {
 			{
 				Order counterOrder = orderBook.getBestBidOffer();
 				
-				Order restOrder = Order.cloneRestOrder(order, counterOrder);
+				Order restOrder = null;
+				try {
+					restOrder = Order.cloneRestOrder(order, counterOrder);
+				} catch (IllegalOrderCloneExeption e1) {
+					e1.printStackTrace();
+					//can not happen!
+					log.fatal("some serious error just happened!");
+				}
 				
 				Trade trade = null;
 				//create trade
 				try {
 					trade = new Trade(order, counterOrder);
 				} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
+					orderBook.add(counterOrder);
 					log.error("unable to place Order");
 					e.printStackTrace();
+					return;
 				}
-			
 				//add trade to history
 				history.addTrade(trade);
 				
 				//add restorder to the Orderbook
 				if(restOrder != null)
 				orderBook.add(restOrder);
-				
 			}
-		
 		}
 		else
 		{
-			
 			log.debug("orderBook is empty");
 			orderBook.add(order);
 		}
-		
-		
-		
 	}
 
 

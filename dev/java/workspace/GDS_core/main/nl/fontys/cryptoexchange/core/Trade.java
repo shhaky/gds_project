@@ -58,7 +58,7 @@ public final class Trade {
 		this.timeStamp = Calendar.getInstance().getTime();
 		
 		this.tradeId = IdGenerator.getInstance().getTradeId();
-		log.debug("Trade executed ID=" + tradeId);
+		log.trace("Trade executed ID=" + tradeId);
 		this.type = newOrder.getType();
 		
 		//check witch volume is bigger the trade volume will be the smaller one
@@ -108,8 +108,7 @@ public final class Trade {
 				if(newOrder.getPrice().subtract(orderInOrderBook.getPrice()).signum() == 1 
 						&& this.type == OrderType.SELL 
 						|| newOrder.getPrice().subtract(orderInOrderBook.getPrice()).signum() == -1 
-								&& this.type == OrderType.BUY
-						)
+								&& this.type == OrderType.BUY)
 				{
 				throw new NoMatchingPriceExeption();
 				}
@@ -117,25 +116,6 @@ public final class Trade {
 		
 	}
 	
-	//TODO
-	@Deprecated
-	/**I think we don't need this constructor anymore
-	 * @author Tobias Zobrist
-	 */
-	public Trade(CurrencyPair currencyPair, OrderType type, BigDecimal price,BigDecimal volume, long buyOrderId, long sellOrderId ) {
-	this.type = type;
-	this.volume = volume;
-	this.currencyPair = currencyPair;
-	this.price = price;
-	this.buyOrderId = buyOrderId;
-	this.sellOrderId = sellOrderId;
-	this.timeStamp = Calendar.getInstance().getTime();
-	
-	
-	this.tradeId = IdGenerator.getInstance().getTradeId();
-	
-	
-}
 	public String toString(){
 		return "Trade [type=" + type + ", volume=" + volume + ", currencyPair=" + currencyPair + ", price=" + price + ", timestamp=" + timeStamp + ", trade ID=" + tradeId + ", order ID sell=" + sellOrderId + " , order ID buy=" + buyOrderId
 		        + "]";

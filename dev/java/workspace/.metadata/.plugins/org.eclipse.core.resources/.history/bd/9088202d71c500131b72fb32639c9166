@@ -1,8 +1,0 @@
-package nl.fontys.cryptoexchange.core.exeptions;
-
-public class NoMatchingPriceExeption extends Exception {
-
-	public NoMatchingPriceExeption() {
-	}
-	
-}

@@ -100,7 +100,7 @@ public class TradeTest {
 	public void testIllegalTradeNoMatchingPricesBuy() {
 		
 		try {
-			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER_1,OrderTest.ORDER_SELL_HIGH_USER2);
+			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER1,OrderTest.ORDER_SELL_HIGH_USER2);
 		} catch (IllegalTradeExeption e) {
 			assertTrue(false);
 			e.printStackTrace();
@@ -114,7 +114,7 @@ public class TradeTest {
 	public void testIllegalOrders2BuyOrders() {
 		
 		try {
-			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER_1,OrderTest.ORDER_BUY_HIGH_USER2);
+			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER1,OrderTest.ORDER_BUY_HIGH_USER2);
 		} catch (IllegalTradeExeption e) {
 			assertTrue(false);
 			e.printStackTrace();

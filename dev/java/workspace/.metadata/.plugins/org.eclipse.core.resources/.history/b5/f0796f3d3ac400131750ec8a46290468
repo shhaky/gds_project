@@ -1,5 +1,0 @@
-package nl.fontys.cryptoexchange.core;
-
-public class NotSameCurrencyPairExeption {
-
-}
