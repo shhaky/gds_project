@@ -22,20 +22,6 @@ import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
  */
 public final class Trade {
 
-	private final OrderType type;
-	private final CurrencyPair currencyPair;
-	private final BigDecimal price;
-	private final BigDecimal volume;
-	
-	private final Date timeStamp;
-	
-	
-	
-	private final long tradeId;
-	private final long buyOrderId;
-	private final long sellOrderId;
-	
-	
 	public OrderType getType() {
 		return type;
 	}
@@ -180,6 +166,15 @@ public final class Trade {
 		    // has to be a Trade Class now
 		    return this.tradeId == ((Trade) obj).getTradeId();
 	}
+
+	private final OrderType type;
+	private final CurrencyPair currencyPair;
+	private final BigDecimal price;
+	private final BigDecimal volume;
+	private final Date timeStamp;
+	private final long tradeId;
+	private final long buyOrderId;
+	private final long sellOrderId;
 	
 	
 }//end Trade

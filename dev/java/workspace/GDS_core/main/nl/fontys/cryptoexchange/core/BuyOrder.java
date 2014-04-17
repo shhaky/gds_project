@@ -9,9 +9,11 @@ import java.math.BigDecimal;
  */
 public class BuyOrder extends Order {
 
-	public BuyOrder(CurrencyPair currencyPair, long orderId, 
-			BigDecimal volume, BigDecimal price) {
-		super(currencyPair, orderId, volume, price);
+
+
+	public BuyOrder(CurrencyPair currencyPair, long orderId, BigDecimal volume,
+			BigDecimal price, long userId) {
+		super(currencyPair, orderId, volume, price, userId);
 		// TODO Auto-generated constructor stub
 	}
 

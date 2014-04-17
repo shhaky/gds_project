@@ -17,3 +17,22 @@
 1397662632814	Rename type 'OrderBook'
 1397662705291	Rename type 'AskOrderBook'
 1397663328573	Move fields
+1397692278567	Move compilation unit
+1397692282222	Move compilation units
+1397692287988	Move compilation unit
+1397692299430	Move compilation unit
+1397692743944	Move methods
+1397693698333	Infer generic type arguments
+1397693736981	Infer generic type arguments
+1397693791999	Infer generic type arguments
+1397693942124	Infer generic type arguments
+1397695385809	Move method
+1397695491109	Rename local variable 'OrderId'
+1397695993956	Move method
+1397696010372	Move method
+1397696469547	Delete element
+1397696925527	Encapsulate field 'numberOfTradesStored'
+1397697164446	Move fields
+1397701479733	Move fields
+1397701486455	Move method
+1397701489588	Move fields

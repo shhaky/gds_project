@@ -1,4 +1,7 @@
-package nl.fontys.cryptoexchange.engine;
+package nl.fontys.cryptoexchange.engine.orderbook;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 
@@ -73,6 +76,30 @@ public class OrderBookArrayList implements OrderBook{
 	public String toString() {
 		
 		return "ASK [" + askList.toString() + "], BID ["+ bidList.toString() + "]";
+	}
+
+	@Override
+	public Iterator<Order> iteratorAsk() {
+		
+		return askList.iterator();
+	}
+
+	@Override
+	public Iterator<Order> iteratorBid() {
+		
+		return bidList.iterator();
+	}
+
+	@Override
+	public boolean cancelOrderById(long orderId) {
+		
+		boolean state = false;
+		state = askList.removeOrderById(orderId);
+		
+		if(!state)
+			state = bidList.removeOrderById(orderId);
+			
+		return state;
 	}
 
 	private Logger log = Logger.getLogger(OrderBookArrayList.class);

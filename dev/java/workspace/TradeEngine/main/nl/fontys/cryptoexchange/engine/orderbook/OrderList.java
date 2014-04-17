@@ -1,14 +1,11 @@
-package nl.fontys.cryptoexchange.engine;
+package nl.fontys.cryptoexchange.engine.orderbook;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Observable;
-import java.util.Observer;
 
 import org.apache.log4j.Logger;
 
 import nl.fontys.cryptoexchange.core.Order;
-import nl.fontys.cryptoexchange.core.OrderType;
 
 /**
  * <ul>
@@ -16,16 +13,16 @@ import nl.fontys.cryptoexchange.core.OrderType;
  * its own elements when you add them</li>
  * </ul>
  * <ul>
- * 	<li>The orderbook has a sorted Vector inside it will put the new Orders into
+ * 	<li>The orderList has a sorted Vector inside it will put the new Orders into
  * the correct positon of the stack</li>
  * </ul>
  * @author Tobias Zobrist
  * @version 1.0
- * @updated 06-Apr-2014 16:21:11
+ * @updated 16-Apr-2014 01:58
  */
-public abstract class OrderBook  {
+public abstract class OrderList  {
 	
-	public OrderBook(){
+	public OrderList(){
 		
 		this.list = new ArrayList<Order>();
 	}
@@ -64,6 +61,8 @@ public abstract class OrderBook  {
 			arrayAddPosition++;
 		}
 		
+		
+		
 		//add on last position
 		this.list.add(arrayAddPosition, order);
 		log.trace("new order added at Position " + arrayAddPosition);
@@ -71,6 +70,21 @@ public abstract class OrderBook  {
 		
 	}
 		return false;
+	}
+	
+	public boolean removeOrderById(long orderId)
+	{
+		for(Order i : list)
+		{
+			if(i.getOrderId() == orderId)
+			{
+				list.remove(i);
+				log.debug("Order " + orderId + " removed");
+				return true;
+				
+			}
+		}
+	return false;
 	}
 
 	/**
@@ -89,10 +103,15 @@ public abstract class OrderBook  {
 
 	/**
 	 * this will not remove the offer from the list
-	 * 
-	 * has to be synchronized
+	 *
 	 */
 	public Order peekBestOffer(){
+		
+		if(list.isEmpty())
+		{
+			return null;
+		}
+		
 		return list.get(0);
 	}
 	
@@ -102,24 +121,26 @@ public abstract class OrderBook  {
 		return this.list.toString();
 	}
 
-	private Logger log = Logger.getLogger(OrderBook.class);
+	public Iterator<Order> iterator()
+	
+	{
+		return list.iterator();
+	}
 
-	private ArrayList<Order> list;
-	
-	
 	//will modify the comparator value that Orders of a BidOrderbook are sorted the opposite way than in a AskOrderbook
-	private int bidAskModifier;
+	protected int bidAskModifier;
 
 	/**
 	 * modifier to sort the list top down
 	 */
 	protected static int BID = 1;
+
 	/**
 	 * modifier to sort the list bottom up
 	 */
 	protected static int ASK = -1;
-	
-	
 
-	
+	private Logger log = Logger.getLogger(OrderList.class);
+
+	private ArrayList<Order> list;
 }

@@ -1,4 +1,6 @@
-package nl.fontys.cryptoexchange.engine;
+package nl.fontys.cryptoexchange.engine.orderbook;
+
+import java.util.Iterator;
 
 import nl.fontys.cryptoexchange.core.Order;
 /**
@@ -18,6 +20,11 @@ public interface OrderBook {
 	
 	public Order peekBestBidOffer();
 
+	public Iterator<Order> iteratorAsk();
+	
+	public Iterator<Order> iteratorBid();
+	
+	public boolean cancelOrderById(long OrderId);
 	@Override
 	public String toString();
 }
