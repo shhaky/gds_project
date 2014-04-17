@@ -6,5 +6,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/zLib_Logging"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/GDS_core"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/zlib_JSON_Wrapper"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

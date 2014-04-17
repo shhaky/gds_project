@@ -88,3 +88,188 @@ DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from B
 DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
 DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
 DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 0
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 1
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 2
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 3
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 4
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 5
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 6
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 7
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - new BID added at Position 8
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+DEBUG main nl.fontys.cryptoexchange.engine.OrderBook - Best Offer removed from BID
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 903ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 974ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 775ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 912ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 819ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 907ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 993ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 1050ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Order IDs in 977ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.engine.IdGeneratorTest - generated 100000010000000 Trade IDs in 1143ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=BUY, volume=20, currencyPair=LTC/BTC, price=10, timestamp=Wed Apr 16 17:22:53 CEST 2014, trade ID=1000000, order ID sell=1000000002 , order ID buy=1000000001]
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=SELL, volume=20, currencyPair=LTC/BTC, price=50, timestamp=Wed Apr 16 17:22:53 CEST 2014, trade ID=1000002, order ID sell=1000000012 , order ID buy=1000000011]
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Order IDs in 783ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Trade IDs in 920ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=BUY, volume=20, currencyPair=LTC/BTC, price=10, timestamp=Thu Apr 17 01:51:59 CEST 2014, trade ID=1000000, order ID sell=1000000002 , order ID buy=1000000001]
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=SELL, volume=20, currencyPair=LTC/BTC, price=50, timestamp=Thu Apr 17 01:51:59 CEST 2014, trade ID=1000002, order ID sell=1000000012 , order ID buy=1000000011]
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Order IDs in 981ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Trade IDs in 988ms with 50 Threads
+ERROR main nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList - unknown Order Type
+ERROR main nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList - unknown Order Type
+ERROR main nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList - unknown Order Type
+ERROR main nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList - unknown Order Type
+ERROR main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - unkonwn OrderType
+ERROR main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - unkonwn OrderType
+ERROR main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - unkonwn OrderType
+ERROR main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - unkonwn OrderType
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:08:16 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:08:16 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:09:26 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:09:26 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:10:29 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:10:29 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:11:59 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:11:59 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:12:09 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:12:09 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:12 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:12 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:56 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:56 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:56 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:56 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:56 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:14:56 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:23 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:23 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:23 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:23 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:23 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:23 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:41 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:41 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:41 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:41 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:41 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:15:41 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:17:03 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:17:03 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:17:03 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:17:03 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:18:26 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:18:26 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:19:13 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 04:19:13 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=SELL, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]  Order [type=BUY, volume=5646, currencyPair=DOGE/BTC, id=46464, timestamp=Thu Apr 17 11:25:35 CEST 2014]

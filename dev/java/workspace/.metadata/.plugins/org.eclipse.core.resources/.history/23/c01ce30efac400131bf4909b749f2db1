@@ -1,0 +1,13 @@
+package nl.fontys.cryptoexchange.engine;
+
+
+public class AskOrderBook extends OrderBook {
+
+	public AskOrderBook() {
+		super();
+		super.bidAskModifier = ASK;
+		
+		
+	}
+
+}

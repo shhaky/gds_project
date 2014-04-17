@@ -25,6 +25,8 @@ public interface TradingEngine {
 
 	public Iterator<Order> getAskDepth();
 
+	boolean cancelOrderByOrderId(long orderId);
+
 	/**
 	 * 
 	 * @param order
@@ -42,20 +44,10 @@ public interface TradingEngine {
 	public void placeOrder(Order order);
 
 	/**
-	 * 
-	 * @param orderId
-	 */
-	public boolean cancelOrderById(long orderId);
-
-	/**
 	 * this will return you the last executed trade and from the trade you can get the
 	 * price
 	 */
 	public Trade getLastTrade();
 
-	/**
-	 * will return the whole market depth
-	 */
-	public Iterator<Order> getMarketDepth();
 
 }

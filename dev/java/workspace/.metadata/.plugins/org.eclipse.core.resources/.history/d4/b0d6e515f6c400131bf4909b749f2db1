@@ -1,0 +1,29 @@
+package nl.fontys.cryptoexchange.engine;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class OrderBookTest {
+
+	 @Before
+	  public void setUp() throws Exception {
+
+
+	    List<LimitOrder> asks = new ArrayList<LimitOrder>(Arrays.asList(askOrder));
+	    List<LimitOrder> bids = new ArrayList<LimitOrder>(Arrays.asList(bidOrder));
+	    Date timeStamp = new Date(0);
+	    orderBook = new OrderBook(timeStamp, asks, bids);
+
+	  }
+	
+	
+	
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

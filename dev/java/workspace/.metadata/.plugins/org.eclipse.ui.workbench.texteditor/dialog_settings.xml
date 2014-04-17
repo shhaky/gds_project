@@ -2,20 +2,36 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="279" key="DIALOG_Y_ORIGIN"/>
+		<item value="233" key="DIALOG_Y_ORIGIN"/>
+		<item value="1152" key="DIALOG_X_ORIGIN"/>
 		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="840" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
+		<item value="Ask" key="selection"/>
 		<list key="findhistory">
+			<item value="ask"/>
+			<item value="order1"/>
+			<item value="&#x09;//make volume positive"/>
+			<item value="public void finalize() throws Throwable {"/>
+			<item value="gettype"/>
+			<item value="getype"/>
+			<item value="price"/>
+			<item value="price\"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Bid"/>
+			<item value="orders[index]"/>
+			<item value="order2"/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="408" key="DIALOG_Y_ORIGIN"/>
+		<item value="729" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

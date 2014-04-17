@@ -3,3 +3,30 @@
 1397526044430	Infer generic type arguments
 1397526646177	Move fields
 1397527075527	Move compilation unit
+1397607636740	Rename field 'count'
+1397607667138	Rename type 'TradeIdGenerator'
+1397607900521	Move fields
+1397607905084	Move method
+1397610319468	Rename type 'Holder'
+1397610718025	Move field
+1397610724432	Move fields
+1397611948692	Delete element
+1397611951162	Delete element
+1397649614977	Move compilation unit
+1397649666169	Delete element
+1397650273881	Move fields
+1397650306566	Encapsulate field 'volume'
+1397650554760	Move method
+1397652479191	Rename method 'getId'
+1397652689676	Delete element
+1397655425883	Rename enum constant 'BID'
+1397655431897	Rename enum constant 'ASK'
+1397655886975	Rename field 'orderBIDhigh'
+1397655890661	Rename field 'orderBIDlow'
+1397655895442	Rename field 'orderASKlow'
+1397655900466	Rename field 'orderASKhigh'
+<<<<<<< HEAD
+=======
+1397658441690	Rename package 'nl.fontys.cryptoexchange.core.exeptions'
+1397658445570	Rename package 'nl.fontys.cryptoexchange.core.exceptions'
+>>>>>>> added AskOrder and SellOrder as subtype to the core
