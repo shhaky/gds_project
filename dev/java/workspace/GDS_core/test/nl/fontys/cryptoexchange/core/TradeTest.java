@@ -2,7 +2,6 @@ package nl.fontys.cryptoexchange.core;
 
 import static org.junit.Assert.*;
 
-import java.math.BigDecimal;
 
 import nl.fontys.cryptoexchange.core.exception.IllegalTradeExeption;
 import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
@@ -25,33 +24,12 @@ import org.junit.Test;
 public class TradeTest {
 
 	private Trade trade;
-	
-	private Order orderBUYlow;
-	private Order orderBUYhigh;
-	
-	private Order orderSELLlow;
-	private Order orderSELLhigh;
-	
-	private Order orderOtherCurrency;
-	
-	
-	private static final int LOW_VOLUME = 20;
-	
 	private Logger log = Logger.getLogger(TradeTest.class);
-	
-	private static final int HIGH_VOLUME = 50;
 	
 	@Before
 	public void setUp()
 	{
-
-		 orderBUYlow = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10));
-		 orderBUYhigh = new BuyOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
-			
-		 orderSELLlow = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(LOW_VOLUME), new BigDecimal(10));
-		 orderSELLhigh = new SellOrder(CurrencyPair.LTC_BTC, IdGenerator.getInstance().getOrderId(),  new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
-	
-		 orderOtherCurrency = new BuyOrder(CurrencyPair.DOGE_BTC, IdGenerator.getInstance().getOrderId(), new BigDecimal(HIGH_VOLUME), new BigDecimal(50));
+		
 	
 	}
 	
@@ -59,7 +37,7 @@ public class TradeTest {
 	public void testConstructorBuyOrderInMarket() {
 		
 		try {
-			trade = new Trade(orderBUYhigh,orderSELLlow);
+			trade = new Trade(OrderTest.ORDER_BUY_HIGH_USER1,OrderTest.ORDER_SELL_LOW_USER2);
 		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
 			
 			e.printStackTrace();
@@ -67,7 +45,7 @@ public class TradeTest {
 		
 		log.info(trade);
 		
-		assertEquals(LOW_VOLUME, trade.getVolume().toBigInteger().intValue());
+		assertEquals(OrderTest.LOW_VOLUME, trade.getVolume().toBigInteger().intValue());
 		assertEquals(OrderType.BUY, trade.getType());
 		
 	}
@@ -77,7 +55,7 @@ public class TradeTest {
 	public void testConstructorSellOrderInMarket() {
 		
 		try {
-			trade = new Trade(orderSELLlow,orderBUYhigh);
+			trade = new Trade(OrderTest.ORDER_SELL_LOW_USER1,OrderTest.ORDER_BUY_HIGH_USER2);
 		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
 			
 			e.printStackTrace();
@@ -85,7 +63,7 @@ public class TradeTest {
 		
 		log.info(trade);;
 		
-		assertEquals(LOW_VOLUME, trade.getVolume().toBigInteger().intValue());
+		assertEquals(OrderTest.LOW_VOLUME, trade.getVolume().toBigInteger().intValue());
 		assertEquals(OrderType.SELL, trade.getType());
 		
 	}
@@ -94,7 +72,7 @@ public class TradeTest {
 	public void testIllegalTradeWrongCurrencyPair() {
 		
 		try {
-			trade = new Trade(orderSELLlow,orderOtherCurrency);
+			trade = new Trade(OrderTest.ORDER_SELL_LOW_USER1,OrderTest.ORDER_BUY_OTHER_CURRECNY_USER2);
 		} catch (IllegalTradeExeption e) {
 			assertTrue(true);
 		} catch (NoMatchingPriceExeption e) {
@@ -108,7 +86,7 @@ public class TradeTest {
 	public void testIllegalTradeNoMatchingPricesSell() {
 		
 		try {
-			trade = new Trade(orderSELLhigh,orderBUYlow);
+			trade = new Trade(OrderTest.ORDER_SELL_HIGH_USER1,OrderTest.ORDER_BUY_LOW_USER2);
 		} catch (IllegalTradeExeption e) {
 			assertTrue(false);
 			e.printStackTrace();
@@ -122,7 +100,7 @@ public class TradeTest {
 	public void testIllegalTradeNoMatchingPricesBuy() {
 		
 		try {
-			trade = new Trade(orderBUYlow,orderSELLhigh);
+			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER1,OrderTest.ORDER_SELL_HIGH_USER2);
 		} catch (IllegalTradeExeption e) {
 			assertTrue(false);
 			e.printStackTrace();
@@ -131,5 +109,68 @@ public class TradeTest {
 		}
 		
 	}
+	
+	@Test
+	public void testIllegalOrders2BuyOrders() {
+		
+		try {
+			trade = new Trade(OrderTest.ORDER_BUY_LOW_USER1,OrderTest.ORDER_BUY_HIGH_USER2);
+		} catch (IllegalTradeExeption e) {
+			assertTrue(false);
+			e.printStackTrace();
+		}	catch (NoMatchingPriceExeption e) {
+			assertTrue(true);
+		}
+		
+	}
+	
+	@Test
+	public void testIllegalOrders2SellOrders() {
+		
+		try {
+			trade = new Trade(OrderTest.ORDER_SELL_HIGH_USER1,OrderTest.ORDER_SELL_LOW_USER2);
+		} catch (IllegalTradeExeption e) {
+			assertTrue(false);
+			e.printStackTrace();
+		}	catch (NoMatchingPriceExeption e) {
+			assertTrue(true);
+		}
+		
+	}
+	
+	/**
+	 * Test sell trade
+	 * @return
+	 */
+	public static Trade getTradeSell()
+	{
+	Trade TRADE_SELL = null;
+		try {
+			TRADE_SELL= new Trade(OrderTest.ORDER_SELL_LOW_USER1, OrderTest.ORDER_BUY_HIGH_USER2);
+		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return TRADE_SELL;
 
+	}
+	/**
+	 * Test buy trade
+	 * @return
+	 */
+	public static Trade getTradeBuy()
+	{
+	Trade TRADE_BUY = null;
+		try {
+			TRADE_BUY= new Trade(OrderTest.ORDER_BUY_HIGH_USER1, OrderTest.ORDER_SELL_LOW_USER2);
+		} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return TRADE_BUY;
+
+	}
+	
 }

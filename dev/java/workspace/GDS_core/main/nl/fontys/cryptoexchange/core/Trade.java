@@ -22,20 +22,6 @@ import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
  */
 public final class Trade {
 
-	private final OrderType type;
-	private final CurrencyPair currencyPair;
-	private final BigDecimal price;
-	private final BigDecimal volume;
-	
-	private final Date timeStamp;
-	
-	
-	
-	private final long tradeId;
-	private final long buyOrderId;
-	private final long sellOrderId;
-	
-	
 	public OrderType getType() {
 		return type;
 	}
@@ -68,10 +54,11 @@ public final class Trade {
 	 */
 	public Trade( Order newOrder, Order orderInOrderBook) throws IllegalTradeExeption, NoMatchingPriceExeption
 	{
+		
 		this.timeStamp = Calendar.getInstance().getTime();
 		
 		this.tradeId = IdGenerator.getInstance().getTradeId();
-		
+		log.trace("Trade executed ID=" + tradeId);
 		this.type = newOrder.getType();
 		
 		//check witch volume is bigger the trade volume will be the smaller one
@@ -129,25 +116,6 @@ public final class Trade {
 		
 	}
 	
-	//TODO
-	@Deprecated
-	/**I think we don't need this constructor anymore
-	 * @author Tobias Zobrist
-	 */
-	public Trade(CurrencyPair currencyPair, OrderType type, BigDecimal price,BigDecimal volume, long buyOrderId, long sellOrderId ) {
-	this.type = type;
-	this.volume = volume;
-	this.currencyPair = currencyPair;
-	this.price = price;
-	this.buyOrderId = buyOrderId;
-	this.sellOrderId = sellOrderId;
-	this.timeStamp = Calendar.getInstance().getTime();
-	
-	
-	this.tradeId = IdGenerator.getInstance().getTradeId();
-	
-	
-}
 	public String toString(){
 		return "Trade [type=" + type + ", volume=" + volume + ", currencyPair=" + currencyPair + ", price=" + price + ", timestamp=" + timeStamp + ", trade ID=" + tradeId + ", order ID sell=" + sellOrderId + " , order ID buy=" + buyOrderId
 		        + "]";
@@ -180,6 +148,17 @@ public final class Trade {
 		    // has to be a Trade Class now
 		    return this.tradeId == ((Trade) obj).getTradeId();
 	}
+
+	private final OrderType type;
+	private final CurrencyPair currencyPair;
+	private final BigDecimal price;
+	private final BigDecimal volume;
+	private final Date timeStamp;
+	private final long tradeId;
+	private final long buyOrderId;
+	private final long sellOrderId;
+	
+	private final Logger log = Logger.getLogger(Trade.class);
 	
 	
 }//end Trade
