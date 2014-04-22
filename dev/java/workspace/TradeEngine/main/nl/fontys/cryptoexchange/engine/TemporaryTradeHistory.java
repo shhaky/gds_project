@@ -1,6 +1,8 @@
 package nl.fontys.cryptoexchange.engine;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Observable;
 
 import org.apache.log4j.Logger;
@@ -19,6 +21,9 @@ import nl.fontys.cryptoexchange.core.Trade;
  */
 public class TemporaryTradeHistory extends Observable {
 
+	private Logger log = Logger.getLogger(TemporaryTradeHistory.class);
+	private ArrayList<Trade> list;
+	private int numberOfTradesStored;
 	public TemporaryTradeHistory(int numberOfTradesStored){
 		
 		this.setNumberOfTradesStored(numberOfTradesStored);
@@ -38,9 +43,14 @@ public class TemporaryTradeHistory extends Observable {
 	
 	public void addTrade(Trade trade)
 	{
-		// push new the trade to the observer
+		// push data to the observer
 		this.setChanged();
-		this.notifyObservers(trade);
+		
+		HashMap<String,Object> push = new HashMap<String, Object>();
+		
+		push.put("trade", trade);
+		
+		this.notifyObservers(push);
 		// add it to the temporary storage
 		this.list.add(trade);
 		
@@ -75,8 +85,4 @@ public class TemporaryTradeHistory extends Observable {
 	public void setNumberOfTradesStored(int numberOfTradesStored) {
 		this.numberOfTradesStored = numberOfTradesStored;
 	}
-
-	private Logger log = Logger.getLogger(TemporaryTradeHistory.class);
-	private ArrayList<Trade> list;
-	private int numberOfTradesStored;
 }

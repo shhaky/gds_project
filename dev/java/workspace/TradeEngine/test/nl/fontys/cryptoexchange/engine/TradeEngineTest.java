@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class TradeEngineTest {
 
-	TradeEngine engine;
+	private TradeEngine engine;
 	
 	
 	@Before

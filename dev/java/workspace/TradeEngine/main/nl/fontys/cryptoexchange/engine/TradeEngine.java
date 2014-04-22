@@ -11,7 +11,7 @@ import nl.fontys.cryptoexchange.core.Trade;
  * This is the interface to witch is visible for the other components
  * @author Tobias Zobrist
  * @version 1.0
- * @created 15-Apr-2014 15:53:19
+ * @updated 22-Apr-2014 18:41:23
  */
 public interface TradeEngine {
 
@@ -48,6 +48,14 @@ public interface TradeEngine {
 	 * price
 	 */
 	public Trade getLastTrade();
+
+	public List<CurrencyPair> getAvailableMarkets();
+
+	/**
+	 * 
+	 * @param pair
+	 */
+	public void createMarket(CurrencyPair pair);
 
 
 }

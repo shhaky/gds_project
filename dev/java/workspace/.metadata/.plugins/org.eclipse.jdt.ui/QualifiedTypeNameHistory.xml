@@ -10,4 +10,6 @@
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.OrderType"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Order"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>
