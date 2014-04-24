@@ -1,11 +1,14 @@
 package nl.fontys.cryptoexchange.engine;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
+import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.OrderType;
 import nl.fontys.cryptoexchange.core.Trade;
@@ -24,12 +27,25 @@ import nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList;
 public class TradeEngineImplementation implements TradeEngine {
 
 	
+
+
+	private OrderBook orderBook;
+
+
+	private Logger log = Logger.getLogger(TradeEngineImplementation.class);
+
+
 	public TradeEngineImplementation(){
 		
 		this.orderBook = new OrderBookArrayList();
-		this.history = new TemporaryTradeHistory(200);
 
 	}
+	
+	
+	
+	
+	
+	
 /**
 	 * @return will return an Iterator of the pening orders by User ID
 	 */
@@ -158,7 +174,7 @@ public class TradeEngineImplementation implements TradeEngine {
 				}
 			
 				//add trade to history
-				history.addTrade(trade);
+				orderBook.getTradeHistory().addTrade(trade);
 				
 				//add restorder to the Orderbook
 				if(restOrder!= null)
@@ -196,7 +212,7 @@ public class TradeEngineImplementation implements TradeEngine {
 					return;
 				}
 				//add trade to history
-				history.addTrade(trade);
+				orderBook.getTradeHistory().addTrade(trade);
 				
 				//add restorder to the Orderbook
 				if(restOrder != null)
@@ -218,16 +234,19 @@ public class TradeEngineImplementation implements TradeEngine {
 	@Override
 	public Trade getLastTrade() {
 		
-		return history.getLastTrade();
+		return orderBook.getTradeHistory().getLastTrade();
 	}
 
 
-	private TemporaryTradeHistory history;
-
-
-	private OrderBook orderBook;
-
-
-	private Logger log = Logger.getLogger(TradeEngineImplementation.class);
+	@Override
+	public List<CurrencyPair> getAvailableMarkets() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void createMarket(CurrencyPair pair) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

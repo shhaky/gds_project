@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.OrderType;
+import nl.fontys.cryptoexchange.engine.TemporaryTradeHistory;
 
 
 
@@ -19,11 +20,22 @@ import nl.fontys.cryptoexchange.core.OrderType;
 public class OrderBookArrayList implements OrderBook{
 
 	
+	private Logger log = Logger.getLogger(OrderBookArrayList.class);
+	private OrderList askList;
+	private OrderList bidList;
+	
+	private TemporaryTradeHistory history;
+	
+	
 	public OrderBookArrayList() {
 	
 	this.askList = new AskOrderList();
 	
 	this.bidList = new BidOrderList();
+	
+	
+	this.history = new TemporaryTradeHistory(200);
+	
 }
 	
 	@Override
@@ -111,9 +123,10 @@ public class OrderBookArrayList implements OrderBook{
 		return bidList.size();
 	}
 
-	private Logger log = Logger.getLogger(OrderBookArrayList.class);
-	private OrderList askList;
-	private OrderList bidList;
+	@Override
+	public TemporaryTradeHistory getTradeHistory() {
+		return history;
+	}
 
 
 	

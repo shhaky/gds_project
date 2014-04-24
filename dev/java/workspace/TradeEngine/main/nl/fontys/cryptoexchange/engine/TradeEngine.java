@@ -1,9 +1,11 @@
 package nl.fontys.cryptoexchange.engine;
 
 import java.util.Iterator;
+import java.util.List;
 
 import org.json.JSONObject;
 
+import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.Trade;
 
