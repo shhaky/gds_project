@@ -72,6 +72,10 @@ public class TemporaryTradeHistory extends Observable {
 		
 		return list.get(list.size()-1);
 	}
+	
+	public ArrayList<Trade> getList(){
+		return list;
+	}
 
 	public int getNumberOfTradesStored() {
 		return numberOfTradesStored;

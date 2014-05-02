@@ -45,6 +45,10 @@ public final class Trade {
 		return volume;
 	}
 	
+	public Date getTimeStamp(){
+		return timeStamp;
+	}
+	
 	/**
 	 * 
 	 * @param newOrder the Order coming in to compare with the order book
