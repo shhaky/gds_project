@@ -915,42 +915,58 @@ Date.prototype.setUTCFullYear = function(year, month,date){};
 Date.prototype.toUTCString = function(){return "";};
 
 /**
+  * Object Global
+  * @super Object
+  * @constructor
+  * @memberOf Global
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+function Global(){};
+Global.prototype=new Object();
+/**
   * Property NaN
+  * @memberOf Global
   * @since   Standard ECMA-262 3rd. Edition 
   * @since   Level 2 Document Object Model Core Definition.  
  */
-var NaN=0;
+Global.prototype.NaN=0;
 /**
   * Property Infinity
+  * @memberOf Global
   * @since   Standard ECMA-262 3rd. Edition 
   * @since   Level 2 Document Object Model Core Definition.  
  */
-var Infinity=0;
+Global.prototype.Infinity=0;
 /**
   * function eval(s)
+  * @memberOf Global
   * @param {String} s
   * @type Object
   * @returns {Object}
   * @since   Standard ECMA-262 3rd. Edition 
   * @since   Level 2 Document Object Model Core Definition.     
  */
-function eval(s){return new Object();};
+Global.prototype.eval=function(s){return new Object();};
 
 //@GINO: Bug 197987 (Temp Fix)
 /**
   * Property debugger
+  * @memberOf Global
   * @description Debugger keyword
  */
-var debugger=null;
+Global.prototype.debugger=null;
 
 /**
  * Property undefined
+ * @memberOf Global
  * @description undefined
 */
-var undefined=null;
+Global.prototype.undefined=null;
 
 /**
   * function parseInt(s,radix)
+  * @memberOf Global
   * @param {String} s
   * @param {Number} radix
   * @type Number
@@ -958,88 +974,97 @@ var undefined=null;
   * @since   Standard ECMA-262 3rd. Edition 
   * @since   Level 2 Document Object Model Core Definition.    
  */
-function parseInt(s,radix){return 0;};
+Global.prototype.parseInt=function(s,radix){return 0;};
 /**
   * function parseFloat(s)
+  * @memberOf Global
   * @param {String} s
   * @type Number
   * @returns {Number}
   * @since   Standard ECMA-262 3rd. Edition 
   * @since   Level 2 Document Object Model Core Definition.   
  */
-function parseFloat(s){return 0;};
+Global.prototype.parseFloat=function(s){return 0;};
 /**
  * function escape(s)
+ * @memberOf Global
  * @param {String} s
  * @type String
  * @returns {String}
  * @since   Standard ECMA-262 3rd. Edition 
  * @since   Level 2 Document Object Model Core Definition.   
 */
-function escape(s){return "";};
+Global.prototype.escape=function(s){return "";};
 /**
  * function unescape(s)
+ * @memberOf Global
  * @param {String} s
  * @type String
  * @returns {String}
  * @since   Standard ECMA-262 3rd. Edition 
  * @since   Level 2 Document Object Model Core Definition.   
 */
-function unescape(s){return "";};
+Global.prototype.unescape=function(s){return "";};
 /**
   * function isNaN(number)
+  * @memberOf Global
   * @param {String} number
   * @type Boolean
   * @returns {Boolean}
   * @since   Standard ECMA-262 3rd. Edition 
   * @since   Level 2 Document Object Model Core Definition.  
  */
-function isNaN(number){return false;};
+Global.prototype.isNaN=function(number){return false;};
 /**
   * function isFinite(number)
+  * @memberOf Global
   * @param {String} number
   * @type Boolean
   * @returns {Boolean}
   * @since   Standard ECMA-262 3rd. Edition 
   * @since   Level 2 Document Object Model Core Definition.    
  */
-function isFinite(number){return false;};
+Global.prototype.isFinite=function(number){return false;};
 /**
  * function decodeURI(encodedURI)
+ * @memberOf Global
  * @param {String} encodedURI
  * @type String
  * @returns {String}
  * @since   Standard ECMA-262 3rd. Edition 
  * @since   Level 2 Document Object Model Core Definition.  
 */
-function decodeURI(encodedURI){return "";};
+Global.prototype.decodeURI=function(encodedURI){return "";};
 /**
+ * @memberOf Global
  * @param {String} uriComponent
  * @type String
  * @returns {String}
  * @since   Standard ECMA-262 3rd. Edition 
  * @since   Level 2 Document Object Model Core Definition.  
 */
-function decodeURIComponent(uriComponent){return "";};
+Global.prototype.decodeURIComponent=function(uriComponent){return "";};
 /**
  * function encodeURIComponent(uriComponent)
+ * @memberOf Global
  * @param {String} uriComponent
  * @type String
  * @returns {String}
  * @since   Standard ECMA-262 3rd. Edition 
  * @since   Level 2 Document Object Model Core Definition.    
 */
-function encodeURIComponent(uriComponent){return "";};
+Global.prototype.encodeURIComponent=function(uriComponent){return "";};
 
 /**
  * function encodeURIComponent(URI)
+ * @memberOf Global
  * @param {String} URI
  * @type String
  * @returns {String}
  * @since   Standard ECMA-262 3rd. Edition 
  * @since   Level 2 Document Object Model Core Definition.    
 */
-function encodeURI(URI){return "";};
+Global.prototype.encodeURI=function(URI){return "";};
 
 /**
   * Object Math(\s)

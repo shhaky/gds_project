@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TemporaryTradeHistoryTest"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TradeEngineTest"/>
-<fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ExecutionException"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.OrderTest"/>
@@ -12,4 +11,11 @@
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.MovingAverageCalculation"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.orderbook.OrderBook"/>
 </qualifiedTypeNameHistroy>
