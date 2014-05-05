@@ -71,5 +71,11 @@ namespace BitCoin
             Form profile = new Profile();
             profile.Show();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // passing the user name and password
+
+        }
     }
 }
