@@ -7,8 +7,8 @@ import java.util.Date;
 import org.apache.log4j.Logger;
 
 
-import nl.fontys.cryptoexchange.core.exception.IllegalTradeExeption;
-import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
+import nl.fontys.cryptoexchange.core.exception.IllegalTradeException;
+import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceException;
 
 /**
  * 
@@ -49,10 +49,10 @@ public final class Trade {
 	 * 
 	 * @param newOrder the Order coming in to compare with the order book
 	 * @param orderInOrderBook The order witch is already in the order book
-	 * @throws IllegalTradeExeption if the two orders are not from the same CurrencyPair
-	 * @throws NoMatchingPriceExeption 
+	 * @throws IllegalTradeException if the two orders are not from the same CurrencyPair
+	 * @throws NoMatchingPriceException 
 	 */
-	public Trade( Order newOrder, Order orderInOrderBook) throws IllegalTradeExeption, NoMatchingPriceExeption
+	public Trade( Order newOrder, Order orderInOrderBook) throws IllegalTradeException, NoMatchingPriceException
 	{
 		
 		this.timeStamp = Calendar.getInstance().getTime();
@@ -75,7 +75,7 @@ public final class Trade {
 		//check if the orders match
 		if(!newOrder.getCurrencyPair().equals(orderInOrderBook.getCurrencyPair()))
 		{
-		throw new IllegalTradeExeption(newOrder, orderInOrderBook);
+		throw new IllegalTradeException(newOrder, orderInOrderBook);
 		}
 		
 		this.currencyPair = newOrder.getCurrencyPair();
@@ -99,7 +99,7 @@ public final class Trade {
 		}
 		else
 		{
-			throw new IllegalTradeExeption(newOrder,orderInOrderBook);
+			throw new IllegalTradeException(newOrder,orderInOrderBook);
 		}
 		
 		
@@ -110,7 +110,7 @@ public final class Trade {
 						|| newOrder.getPrice().subtract(orderInOrderBook.getPrice()).signum() == -1 
 								&& this.type == OrderType.BUY)
 				{
-				throw new NoMatchingPriceExeption();
+				throw new NoMatchingPriceException();
 				}
 		
 		

@@ -1,11 +1,13 @@
 package nl.fontys.cryptoexchange.engine.orderbook;
 
-import java.util.Iterator;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.OrderType;
+import nl.fontys.cryptoexchange.core.exception.IllegalOrderException;
 import nl.fontys.cryptoexchange.engine.TemporaryTradeHistory;
 
 
@@ -21,17 +23,21 @@ public class OrderBookArrayList implements OrderBook{
 
 	
 	private Logger log = Logger.getLogger(OrderBookArrayList.class);
-	private OrderList askList;
-	private OrderList bidList;
+	private final OrderList askList;
+	private final OrderList bidList;
 	
-	private TemporaryTradeHistory history;
+	private final TemporaryTradeHistory history;
+	
+	private final CurrencyPair currencyPair;
 	
 	
-	public OrderBookArrayList() {
+	public OrderBookArrayList(final CurrencyPair currencyPair) {
 	
 	this.askList = new AskOrderList();
 	
 	this.bidList = new BidOrderList();
+	
+	this.currencyPair = currencyPair;
 	
 	
 	this.history = new TemporaryTradeHistory(200);
@@ -64,24 +70,31 @@ public class OrderBookArrayList implements OrderBook{
 	}
 
 	@Override
-	public boolean add(Order order) {
+	public void add(Order order) throws IllegalOrderException {
+		
+		
+		//check type if Order doesn't fit with OrderBook Type it will throw exception
+		if(order.getCurrencyPair().equals(this.currencyPair) == false)
+		{
+			throw new IllegalOrderException();
+		}
 		
 		if(order.getType() == OrderType.BUY)
 		{
 			bidList.add(order);
-			return true;
+			return;
 		}
 		else if(order.getType() == OrderType.SELL)
 		{
 			askList.add(order);
-			return true;
+			return;
 		}
 		else
 		{
 			log.error("unknown Order Type");
 		}
 		
-		return false;
+		throw new IllegalOrderException();
 	}
 	@Override
 	public String toString() {
@@ -90,15 +103,15 @@ public class OrderBookArrayList implements OrderBook{
 	}
 
 	@Override
-	public Iterator<Order> iteratorAsk() {
+	public List<Order> getAskList() {
 		
-		return askList.iterator();
+		return askList.toList();
 	}
 
 	@Override
-	public Iterator<Order> iteratorBid() {
+	public List<Order> getBidList() {
 		
-		return bidList.iterator();
+		return bidList.toList();
 	}
 
 	@Override
@@ -126,6 +139,11 @@ public class OrderBookArrayList implements OrderBook{
 	@Override
 	public TemporaryTradeHistory getTradeHistory() {
 		return history;
+	}
+
+	@Override
+	public CurrencyPair getCurrencyPair() {
+		return this.currencyPair;
 	}
 
 

@@ -8,6 +8,7 @@ import org.json.JSONObject;
 import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.Trade;
+import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
 
 /**
  * This is the interface to witch is visible for the other components
@@ -21,11 +22,11 @@ public interface TradeEngine {
 	 * 
 	 * @param userId
 	 */
-	public Iterator<Order> getPendingOrdersByUserId(long userId);
+	public List<Order> getPendingOrdersByUserId(long userId);
 
-	public Iterator<Order> getBidDepth();
+	public List<Order> getBidDepth(CurrencyPair pair) throws MarketNotAvailableException;
 
-	public Iterator<Order> getAskDepth();
+	public List<Order> getAskDepth(CurrencyPair pair) throws MarketNotAvailableException;
 
 	boolean cancelOrderByOrderId(long orderId);
 
@@ -49,7 +50,7 @@ public interface TradeEngine {
 	 * this will return you the last executed trade and from the trade you can get the
 	 * price
 	 */
-	public Trade getLastTrade();
+	public Trade getLastTrade(CurrencyPair pair);
 
 	public List<CurrencyPair> getAvailableMarkets();
 

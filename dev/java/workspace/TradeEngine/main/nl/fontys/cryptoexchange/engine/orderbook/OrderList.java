@@ -2,6 +2,7 @@ package nl.fontys.cryptoexchange.engine.orderbook;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 
@@ -40,6 +41,7 @@ public abstract class OrderList  {
 		
 		if(this.list.isEmpty())
 		{
+			
 			log.trace("new order added at Position " + 0);
 			this.list.add(order);
 		}
@@ -125,10 +127,10 @@ public abstract class OrderList  {
 		return this.list.toString();
 	}
 
-	public Iterator<Order> iterator()
+	public List<Order> toList()
 	
 	{
-		return list.iterator();
+		return list;
 	}
 
 	//will modify the comparator value that Orders of a BidOrderbook are sorted the opposite way than in a AskOrderbook

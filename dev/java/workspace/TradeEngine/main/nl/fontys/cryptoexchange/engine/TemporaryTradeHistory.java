@@ -50,7 +50,7 @@ public class TemporaryTradeHistory extends Observable {
 		
 		push.put("trade", trade);
 		
-		this.notifyObservers(push);
+		this.notifyObservers (push);
 		// add it to the temporary storage
 		this.list.add(trade);
 		

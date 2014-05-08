@@ -2,6 +2,7 @@ package nl.fontys.cryptoexchange.engine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
@@ -13,8 +14,10 @@ import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.OrderType;
 import nl.fontys.cryptoexchange.core.Trade;
 import nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption;
-import nl.fontys.cryptoexchange.core.exception.IllegalTradeExeption;
-import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceExeption;
+import nl.fontys.cryptoexchange.core.exception.IllegalOrderException;
+import nl.fontys.cryptoexchange.core.exception.IllegalTradeException;
+import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
+import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceException;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBook;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList;
 
@@ -28,8 +31,16 @@ public class TradeEngineImplementation implements TradeEngine {
 
 	
 
-
-	private OrderBook orderBook;
+	/**
+	 * this map contains all available trading pairs
+	 */
+	
+	private HashMap <String,OrderBook> orderBookMap;
+	
+	/**
+	 * this set contains all available keys
+	 */
+	private HashSet<String> keySet;
 
 
 	private Logger log = Logger.getLogger(TradeEngineImplementation.class);
@@ -37,7 +48,8 @@ public class TradeEngineImplementation implements TradeEngine {
 
 	public TradeEngineImplementation(){
 		
-		this.orderBook = new OrderBookArrayList();
+		this.keySet = new HashSet<String>();
+		orderBookMap = new HashMap<String, OrderBook>();
 
 	}
 	
@@ -47,21 +59,36 @@ public class TradeEngineImplementation implements TradeEngine {
 	
 	
 /**
-	 * @return will return an Iterator of the pening orders by User ID
+	 * @return will return an Iterator of the pending orders by User ID
 	 */
 
 //TODO we have to find a better (more efficient) solution for the implementation in version 2
 	@Override
-	public Iterator<Order> getPendingOrdersByUserId(long userId) {
+	public List<Order> getPendingOrdersByUserId(long userId) {
 		
 		ArrayList<Order> orderList = new ArrayList<Order>();
+	
 		
 		@SuppressWarnings("unchecked")
 		Iterator<Order>[] iterator = new Iterator[2];
 		
-		iterator[0] = orderBook.iteratorAsk();
+		ArrayList<OrderBook> orderBooks = new ArrayList<OrderBook>();
 		
-		iterator[1] = orderBook.iteratorBid();
+		Iterator<String> set = keySet.iterator();
+		
+		//add all OrderBooks to the List
+		while(set.hasNext())
+		{
+			orderBooks.add(orderBookMap.get(set.next()));
+		}
+		
+		//iterate trough all orders
+		for(int ii= 0; ii < orderBooks.size(); ii++)
+		{
+		
+		iterator[0] = orderBooks.get(ii).getAskList().iterator();
+		
+		iterator[1] = orderBooks.get(ii).getBidList().iterator();
 		
 		for( int i = 0;i < iterator.length; i++)
 		{
@@ -72,25 +99,45 @@ public class TradeEngineImplementation implements TradeEngine {
 			
 			if(order.getUserId() == userId)
 			{
+				//if ID matches add to return list
 				orderList.add(order);
 				log.trace("Order found, added to Users Orderlist");
 			}
 		}
 		}
-		
-		return orderList.iterator();
+		}
+		return orderList;
 		
 	}
 
 	@Override
-	public Iterator<Order> getBidDepth() {
+	public List<Order> getBidDepth(CurrencyPair pair) throws MarketNotAvailableException {
 		
-		return orderBook.iteratorBid();
+		
+		
+		OrderBook orderBook = orderBookMap.get(pair.toString());
+		
+		
+		if(orderBook == null)
+		{
+			throw new MarketNotAvailableException(pair);
+		}
+		
+		
+		return orderBook.getBidList();
 	}
 
 	@Override
-	public Iterator<Order> getAskDepth() {
-		return orderBook.iteratorAsk();
+	public List<Order> getAskDepth(CurrencyPair pair) throws MarketNotAvailableException {
+		
+		OrderBook orderBook = orderBookMap.get(pair.toString());
+		
+		if(orderBook == null)
+		{
+			throw new MarketNotAvailableException(pair);
+		}
+		
+		return orderBook.getAskList();
 	}
 
 	@Override
@@ -104,7 +151,20 @@ public class TradeEngineImplementation implements TradeEngine {
 	public boolean cancelOrderByOrderId(long orderId) {
 		
 		
-		return orderBook.cancelOrderById(orderId);
+		
+		
+		for(String key : keySet)
+		{
+			if(orderBookMap.get(key).cancelOrderById(orderId) == true)
+			{
+				log.debug("Order ID: " + orderId + " canceled");
+				return true;
+			}
+		}
+		
+		
+		log.debug("Order ID: " + orderId + "not canceled - Order not found");
+		return false;
 	}
 	
 	@Override
@@ -140,6 +200,13 @@ public class TradeEngineImplementation implements TradeEngine {
 	@Override
 	public void placeOrder(Order order) {
 
+		OrderBook orderBook = orderBookMap.get(order.getCurrencyPair().toString());
+		
+		if(orderBook == null)
+		{
+			log.error("Orderbook " + order.getCurrencyPair().toString() + " does not exist can not place order ID " + order.getOrderId());
+			return;
+		}
 		
 		
 		if(order.getType() == OrderType.BUY && orderBook.peekBestAskOffer() != null)
@@ -163,11 +230,10 @@ public class TradeEngineImplementation implements TradeEngine {
 				//create trade
 				try {
 					trade = new Trade(order, counterOrder);
-				} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
+					orderBook.add(counterOrder);
+				} catch (IllegalTradeException | NoMatchingPriceException | IllegalOrderException e) {
 					log.error("unable to place Order");
 					//put the Order back to the Orderbook
-					
-					orderBook.add(counterOrder);
 					
 					e.printStackTrace();
 					return;
@@ -178,12 +244,22 @@ public class TradeEngineImplementation implements TradeEngine {
 				
 				//add restorder to the Orderbook
 				if(restOrder!= null)
-				orderBook.add(restOrder);
+					try {
+						orderBook.add(restOrder);
+					} catch (IllegalOrderException e) {
+						
+						log.error("unable to place Order");
+						//put the Order back to the Orderbook
+					}
 				
 			}
 			else
 			{
-				orderBook.add(order);
+				try {
+					orderBook.add(order);
+				} catch (IllegalOrderException e) {
+					log.error("unable to place Order");
+				}
 			}
 		}
 		else if(order.getType() == OrderType.SELL && orderBook.peekBestBidOffer() != null)
@@ -205,8 +281,17 @@ public class TradeEngineImplementation implements TradeEngine {
 				//create trade
 				try {
 					trade = new Trade(order, counterOrder);
-				} catch (IllegalTradeExeption | NoMatchingPriceExeption e) {
-					orderBook.add(counterOrder);
+				} catch (IllegalTradeException | NoMatchingPriceException e) {
+					
+					//add order back to OrderBook
+					try {
+						orderBook.add(counterOrder);
+					} catch (IllegalOrderException e1) {
+						
+						//is not possible to happen
+						log.error("unable to place Order");
+						e1.printStackTrace();
+					}
 					log.error("unable to place Order");
 					e.printStackTrace();
 					return;
@@ -216,13 +301,23 @@ public class TradeEngineImplementation implements TradeEngine {
 				
 				//add restorder to the Orderbook
 				if(restOrder != null)
-				orderBook.add(restOrder);
+					try {
+						orderBook.add(restOrder);
+					} catch (IllegalOrderException e) {
+						//is not possible to happen
+						e.printStackTrace();
+					}
 			}
 		}
 		else
 		{
 			log.debug("orderBook is empty");
-			orderBook.add(order);
+			try {
+				orderBook.add(order);
+			} catch (IllegalOrderException e) {
+				// not possible to happen
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -232,21 +327,51 @@ public class TradeEngineImplementation implements TradeEngine {
 	 * price
 	 */
 	@Override
-	public Trade getLastTrade() {
+	public Trade getLastTrade(CurrencyPair pair) {
 		
-		return orderBook.getTradeHistory().getLastTrade();
+		return orderBookMap.get(pair.toString()).getTradeHistory().getLastTrade();
 	}
 
 
 	@Override
 	public List<CurrencyPair> getAvailableMarkets() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		ArrayList<CurrencyPair> list = new ArrayList<CurrencyPair>();
+		
+		Iterator<String> keys = keySet.iterator();
+		while (keys.hasNext()) {
+			
+			list.add(orderBookMap.get(keys.next()).getCurrencyPair());
+		}
+		return list;
 	}
+	
+	/**
+	 * will create a new tradeable Market in the TradeEngine
+	 */
+	
 	@Override
 	public void createMarket(CurrencyPair pair) {
-		// TODO Auto-generated method stub
+		
+		//check if already existing
+		if(orderBookMap.get(pair.toString()) == null)
+		{
+		OrderBook newMarket = new OrderBookArrayList(pair);
+		orderBookMap.put(pair.toString(), newMarket);
+		
+		keySet.add(pair.toString());
+		
+		log.info("Market: " + pair.toString() + " created");
+		
+		}
+		else
+		{
+			log.info("Market: " + pair.toString() + " is already existing");
+		}
+		
 		
 	}
 
 }
+
+	
