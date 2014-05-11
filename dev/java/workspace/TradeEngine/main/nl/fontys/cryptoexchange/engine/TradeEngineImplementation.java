@@ -18,6 +18,7 @@ import nl.fontys.cryptoexchange.core.exception.IllegalOrderException;
 import nl.fontys.cryptoexchange.core.exception.IllegalTradeException;
 import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
 import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceException;
+import nl.fontys.cryptoexchange.engine.exception.UnableToDeleteOrderException;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBook;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList;
 
@@ -141,14 +142,14 @@ public class TradeEngineImplementation implements TradeEngine {
 	}
 
 	@Override
-	public boolean cancelOrderByOrder(Order order) {
+	public void cancelOrderByOrder(Order order) throws UnableToDeleteOrderException {
 		
-		return this.cancelOrderByOrderId(order.getOrderId());
+		this.cancelOrderByOrderId(order.getOrderId());
 	}
 
 	
 	@Override
-	public boolean cancelOrderByOrderId(long orderId) {
+	public void cancelOrderByOrderId(long orderId) throws UnableToDeleteOrderException {
 		
 		
 		
@@ -158,13 +159,15 @@ public class TradeEngineImplementation implements TradeEngine {
 			if(orderBookMap.get(key).cancelOrderById(orderId) == true)
 			{
 				log.debug("Order ID: " + orderId + " canceled");
-				return true;
+				return;
 			}
 		}
 		
 		
 		log.debug("Order ID: " + orderId + "not canceled - Order not found");
-		return false;
+		
+		throw new UnableToDeleteOrderException("Order ID: " + orderId + "not canceled - Order not found");
+		
 	}
 	
 	@Override
@@ -200,6 +203,7 @@ public class TradeEngineImplementation implements TradeEngine {
 	@Override
 	public void placeOrder(Order order) {
 
+		Order restOrder = null;
 		OrderBook orderBook = orderBookMap.get(order.getCurrencyPair().toString());
 		
 		if(orderBook == null)
@@ -209,14 +213,12 @@ public class TradeEngineImplementation implements TradeEngine {
 		}
 		
 		
-		if(order.getType() == OrderType.BUY && orderBook.peekBestAskOffer() != null)
-		{
-			
-			if(orderBook.peekBestAskOffer().getPrice().subtract(order.getPrice()).signum() > -1)
+		if(order.getType() == OrderType.BUY && orderBook.peekBestAskOffer() != null
+			//if offer is the same or better
+			&& orderBook.peekBestAskOffer().getPrice().subtract(order.getPrice()).signum() < 1)
 			{
 				Order counterOrder = orderBook.getBestAskOffer();
 				
-				Order restOrder = null;
 				try {
 					restOrder = Order.cloneRestOrder(order, counterOrder);
 				} catch (IllegalOrderCloneExeption e1) {
@@ -230,11 +232,15 @@ public class TradeEngineImplementation implements TradeEngine {
 				//create trade
 				try {
 					trade = new Trade(order, counterOrder);
-					orderBook.add(counterOrder);
-				} catch (IllegalTradeException | NoMatchingPriceException | IllegalOrderException e) {
+				} catch (IllegalTradeException | NoMatchingPriceException e) {
 					log.error("unable to place Order");
 					//put the Order back to the Orderbook
-					
+					try {
+						orderBook.add(counterOrder);
+					} catch (IllegalOrderException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 					e.printStackTrace();
 					return;
 				}
@@ -242,33 +248,16 @@ public class TradeEngineImplementation implements TradeEngine {
 				//add trade to history
 				orderBook.getTradeHistory().addTrade(trade);
 				
-				//add restorder to the Orderbook
-				if(restOrder!= null)
-					try {
-						orderBook.add(restOrder);
-					} catch (IllegalOrderException e) {
-						
-						log.error("unable to place Order");
-						//put the Order back to the Orderbook
-					}
+				
 				
 			}
-			else
-			{
-				try {
-					orderBook.add(order);
-				} catch (IllegalOrderException e) {
-					log.error("unable to place Order");
-				}
-			}
-		}
-		else if(order.getType() == OrderType.SELL && orderBook.peekBestBidOffer() != null)
-		{
-			if(orderBook.peekBestBidOffer().getPrice().subtract(order.getPrice()).signum() > -1)
+	
+		else if(order.getType() == OrderType.SELL && orderBook.peekBestBidOffer() != null &&
+		orderBook.peekBestBidOffer().getPrice().subtract(order.getPrice()).signum() > -1)
 			{
 				Order counterOrder = orderBook.getBestBidOffer();
 				
-				Order restOrder = null;
+				
 				try {
 					restOrder = Order.cloneRestOrder(order, counterOrder);
 				} catch (IllegalOrderCloneExeption e1) {
@@ -283,7 +272,7 @@ public class TradeEngineImplementation implements TradeEngine {
 					trade = new Trade(order, counterOrder);
 				} catch (IllegalTradeException | NoMatchingPriceException e) {
 					
-					//add order back to OrderBook
+					//add order back to OrderBook if Trade failed
 					try {
 						orderBook.add(counterOrder);
 					} catch (IllegalOrderException e1) {
@@ -298,17 +287,8 @@ public class TradeEngineImplementation implements TradeEngine {
 				}
 				//add trade to history
 				orderBook.getTradeHistory().addTrade(trade);
-				
-				//add restorder to the Orderbook
-				if(restOrder != null)
-					try {
-						orderBook.add(restOrder);
-					} catch (IllegalOrderException e) {
-						//is not possible to happen
-						e.printStackTrace();
-					}
 			}
-		}
+		
 		else
 		{
 			log.debug("orderBook is empty");
@@ -318,6 +298,12 @@ public class TradeEngineImplementation implements TradeEngine {
 				// not possible to happen
 				e.printStackTrace();
 			}
+		}
+		
+		//add rest order to the Orderbook
+		if(restOrder!= null)
+		{
+			this.placeOrder(restOrder);
 		}
 	}
 

@@ -73,6 +73,14 @@ public class OrderBookArrayList implements OrderBook{
 	public void add(Order order) throws IllegalOrderException {
 		
 		
+		
+		if(order == null)
+		{
+			log.trace("Order is null, can not add to Orderbook");
+			return;
+		}
+		
+		
 		//check type if Order doesn't fit with OrderBook Type it will throw exception
 		if(order.getCurrencyPair().equals(this.currencyPair) == false)
 		{

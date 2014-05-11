@@ -60,45 +60,174 @@ public class TradeEngineTest {
 	}
 	
 	@Test
-	public void testOrderExecutionWithMatchingOrders() {
+	public void testOrderExecutionWithMatchingOrdersAndSameVolume() {
 		
 		engine.createMarket(CurrencyPair.LTC_BTC);
 		
-		engine.createMarket(CurrencyPair.DOGE_BTC);
+		//engine.createMarket(CurrencyPair.DOGE_BTC);
 		
 		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
 		
 		engine.placeOrder(OrderTest.ORDER_BUY_HIGH_USER2);
 		
 		try {
-			assertEquals(false, engine.getAskDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).get(0));
-			assertEquals(false, engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).get(0));
+			//if the asks and bid list size is 0 then both orders have been matched and a trade happened
+			assertEquals(0, engine.getAskDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).size());
+			assertEquals(0, engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).size());
 		} catch (MarketNotAvailableException e) {
 			e.printStackTrace();
 			fail();
 		}
 	}
 	
-	//@Test
+	@Test
 	public void testOrderExecutionWithMatchingOrdersButDifferentVolume() {
 		
-		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
+		engine.createMarket(CurrencyPair.LTC_BTC);
+		//create other market to make it more interesting
+		engine.createMarket(CurrencyPair.DOGE_BTC);
 		
-		engine.placeOrder(OrderTest.ORDER_BUY_LOW_USER2);
+		engine.placeOrder(OrderTest.ORDER_SELL_LOW_USER1);
 		
-		//System.err.println(engine.getAskDepth().next());
-		
-		//System.err.println(engine.getBidDepth().next());
-		
-		
+		engine.placeOrder(OrderTest.ORDER_BUY_HIGH_USER2);
 		try {
-			assertEquals(false, engine.getAskDepth(OrderTest.ORDER_SELL_HIGH_USER1.getCurrencyPair()).get(0));
+					//@Expected rest order volume = bigger volume - lower volume
+					assertEquals(OrderTest.ORDER_BUY_HIGH_USER2.getVolume().subtract(OrderTest.ORDER_SELL_LOW_USER1.getVolume()), 
+					
+					//@Actual the rest orders volume in the Bid list
+					engine.getBidDepth(OrderTest.ORDER_SELL_HIGH_USER1.getCurrencyPair()).get(0).getVolume());
+					
+					//compare also the price of the offer
+					assertEquals(OrderTest.ORDER_BUY_HIGH_USER2.getPrice(),engine.getBidDepth(OrderTest.ORDER_SELL_HIGH_USER1.getCurrencyPair()).get(0).getPrice() );
+					
 		} catch (MarketNotAvailableException e) {
 			e.printStackTrace();
 			fail();
 		}
 	}
 
+
+	@Test
+	public void testAddTwoNonMatchingOrdersOfTheSameMarket()
+	{
+		
+		engine.createMarket(CurrencyPair.LTC_BTC);
+		
+		engine.placeOrder(OrderTest.ORDER_BUY_LOW_USER1);
+		
+		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER2);
+		
+		try {
+			//if the asks and bid list size is 1 then both orders are still in the Orderbook
+			assertEquals(1, engine.getAskDepth(CurrencyPair.LTC_BTC).size());
+			assertEquals(1, engine.getBidDepth(CurrencyPair.LTC_BTC).size());
+			
+			//If there is no Last Trade then there was no trade
+			assertEquals(null,engine.getLastTrade(CurrencyPair.LTC_BTC));
+		
+		
+		} catch (MarketNotAvailableException e) {
+			e.printStackTrace();
+			fail();
+		}
+	}
+	
+	@Test
+	public void testAddTwoMatchingOrdersOfDifferentMarkets()
+	{
+		
+			engine.createMarket(CurrencyPair.LTC_BTC);
+			engine.createMarket(CurrencyPair.DOGE_BTC);
+		
+			engine.placeOrder(OrderTest.ORDER_BUY_OTHER_CURRECNY_USER1);
+			
+			engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER2);
+			
+			try {
+				assertEquals(1, engine.getAskDepth(CurrencyPair.LTC_BTC).size());
+				assertEquals(1, engine.getBidDepth(CurrencyPair.DOGE_BTC).size());
+				assertEquals(0, engine.getAskDepth(CurrencyPair.DOGE_BTC).size());
+				assertEquals(0, engine.getBidDepth(CurrencyPair.LTC_BTC).size());
+				
+				//If there is no Last Trade then there was no trade
+				assertEquals(null,engine.getLastTrade(CurrencyPair.LTC_BTC));
+			
+			
+			} catch (MarketNotAvailableException e) {
+				e.printStackTrace();
+				fail();
+			}
+
+}
+	@Test
+	public void testAddManyOrdersSameVolume() {
+		int orders = 1000;
+		
+		engine.createMarket(CurrencyPair.LTC_BTC);
+		
+		engine.createMarket(CurrencyPair.DOGE_BTC);
+		
+		for(int i = 0; i< orders; i++ )
+		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
+		
+		for(int i = 0; i< orders; i++ )
+			engine.placeOrder(OrderTest.ORDER_BUY_OTHER_CURRECNY_USER1);
+		
+		for(int i = 0; i< orders; i++ )
+		engine.placeOrder(OrderTest.ORDER_BUY_HIGH_USER2);
+		
+		try {
+			//if the asks and bid list size is 0 then both orders have been matched and a trade happened
+			assertEquals(0, engine.getAskDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).size());
+			assertEquals(0, engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).size());
+		
+			assertEquals(orders, engine.getBidDepth(OrderTest.ORDER_BUY_OTHER_CURRECNY_USER1.getCurrencyPair()).size());
+			
+		} catch (MarketNotAvailableException e) {
+			e.printStackTrace();
+			fail();
+		}
+	}
+	
+	@Test
+	public void testAddManyOrdersDifferentVolume() {
+		int orders = 500;
+		
+		engine.createMarket(CurrencyPair.LTC_BTC);
+		
+		engine.createMarket(CurrencyPair.DOGE_BTC);
+		
+		for(int i = 0; i< orders; i++ )
+		{
+		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
+		engine.placeOrder(OrderTest.ORDER_SELL_LOW_USER1);
+		}
+		for(int i = 0; i< orders; i++ )
+		{
+			engine.placeOrder(OrderTest.ORDER_BUY_OTHER_CURRECNY_USER1);
+		}
+		for(int i = 0; i< orders; i++ )
+		{
+		engine.placeOrder(OrderTest.ORDER_BUY_HIGH_USER2);
+		engine.placeOrder(OrderTest.ORDER_BUY_LOW_USER2);
+		}
+		try {
+			System.err.println(engine.getAskDepth(CurrencyPair.LTC_BTC));
+			
+			System.err.println(engine.getBidDepth(CurrencyPair.LTC_BTC));
+
+			
+			//if the asks and bid list size is 0 then both orders have been matched and a trade happened
+			assertEquals(0, engine.getAskDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).size());
+			assertEquals(0, engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).size());
+		
+			assertEquals(orders, engine.getBidDepth(OrderTest.ORDER_BUY_OTHER_CURRECNY_USER1.getCurrencyPair()).size());
+			
+		} catch (MarketNotAvailableException e) {
+			e.printStackTrace();
+			fail();
+		}
+	}
 }
 
 

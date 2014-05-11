@@ -1,6 +1,5 @@
 package nl.fontys.cryptoexchange.engine;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.json.JSONObject;
@@ -9,6 +8,7 @@ import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.Trade;
 import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
+import nl.fontys.cryptoexchange.engine.exception.UnableToDeleteOrderException;
 
 /**
  * This is the interface to witch is visible for the other components
@@ -28,13 +28,13 @@ public interface TradeEngine {
 
 	public List<Order> getAskDepth(CurrencyPair pair) throws MarketNotAvailableException;
 
-	boolean cancelOrderByOrderId(long orderId);
+	public void cancelOrderByOrderId(long orderId) throws UnableToDeleteOrderException;
 
 	/**
 	 * 
 	 * @param order
 	 */
-	public boolean cancelOrderByOrder(Order order);
+	public void cancelOrderByOrder(Order order) throws UnableToDeleteOrderException;
 
 	public JSONObject getAskDepthAsJSON();
 
