@@ -307,3 +307,165 @@ TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added
 INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
 DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
 TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000000
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 2
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 4
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 5
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 2
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 6
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+DEBUG main nl.fontys.cryptoexchange.core.Order - Order 2 has bigger volume Order1:Order [type=BUY, price=10, volume=20, currencyPair=LTC/BTC, id=1000000000, timestamp=Thu May 08 13:26:22 CEST 2014] Order2:Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Thu May 08 13:26:22 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Thu May 08 13:26:22 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Thu May 08 13:26:22 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.core.Order - Order 1 has bigger volume Order1:Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Thu May 08 13:26:22 CEST 2014] Order2:Order [type=SELL, price=10, volume=20, currencyPair=LTC/BTC, id=1000000007, timestamp=Thu May 08 13:26:22 CEST 2014]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000000
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=BUY, volume=20, currencyPair=LTC/BTC, price=10, timestamp=Thu May 08 13:26:22 CEST 2014, trade ID=1000000, order ID sell=1000000007 , order ID buy=1000000001]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000003
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=SELL, volume=20, currencyPair=LTC/BTC, price=50, timestamp=Thu May 08 13:26:22 CEST 2014, trade ID=1000003, order ID sell=1000000002 , order ID buy=1000000006]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000005
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000006
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Order IDs in 831ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Trade IDs in 959ms with 50 Threads
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000003
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000005
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: ZET/BTC created
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: DOGE/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Thu May 08 13:26:22 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Thu May 08 13:26:22 CEST 2014]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000006
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 2
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 4
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 5
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 2
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 6
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+DEBUG main nl.fontys.cryptoexchange.core.Order - Order 2 has bigger volume Order1:Order [type=BUY, price=10, volume=20, currencyPair=LTC/BTC, id=1000000000, timestamp=Thu May 08 13:27:28 CEST 2014] Order2:Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Thu May 08 13:27:28 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Thu May 08 13:27:28 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Thu May 08 13:27:28 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.core.Order - Order 1 has bigger volume Order1:Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Thu May 08 13:27:28 CEST 2014] Order2:Order [type=SELL, price=10, volume=20, currencyPair=LTC/BTC, id=1000000007, timestamp=Thu May 08 13:27:28 CEST 2014]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000000
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=BUY, volume=20, currencyPair=LTC/BTC, price=10, timestamp=Thu May 08 13:27:28 CEST 2014, trade ID=1000000, order ID sell=1000000007 , order ID buy=1000000001]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000003
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=SELL, volume=20, currencyPair=LTC/BTC, price=50, timestamp=Thu May 08 13:27:28 CEST 2014, trade ID=1000003, order ID sell=1000000002 , order ID buy=1000000006]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000005
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000006
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Order IDs in 793ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Trade IDs in 985ms with 50 Threads
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000003
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000005
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: ZET/BTC created
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: DOGE/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Thu May 08 13:27:28 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Thu May 08 13:27:28 CEST 2014]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000006
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000007
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 2
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 4
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 5
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 2
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 6
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 3
+DEBUG main nl.fontys.cryptoexchange.core.Order - Order 2 has bigger volume Order1:Order [type=BUY, price=10, volume=20, currencyPair=LTC/BTC, id=1000000000, timestamp=Fri May 09 11:29:49 CEST 2014] Order2:Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Fri May 09 11:29:49 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Fri May 09 11:29:49 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Fri May 09 11:29:49 CEST 2014]
+DEBUG main nl.fontys.cryptoexchange.core.Order - Order 1 has bigger volume Order1:Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Fri May 09 11:29:49 CEST 2014] Order2:Order [type=SELL, price=10, volume=20, currencyPair=LTC/BTC, id=1000000007, timestamp=Fri May 09 11:29:49 CEST 2014]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000000
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=BUY, volume=20, currencyPair=LTC/BTC, price=10, timestamp=Fri May 09 11:29:49 CEST 2014, trade ID=1000000, order ID sell=1000000007 , order ID buy=1000000001]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000003
+INFO main nl.fontys.cryptoexchange.core.TradeTest - Trade [type=SELL, volume=20, currencyPair=LTC/BTC, price=50, timestamp=Fri May 09 11:29:49 CEST 2014, trade ID=1000003, order ID sell=1000000002 , order ID buy=1000000006]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000005
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000006
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Order IDs in 742ms with 50 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000010000000 Trade IDs in 825ms with 50 Threads
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000003
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000005
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: ZET/BTC created
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: DOGE/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
+DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Fri May 09 11:29:49 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Fri May 09 11:29:49 CEST 2014]
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000006
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
+DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
+TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11000007
