@@ -1,7 +1,5 @@
 package nl.fontys.cryptoexchange.engine;
-/**
- * TODO Finish test
- */
+
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
@@ -9,14 +7,17 @@ import java.util.ArrayList;
 import nl.fontys.cryptoexchange.core.OrderTest;
 import nl.fontys.cryptoexchange.core.Trade;
 import nl.fontys.cryptoexchange.core.TradeTest;
-import nl.fontys.cryptoexchange.engine.orderbook.OrderBook;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList;
 
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-
-public class MovingAverageCalculationTest {
+/**
+ * 
+ * @author Ratidzo Zvirawa
+ *
+ */
+public class VolumeTest {
 
 	private static int NUMBER_OF_TRADES_STORED = 200;
 	private TemporaryTradeHistory history;
@@ -24,6 +25,8 @@ public class MovingAverageCalculationTest {
 	private OrderBookArrayList orderBookArrayList;
 	private OrderBookArrayList orderbook;
 	private ArrayList<MovingAverage> movingAverages;
+	private Volume volumeCalculation;
+	private double volume;
 
 	
 	
@@ -32,6 +35,7 @@ public class MovingAverageCalculationTest {
 	public void setUp()
 	{
 		this.orderbook = new OrderBookArrayList();
+		
 		
 		createTrades();
 		
@@ -85,9 +89,9 @@ public class MovingAverageCalculationTest {
 	@Test
 	public void testGetMovingAverage() {
 		
-		this.movingAverage = new MovingAverageCalculation(this.orderbook, 1);
-		movingAverages = this.movingAverage.getMovingAverage();
-		assertNotNull(movingAverages);
+		volumeCalculation = new Volume(orderbook, 1);
+		volume =  volumeCalculation.getVolume();
+		assertNotNull(volume);
 		
 		
 		
