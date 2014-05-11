@@ -1,6 +1,5 @@
 package nl.fontys.cryptoexchange.engine;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.json.JSONObject;
@@ -8,6 +7,8 @@ import org.json.JSONObject;
 import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.Trade;
+import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
+import nl.fontys.cryptoexchange.engine.exception.UnableToDeleteOrderException;
 
 /**
  * This is the interface to witch is visible for the other components
@@ -21,19 +22,19 @@ public interface TradeEngine {
 	 * 
 	 * @param userId
 	 */
-	public Iterator<Order> getPendingOrdersByUserId(long userId);
+	public List<Order> getPendingOrdersByUserId(long userId);
 
-	public Iterator<Order> getBidDepth();
+	public List<Order> getBidDepth(CurrencyPair pair) throws MarketNotAvailableException;
 
-	public Iterator<Order> getAskDepth();
+	public List<Order> getAskDepth(CurrencyPair pair) throws MarketNotAvailableException;
 
-	boolean cancelOrderByOrderId(long orderId);
+	public void cancelOrderByOrderId(long orderId) throws UnableToDeleteOrderException;
 
 	/**
 	 * 
 	 * @param order
 	 */
-	public boolean cancelOrderByOrder(Order order);
+	public void cancelOrderByOrder(Order order) throws UnableToDeleteOrderException;
 
 	public JSONObject getAskDepthAsJSON();
 
@@ -49,7 +50,7 @@ public interface TradeEngine {
 	 * this will return you the last executed trade and from the trade you can get the
 	 * price
 	 */
-	public Trade getLastTrade();
+	public Trade getLastTrade(CurrencyPair pair);
 
 	public List<CurrencyPair> getAvailableMarkets();
 

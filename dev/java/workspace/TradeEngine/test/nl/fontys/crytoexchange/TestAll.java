@@ -3,6 +3,7 @@ package nl.fontys.crytoexchange;
 import nl.fontys.cryptoexchange.core.IdGeneratorTest;
 import nl.fontys.cryptoexchange.core.OrderTest;
 import nl.fontys.cryptoexchange.core.TradeTest;
+import nl.fontys.cryptoexchange.engine.MovingAverageCalculationTest;
 import nl.fontys.cryptoexchange.engine.TemporaryTradeHistoryTest;
 import nl.fontys.cryptoexchange.engine.TradeEngineTest;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBookTest;
@@ -26,7 +27,8 @@ OrderTest.class,
 TradeTest.class, 
 IdGeneratorTest.class, 
 TemporaryTradeHistoryTest.class,
-TradeEngineTest.class
+TradeEngineTest.class,
+MovingAverageCalculationTest.class,
 })
 public class TestAll {
 

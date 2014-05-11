@@ -31,10 +31,15 @@ public class MovingAverageCalculationTest {
 	@Before
 	public void setUp()
 	{
+<<<<<<< HEAD
 		this.orderbook = new OrderBookArrayList();
 		
 		createTrades();
+=======
+>>>>>>> 24bacd775503756a4f0a40659bf907ebb7f98d05
 		
+		history = new TemporaryTradeHistory(NUMBER_OF_TRADES_STORED);
+		createTrades();
 	}
 	
 	

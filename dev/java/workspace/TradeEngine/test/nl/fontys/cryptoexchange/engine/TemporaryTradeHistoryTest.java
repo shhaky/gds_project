@@ -2,6 +2,7 @@ package nl.fontys.cryptoexchange.engine;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.HashMap;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -86,9 +87,16 @@ class SubscriberTest implements Observer{
 	private Trade trade;
 	
 	@Override
-	public void update(Observable arg0, Object pushedTrade) {
+	public void update(Observable arg0, Object pushedData) {
 		
-		this.trade = (Trade) pushedTrade;
+		@SuppressWarnings("unchecked")
+		HashMap<String, Object> map = (HashMap<String,Object>) pushedData;
+		
+		Object tempTrade = map.get("trade");
+		
+		this.trade = (Trade) tempTrade;
+		
+		
 	}
 	
 	public Trade getTrade()

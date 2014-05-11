@@ -1,8 +1,11 @@
 package nl.fontys.cryptoexchange.engine.orderbook;
 
 import java.util.Iterator;
+import java.util.List;
 
+import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
+import nl.fontys.cryptoexchange.core.exception.IllegalOrderException;
 import nl.fontys.cryptoexchange.engine.TemporaryTradeHistory;
 /**
 * @author Tobias Zobrist
@@ -11,7 +14,7 @@ import nl.fontys.cryptoexchange.engine.TemporaryTradeHistory;
 */
 public interface OrderBook {
 	
-	public boolean add(Order order);
+	public void add(Order order) throws IllegalOrderException;
 	
 	public Order getBestAskOffer();
 	
@@ -21,9 +24,9 @@ public interface OrderBook {
 	
 	public Order peekBestBidOffer();
 
-	public Iterator<Order> iteratorAsk();
+	public List<Order> getAskList();
 	
-	public Iterator<Order> iteratorBid();
+	public List<Order> getBidList();
 	
 	public int getAskOrderLength();
 	
@@ -34,4 +37,6 @@ public interface OrderBook {
 	public boolean cancelOrderById(long OrderId);
 	@Override
 	public String toString();
+	
+	public CurrencyPair getCurrencyPair();
 }
