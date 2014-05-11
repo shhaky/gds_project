@@ -5,4 +5,11 @@
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.OrderTest"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TradeEngine"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.CurrencyPair"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.VolumeTest"/>
+<fullyQualifiedTypeName name="java.math.RoundingMode"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TemporaryTradeHistory"/>
+<fullyQualifiedTypeName name="java.util.Observer"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Trade"/>
 </qualifiedTypeNameHistroy>
