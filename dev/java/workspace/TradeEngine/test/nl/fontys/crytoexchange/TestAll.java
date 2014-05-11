@@ -6,6 +6,7 @@ import nl.fontys.cryptoexchange.core.TradeTest;
 import nl.fontys.cryptoexchange.engine.MovingAverageCalculationTest;
 import nl.fontys.cryptoexchange.engine.TemporaryTradeHistoryTest;
 import nl.fontys.cryptoexchange.engine.TradeEngineTest;
+import nl.fontys.cryptoexchange.engine.VolumeTest;
 import nl.fontys.cryptoexchange.engine.orderbook.OrderBookTest;
 
 import org.junit.runner.RunWith;
@@ -29,6 +30,7 @@ IdGeneratorTest.class,
 TemporaryTradeHistoryTest.class,
 TradeEngineTest.class,
 MovingAverageCalculationTest.class,
+VolumeTest.class,
 })
 public class TestAll {
 

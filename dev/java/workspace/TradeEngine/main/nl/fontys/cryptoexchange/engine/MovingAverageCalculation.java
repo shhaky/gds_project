@@ -1,5 +1,6 @@
 package nl.fontys.cryptoexchange.engine;
 
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -16,7 +17,7 @@ public class MovingAverageCalculation {
 	private MovingAverage movingAverage;
 	private ArrayList<MovingAverage> movingAverageList;
 	
-	public MovingAverageCalculation(OrderBookArrayList orderBook, int interval){
+	public MovingAverageCalculation(OrderBook orderBook, int interval){
 		
 		this.tradeHistory = orderBook.getTradeHistory().getList();
 		this.interval = interval;
@@ -53,6 +54,7 @@ public class MovingAverageCalculation {
 		
 			if(count >0)
 			{
+				
 				average = total/count;
 				movingAverage = new MovingAverage(average, interval, endTime.getTime());
 				movingAverageList.add(movingAverage);

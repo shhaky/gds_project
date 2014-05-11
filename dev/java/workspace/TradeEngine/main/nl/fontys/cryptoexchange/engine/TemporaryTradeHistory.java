@@ -46,8 +46,10 @@ public class TemporaryTradeHistory extends Observable {
 		// push data to the observer
 		this.setChanged();
 		
-		HashMap<String,Object> push = new HashMap<String, Object>();
 		
+	
+		HashMap<String,Object> push = new HashMap<String, Object>();
+		//IMPORTANT keyword for the push --> trade
 		push.put("trade", trade);
 		
 		this.notifyObservers (push);
