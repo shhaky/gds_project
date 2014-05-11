@@ -24,7 +24,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({ 
 OrderBookTest.class,
 OrderTest.class,
-TradeTest.class, 
+TradeTest.class,
 IdGeneratorTest.class, 
 TemporaryTradeHistoryTest.class,
 TradeEngineTest.class,
