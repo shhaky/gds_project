@@ -11,7 +11,8 @@
 <fullyQualifiedTypeName name="java.util.Observer"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Trade"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.CurrencyPair"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.CurrencyPair"/>
 </qualifiedTypeNameHistroy>
