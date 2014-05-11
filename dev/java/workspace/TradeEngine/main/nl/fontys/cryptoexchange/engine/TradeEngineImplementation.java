@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
+import org.json.JSONArray;
 
 import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
@@ -171,25 +171,24 @@ public class TradeEngineImplementation implements TradeEngine {
 	}
 	
 	@Override
-	public JSONObject getAskDepthAsJSON() {
+	public String getAskDepthAsJSON(CurrencyPair pair) throws MarketNotAvailableException {
 
-		/**
-		 * example
-		 
-		JSONArray array = new JSONArray(collection)
+		JSONArray jsonArray = new JSONArray(this.getAskDepth(pair));
 		
-		JSONObject object = new JSONObject(array);
+		String response = jsonArray.toString();
 		
-		object.toString();
-		*/
-		log.error("not implementet yet");
-		return null;
+		log.trace("JSON RESPONSE " + response);
+		return response;
 	}
 
 	@Override
-	public JSONObject getBidDEpthAsJSON() {
-		log.error("not implementet yet");
-		return null;
+	public String getBidDepthAsJSON(CurrencyPair market) throws MarketNotAvailableException {
+JSONArray jsonArray = new JSONArray(this.getBidDepth(market));
+		
+		String response = jsonArray.toString();
+		
+		log.trace("JSON RESPONSE " + response);
+		return response;
 	}
 
 	/**
@@ -357,6 +356,28 @@ public class TradeEngineImplementation implements TradeEngine {
 		
 		
 	}
+
+
+	@Override
+	public void removeMarket(CurrencyPair pair)
+			throws MarketNotAvailableException {
+		
+		if(keySet.isEmpty() || orderBookMap.get(pair.toString()) == null)
+		{
+			throw new MarketNotAvailableException(pair);
+		}
+		else
+		{
+			keySet.remove(pair.toString());
+			orderBookMap.remove(pair.toString());
+			
+			log.trace(pair.toString() + " sucsessfully removed from TradeEngine");
+		}
+		
+		
+		
+	}
+	
 
 }
 

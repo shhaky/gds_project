@@ -2,7 +2,6 @@ package nl.fontys.cryptoexchange.engine;
 
 import java.util.List;
 
-import org.json.JSONObject;
 
 import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
@@ -36,9 +35,9 @@ public interface TradeEngine {
 	 */
 	public void cancelOrderByOrder(Order order) throws UnableToDeleteOrderException;
 
-	public JSONObject getAskDepthAsJSON();
+	public String getAskDepthAsJSON(CurrencyPair market) throws MarketNotAvailableException;
 
-	public JSONObject getBidDEpthAsJSON();
+	public  String getBidDepthAsJSON(CurrencyPair market) throws MarketNotAvailableException;
 
 	/**
 	 * 
@@ -56,9 +55,23 @@ public interface TradeEngine {
 
 	/**
 	 * 
-	 * @param pair
+	 * will create a new Market to trade in, 
+	 * 
+	 * 
+	 * @param pair the Currency Pair you can trade in this market, for instance LTC/BTC
 	 */
 	public void createMarket(CurrencyPair pair);
+	
+	
+	/**
+	 * will remove an existing Market to trade in
+	 * 
+	 * @exception if the Market to remove does not exist it will throw a MarketNotAvailableExeption
+	 * @param pair
+	 */
+	
+	
+	public void removeMarket(CurrencyPair pair) throws MarketNotAvailableException;
 
 
 }

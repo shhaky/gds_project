@@ -26,9 +26,10 @@ public class OrderTest {
 	
 	public final static long USER2_ID = 44444;
 	
-	public static final int HIGH_VOLUME = 50;
-	public static final int LOW_VOLUME = 20;
 	
+	
+	public static final int LOW_VOLUME = 25;
+	public static final int HIGH_VOLUME = 2*LOW_VOLUME;
 	
 	public static final int PRICE_HIGH = 50;
 

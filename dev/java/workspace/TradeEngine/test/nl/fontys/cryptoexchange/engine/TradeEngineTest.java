@@ -8,9 +8,21 @@ import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
 import org.junit.Before;
 import org.junit.Test;
 
+
+/**
+ * 
+ * Tests for TradeEngine
+ * 
+ * @author Tobias Zobrist
+ * @version 1.0
+ * @updated 22-Apr-2014 18:41:23
+ */
+
+
 public class TradeEngineTest {
 
 	private TradeEngine engine;
+	
 	
 	
 	@Before
@@ -26,7 +38,46 @@ public class TradeEngineTest {
 	{
 		engine.createMarket(CurrencyPair.ZET_BTC);
 		
-		assertEquals(CurrencyPair.ZET_BTC, engine.getAvailableMarkets().get(0));}
+		assertEquals(CurrencyPair.ZET_BTC, engine.getAvailableMarkets().get(0));
+		}
+	
+	
+	@Test
+	public void testRemoveMarket()
+	{
+		engine.createMarket(CurrencyPair.ZET_BTC);
+		engine.createMarket(CurrencyPair.LTC_BTC);
+		engine.createMarket(CurrencyPair.DOGE_BTC);
+		
+		try {
+			engine.removeMarket(CurrencyPair.ZET_BTC);
+			engine.removeMarket(CurrencyPair.LTC_BTC);
+			engine.removeMarket(CurrencyPair.DOGE_BTC);
+		} catch (MarketNotAvailableException e) {
+			e.printStackTrace();
+			fail();
+		}
+		
+		
+		//if all markets have been removed again
+		assertEquals(true, engine.getAvailableMarkets().isEmpty());
+		
+	}
+	
+	
+	//test if MarketNotAvailableExeption is thrown
+	@Test
+	public void testRemoveNonExistingMarket()
+	{
+		try {
+			engine.removeMarket(CurrencyPair.ZET_BTC);
+			fail();
+		} catch (MarketNotAvailableException e) {
+			assertTrue(true);
+		}
+	}
+	
+	
 	
 	@Test
 	public void testAddBidOrder() {
@@ -58,6 +109,44 @@ public class TradeEngineTest {
 			fail();
 		}
 	}
+	
+	@Test
+	public void testGetBidDepthAsJSON() throws MarketNotAvailableException
+	{
+		
+		final String expected = "[{\"price\":";
+		
+		CurrencyPair market = CurrencyPair.LTC_BTC;
+		engine.createMarket(market);
+		
+		engine.placeOrder(OrderTest.ORDER_BUY_HIGH_USER1);
+		engine.placeOrder(OrderTest.ORDER_BUY_LOW_USER1);
+		
+		String result = engine.getBidDepthAsJSON(market);
+		// I can't compare the whole String because of the Date
+		assertTrue(result.startsWith(expected));
+		
+	}
+	
+	@Test
+	public void testGetAskDepthAsJSON() throws MarketNotAvailableException
+	{
+		
+		final String expected = "[{\"price\":";
+		
+		CurrencyPair market = CurrencyPair.LTC_BTC;
+		engine.createMarket(market);
+		
+		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
+		engine.placeOrder(OrderTest.ORDER_SELL_LOW_USER1);
+		
+		String result = engine.getAskDepthAsJSON(market);
+		// I can't compare the whole String because of the Date
+		assertTrue(result.startsWith(expected));
+		
+	}
+	
+	
 	
 	@Test
 	public void testOrderExecutionWithMatchingOrdersAndSameVolume() {
@@ -161,7 +250,7 @@ public class TradeEngineTest {
 }
 	@Test
 	public void testAddManyOrdersSameVolume() {
-		int orders = 1000;
+		int orders = 2000;
 		
 		engine.createMarket(CurrencyPair.LTC_BTC);
 		
@@ -191,7 +280,7 @@ public class TradeEngineTest {
 	
 	@Test
 	public void testAddManyOrdersDifferentVolume() {
-		int orders = 500;
+		int orders = 2000;
 		
 		engine.createMarket(CurrencyPair.LTC_BTC);
 		
@@ -199,7 +288,7 @@ public class TradeEngineTest {
 		
 		for(int i = 0; i< orders; i++ )
 		{
-		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
+		engine.placeOrder(OrderTest.ORDER_SELL_LOW_USER1);
 		engine.placeOrder(OrderTest.ORDER_SELL_LOW_USER1);
 		}
 		for(int i = 0; i< orders; i++ )
@@ -209,13 +298,8 @@ public class TradeEngineTest {
 		for(int i = 0; i< orders; i++ )
 		{
 		engine.placeOrder(OrderTest.ORDER_BUY_HIGH_USER2);
-		engine.placeOrder(OrderTest.ORDER_BUY_LOW_USER2);
 		}
 		try {
-			System.err.println(engine.getAskDepth(CurrencyPair.LTC_BTC));
-			
-			System.err.println(engine.getBidDepth(CurrencyPair.LTC_BTC));
-
 			
 			//if the asks and bid list size is 0 then both orders have been matched and a trade happened
 			assertEquals(0, engine.getAskDepth(OrderTest.ORDER_BUY_HIGH_USER2.getCurrencyPair()).size());

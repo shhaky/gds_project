@@ -11,7 +11,12 @@ import org.junit.Test;
 
 import nl.fontys.cryptoexchange.core.Trade;
 import nl.fontys.cryptoexchange.core.TradeTest;
-
+/**
+ * 
+ * @author Tobias Zobrist
+ * @version 1.0
+ * @updated 22-Apr-2014 18:41:23
+ */
 public class TemporaryTradeHistoryTest {
 	
 	
