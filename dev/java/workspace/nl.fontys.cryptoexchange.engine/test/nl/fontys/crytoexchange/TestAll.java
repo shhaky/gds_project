@@ -1,14 +1,7 @@
 package nl.fontys.crytoexchange;
 
-import nl.fontys.cryptoexchange.core.IdGeneratorTest;
-import nl.fontys.cryptoexchange.core.OrderTest;
-import nl.fontys.cryptoexchange.core.TradeTest;
-import nl.fontys.cryptoexchange.engine.MovingAverageCalculationTest;
-import nl.fontys.cryptoexchange.engine.TemporaryTradeHistoryTest;
-import nl.fontys.cryptoexchange.engine.TradeEngineTest;
-import nl.fontys.cryptoexchange.engine.VolumeTest;
-import nl.fontys.cryptoexchange.engine.orderbook.OrderBookTest;
-
+import nl.fontys.cryptoexchange.core.TestCoreAll;
+import nl.fontys.cryptoexchange.engine.TestEngineAll;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -22,15 +15,9 @@ import org.junit.runners.Suite.SuiteClasses;
  */
 
 @RunWith(Suite.class)
-@SuiteClasses({ 
-OrderBookTest.class,
-OrderTest.class,
-TradeTest.class,
-IdGeneratorTest.class, 
-TemporaryTradeHistoryTest.class,
-TradeEngineTest.class,
-MovingAverageCalculationTest.class,
-VolumeTest.class,
+@SuiteClasses({
+	TestCoreAll.class,
+	TestEngineAll.class,
 })
 public class TestAll {
 
