@@ -67,3 +67,9 @@ DEBUG main nl.fontys.cryptoexchange.core.Order - Order 1 has bigger volume Order
 DEBUG main nl.fontys.cryptoexchange.core.Order - Order 2 has bigger volume Order1:Order [type=BUY, price=10, volume=20, currencyPair=LTC/BTC, id=1000000000, timestamp=Thu Apr 17 23:50:44 CEST 2014] Order2:Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Thu Apr 17 23:50:44 CEST 2014]
 DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Thu Apr 17 23:50:44 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000008, timestamp=Thu Apr 17 23:50:44 CEST 2014]
 DEBUG main nl.fontys.cryptoexchange.core.Order - Order 1 has bigger volume Order1:Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000001, timestamp=Thu Apr 17 23:50:44 CEST 2014] Order2:Order [type=SELL, price=10, volume=20, currencyPair=LTC/BTC, id=1000000007, timestamp=Thu Apr 17 23:50:44 CEST 2014]
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000014000000 Order IDs in 1230ms with 70 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000014000000 Trade IDs in 1279ms with 70 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000020000000 Order IDs in 1765ms with 100 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000020000000 Trade IDs in 1857ms with 100 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000040000000 Order IDs in 3764ms with 200 Threads
+INFO main nl.fontys.cryptoexchange.core.IdGeneratorTest - generated 100000040000000 Trade IDs in 3608ms with 200 Threads

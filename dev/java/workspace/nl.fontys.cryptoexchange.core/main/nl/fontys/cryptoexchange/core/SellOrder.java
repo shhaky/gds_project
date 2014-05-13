@@ -2,11 +2,16 @@ package nl.fontys.cryptoexchange.core;
 
 import java.math.BigDecimal;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * @author Tobias Zobrist
  * @version 1.0
  * @created 16-Apr-2014 16:34:32
  */
+
+
+@XmlRootElement
 public final class SellOrder extends Order {
 
 	public SellOrder(CurrencyPair currencyPair, long orderId,

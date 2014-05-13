@@ -28,7 +28,7 @@ public class TradeEngineTest {
 	@Before
 	public void setUp()
 	{
-		engine = new TradeEngineImplementation();
+		engine = new TradeEngineManualUpdating();
 		
 	}
 	

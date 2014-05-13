@@ -92,7 +92,7 @@ public class IdGeneratorTest {
 
 	
 	
-	private final static int NUMBER_OF_THREADS = 50;
+	private final static int NUMBER_OF_THREADS = 200;
 
 	private final static int NUMBER_OF_ID_REQUESTS = 200000;
 

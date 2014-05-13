@@ -28,7 +28,7 @@ import nl.fontys.cryptoexchange.engine.orderbook.OrderBookArrayList;
  * @version 1.0
  * @updated 17-Apr-2014 03:54:54
  */
-public class TradeEngineImplementation implements TradeEngine {
+public class TradeEngineManualUpdating implements TradeEngine {
 
 	
 
@@ -44,10 +44,10 @@ public class TradeEngineImplementation implements TradeEngine {
 	private HashSet<String> keySet;
 
 
-	private Logger log = Logger.getLogger(TradeEngineImplementation.class);
+	private Logger log = Logger.getLogger(TradeEngineManualUpdating.class);
 
 
-	public TradeEngineImplementation(){
+	public TradeEngineManualUpdating(){
 		
 		this.keySet = new HashSet<String>();
 		orderBookMap = new HashMap<String, OrderBook>();
@@ -142,14 +142,14 @@ public class TradeEngineImplementation implements TradeEngine {
 	}
 
 	@Override
-	public void cancelOrderByOrder(Order order) throws UnableToDeleteOrderException {
+	public synchronized void cancelOrderByOrder(Order order) throws UnableToDeleteOrderException {
 		
 		this.cancelOrderByOrderId(order.getOrderId());
 	}
 
 	
 	@Override
-	public void cancelOrderByOrderId(long orderId) throws UnableToDeleteOrderException {
+	public synchronized void cancelOrderByOrderId(long orderId) throws UnableToDeleteOrderException {
 		
 		
 		
@@ -200,7 +200,7 @@ JSONArray jsonArray = new JSONArray(this.getBidDepth(market));
 	 */
 	
 	@Override
-	public void placeOrder(Order order) {
+	public synchronized void placeOrder(Order order) {
 
 		Order restOrder = null;
 		OrderBook orderBook = orderBookMap.get(order.getCurrencyPair().toString());
@@ -336,12 +336,13 @@ JSONArray jsonArray = new JSONArray(this.getBidDepth(market));
 	 */
 	
 	@Override
-	public void createMarket(CurrencyPair pair) {
+	public synchronized void createMarket(CurrencyPair pair) {
 		
 		//check if already existing
 		if(orderBookMap.get(pair.toString()) == null)
 		{
 		OrderBook newMarket = new OrderBookArrayList(pair);
+		
 		orderBookMap.put(pair.toString(), newMarket);
 		
 		keySet.add(pair.toString());
@@ -359,7 +360,7 @@ JSONArray jsonArray = new JSONArray(this.getBidDepth(market));
 
 
 	@Override
-	public void removeMarket(CurrencyPair pair)
+	public synchronized void removeMarket(CurrencyPair pair)
 			throws MarketNotAvailableException {
 		
 		if(keySet.isEmpty() || orderBookMap.get(pair.toString()) == null)

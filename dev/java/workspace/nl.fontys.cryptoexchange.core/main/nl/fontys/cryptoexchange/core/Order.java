@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 import nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption;
 
 import org.apache.log4j.Logger;
@@ -17,6 +19,7 @@ import org.json.JSONObject;
  * @version 1.0
  * @updated 15-Apr-2014 02:43
  */
+@XmlRootElement
 public abstract class Order implements Comparable<Order> {
 	
 	public Order(CurrencyPair currencyPair, long orderId, BigDecimal volume, BigDecimal price, long userId) {
@@ -44,7 +47,7 @@ public abstract class Order implements Comparable<Order> {
 	private final BigDecimal price;
 	private final long userId; //owner
 
-
+ 
 	public CurrencyPair getCurrencyPair(){
 		return this.currencyPair;
 	}
@@ -71,16 +74,16 @@ public abstract class Order implements Comparable<Order> {
 		return userId;
 	}
 
-	//TODO
-	public JSONObject toJson(){
-		
-		return null;
-	}
-		  @Override
-		  public String toString() {
-
-		    return "Order [type=" + this.getType() + ", price=" + price + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
-		  }
+//	//TODO
+//	public JSONObject toJson(){
+//		
+//		return null;
+//	}
+//		  @Override
+//		  public String toString() {
+//
+//		    return "Order [type=" + this.getType() + ", price=" + price + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
+//		  }
 	
 
 	@Override
