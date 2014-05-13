@@ -27,13 +27,14 @@ public class MyResource {
      * @return String that will be send back as a response of type "text/plain".
      */
     @GET 
-    @Produces(MediaType.APPLICATION_JSON)
-    public Order getIt() {
+    //@Produces(MediaType.APPLICATION_JSON)
+    @Produces("plain/text")
+    public String getIt() {
         
-    	BuyOrder order  = new BuyOrder(CurrencyPair.DOGE_BTC,54645, BigDecimal.ONE,BigDecimal.TEN,5346454);
+    	//BuyOrder order  = new BuyOrder(CurrencyPair.DOGE_BTC,54645, BigDecimal.ONE,BigDecimal.TEN,5346454);
     	
     	
-    	return order;
+    	return "hallo";
     }
     
     @GET 
