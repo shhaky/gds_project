@@ -13,10 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public final class BuyOrder extends Order {
 
-
-
-	public BuyOrder(CurrencyPair currencyPair, long orderId, BigDecimal volume,
-			BigDecimal price, long userId) {
+	public BuyOrder(CurrencyPair currencyPair, long orderId, BigDecimal volume, BigDecimal price, long userId) {
 		super(currencyPair, orderId, volume, price, userId);
 		// TODO Auto-generated constructor stub
 	}
@@ -25,4 +22,4 @@ public final class BuyOrder extends Order {
 	public OrderType getType() {
 		return OrderType.BUY;
 	}
-	}
+}

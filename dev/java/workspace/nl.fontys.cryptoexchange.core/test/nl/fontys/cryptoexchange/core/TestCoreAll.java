@@ -9,19 +9,11 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * 
- * @author Tobias Zobrist
- * 
- * this will run all the Core Test Cases
- *
+ * @author Tobias Zobrist this will run all the Core Test Cases
  */
 
 @RunWith(Suite.class)
-@SuiteClasses({ 
-OrderTest.class,
-TradeTest.class,
-IdGeneratorTest.class, 
-})
+@SuiteClasses({ OrderTest.class, TradeTest.class, IdGeneratorTest.class, })
 public class TestCoreAll {
 
 }

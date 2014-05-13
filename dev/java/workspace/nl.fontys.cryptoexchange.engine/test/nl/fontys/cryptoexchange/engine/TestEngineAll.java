@@ -15,21 +15,11 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * 
- * @author Tobias Zobrist
- * 
- * this will run all the Engine Test Cases
- *
+ * @author Tobias Zobrist this will run all the Engine Test Cases
  */
 
 @RunWith(Suite.class)
-@SuiteClasses({ 
-OrderBookTest.class,
-TemporaryTradeHistoryTest.class,
-TradeEngineTest.class,
-MovingAverageCalculationTest.class,
-VolumeTest.class,
-})
+@SuiteClasses({ OrderBookTest.class, TemporaryTradeHistoryTest.class, TradeEngineTest.class, MovingAverageCalculationTest.class, VolumeTest.class, })
 public class TestEngineAll {
 
 }

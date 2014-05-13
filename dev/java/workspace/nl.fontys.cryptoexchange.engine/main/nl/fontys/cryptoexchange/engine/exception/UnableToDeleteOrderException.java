@@ -1,12 +1,13 @@
 package nl.fontys.cryptoexchange.engine.exception;
 
-public class UnableToDeleteOrderException extends Exception{
+public class UnableToDeleteOrderException extends Exception {
 
 	public UnableToDeleteOrderException(String reason) {
 
-	super(reason);
-	
+		super(reason);
+
 	}
+
 	/**
 	 * 
 	 */
