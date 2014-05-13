@@ -14,11 +14,16 @@ namespace GDS_HUB
         void logIn(string accountName, string password);
 
         [OperationContract]
-        bool logOut(string account);
+        bool checkIfExistedUserNameHUB(string userName);
 
         [OperationContract]
-        string registration(string name, string residence, string password);
+        bool addNewUserHUB(long userId, string userName, string passWord,string firstName,
+                           string lastName, string email, string joinDate);
 
+         [OperationContract]
+        bool checkPasswordHUB(string userName, string passWord);
+
+      
         [OperationContract]
         bool sendTransaction(string userAccount, string account, int amount);
     }
@@ -79,6 +84,9 @@ namespace GDS_HUB
     {
         [OperationContract(IsOneWay = true)]
         void confirmation();
+
+        [OperationContract(IsOneWay = true)]
+        void serverInfo(string info);
 
     }
 }
