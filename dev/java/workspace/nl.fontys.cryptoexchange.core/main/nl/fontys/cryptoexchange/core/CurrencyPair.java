@@ -1,11 +1,14 @@
 package nl.fontys.cryptoexchange.core;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * @author Tobias Zobrist
  * @version 1.0
  * @created 15-Apr-2014 03:49:28 represents a CurrencyPair witch is traded on
  *          the platform
  */
+@XmlRootElement
 public class CurrencyPair {
 
 	// Provide some default BTC major symbols

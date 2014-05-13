@@ -1,5 +1,7 @@
 package nl.fontys.cryptoexchange.core;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * has values BID and ASK
  * <p>
@@ -11,6 +13,7 @@ package nl.fontys.cryptoexchange.core;
  * @version 1.0
  * @created 04-Apr-2014 14:06:44
  */
+@XmlRootElement
 public enum OrderType {
 	BUY, SELL;
 

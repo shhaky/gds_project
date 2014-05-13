@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 import org.apache.log4j.Logger;
 
 import nl.fontys.cryptoexchange.core.exception.IllegalTradeException;
@@ -15,6 +17,7 @@ import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceException;
  * @created 16-Apr-2014 14:05:14 This is a Data Object that is representing a
  *          Trade.
  */
+@XmlRootElement
 public final class Trade {
 
 	public OrderType getType() {
