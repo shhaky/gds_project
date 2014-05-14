@@ -5,9 +5,7 @@
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.VolumeTest"/>
 <fullyQualifiedTypeName name="java.math.RoundingMode"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TemporaryTradeHistory"/>
-<fullyQualifiedTypeName name="java.util.Observer"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Trade"/>
 <fullyQualifiedTypeName name="org.json.JSONArray"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException"/>
 <fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.TestCoreAll"/>
@@ -39,4 +37,11 @@
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="com.sun.jersey.api.client.ClientResponse"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
+<fullyQualifiedTypeName name="java.util.Observer"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.Trade"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

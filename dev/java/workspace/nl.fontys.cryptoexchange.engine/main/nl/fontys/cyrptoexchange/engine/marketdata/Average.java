@@ -92,9 +92,7 @@ public class Average implements Observer {
 		
 		Trade newIncomingTrade = (Trade) push.get("trade");
 		
-		this.tradeHistory.add(newIncomingTrade);
-		
-		
+		tradeHistory.add(newIncomingTrade);
 		
 		
 	}
