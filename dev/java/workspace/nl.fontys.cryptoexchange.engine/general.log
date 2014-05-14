@@ -1,521 +1,178 @@
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005839
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005840
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005841
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005842
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005843
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005844
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005845
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005846
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005847
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005848
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005849
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005850
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005851
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005852
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005853
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005854
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005855
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005856
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005857
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005858
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005859
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005860
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005861
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005862
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005863
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005864
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005865
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005866
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005867
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005868
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005869
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005870
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005871
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005872
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005873
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005874
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005875
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005876
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005877
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005878
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005879
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005880
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005881
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005882
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005883
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005884
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005885
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005886
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005887
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005888
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005889
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005890
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005891
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005892
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005893
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005894
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005895
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005896
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005897
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005898
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005899
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005900
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005901
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005902
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005903
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005904
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005905
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005906
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005907
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005908
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005909
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005910
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005911
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005912
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005913
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005914
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005915
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005916
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005917
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005918
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005919
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005920
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005921
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005922
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005923
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005924
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005925
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005926
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005927
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005928
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005929
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005930
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005931
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005932
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005933
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005934
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005935
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005936
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005937
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005938
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005939
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005940
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005941
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005942
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005943
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005944
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005945
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005946
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005947
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005948
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005949
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005950
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005951
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005952
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005953
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005954
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005955
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005956
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005957
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005958
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005959
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005960
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005961
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005962
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005963
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005964
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005965
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005966
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005967
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005968
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005969
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005970
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005971
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005972
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005973
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005974
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005975
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005976
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005977
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005978
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005979
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005980
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005981
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005982
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005983
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005984
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005985
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005986
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005987
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005988
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005989
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005990
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005991
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005992
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005993
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005994
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005995
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005996
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005997
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005998
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11005999
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006000
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006001
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006002
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006003
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006004
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006005
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - orders have the same volume Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014]  Order [type=SELL, price=50, volume=50, currencyPair=LTC/BTC, id=1000000003, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006006
-INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
-DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
-DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 1
-TRACE main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - JSON RESPONSE [{"price":"50","timeStamp":"Mon May 12 16:23:20 CEST 2014","userId":33333,"volume":"50","type":{},"currencyPair":{"baseSymbol":{},"counterSymbol":{}},"orderId":1000000003},{"price":"10","timeStamp":"Mon May 12 16:23:20 CEST 2014","userId":33333,"volume":"25","type":{},"currencyPair":{"baseSymbol":{},"counterSymbol":{}},"orderId":1000000002}]
-INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
-INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: DOGE/BTC created
-DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - Best Offer removed
-DEBUG main nl.fontys.cryptoexchange.core.Order - Order 1 has bigger volume Order1:Order [type=BUY, price=50, volume=50, currencyPair=LTC/BTC, id=1000000006, timestamp=Mon May 12 16:23:20 CEST 2014] Order2:Order [type=SELL, price=10, volume=25, currencyPair=LTC/BTC, id=1000000002, timestamp=Mon May 12 16:23:20 CEST 2014]
-TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=11006007
-DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
-INFO main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - Market: LTC/BTC created
-DEBUG main nl.fontys.cryptoexchange.engine.TradeEngineImplementation - orderBook is empty
-TRACE main nl.fontys.cryptoexchange.engine.orderbook.OrderList - new order added at Position 0
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000354
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000355
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000356
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000357
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000358
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000359
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000360
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000361
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000362
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000363
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000364
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000365
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000366
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000367
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000368
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000369
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000370
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000371
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000372
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000373
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000374
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000375
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000376
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000377
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000378
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000379
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000380
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000381
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000382
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000383
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000384
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000385
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000386
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000387
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000388
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000389
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000390
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000391
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000392
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000393
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000394
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000395
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000396
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000397
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000398
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000399
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000400
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000401
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000402
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000403
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000404
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000405
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000406
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000407
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000408
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000409
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000410
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000411
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000412
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000413
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000414
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000415
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000416
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000417
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000418
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000419
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000420
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000421
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000422
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000423
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000424
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000425
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000426
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000427
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000428
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000429
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000430
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000431
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000432
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000433
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000434
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000435
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000436
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000437
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000438
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000439
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000440
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000441
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000442
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000443
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000000
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000003
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000005
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000006
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000007
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000008
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000009
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000010
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000011
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000012
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000013
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000014
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000015
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000016
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000017
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000018
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000019
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000020
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000021
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000022
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000023
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000024
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000025
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000026
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000027
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000028
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000029
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000030
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000031
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000032
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000033
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000034
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000035
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000036
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000037
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000038
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000039
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000040
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000041
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000042
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000043
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000000
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000001
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000002
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000003
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000004
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000005
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000006
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000007
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000008
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000009
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000010
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000011
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000012
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000013
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000014
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000015
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000016
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000017
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000018
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000019
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000020
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000021
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000022
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000023
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000024
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000025
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000026
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000027
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000028
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000029
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000030
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000031
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000032
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000033
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000034
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000035
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000036
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000037
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000038
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000039
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000040
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000041
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000042
+TRACE main nl.fontys.cryptoexchange.core.Trade - Trade executed ID=1000043
