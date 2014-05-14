@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlAttribute"/>
-<fullyQualifiedTypeName name="org.json.JSONObject"/>
-<fullyQualifiedTypeName name="java.awt.PageAttributes.MediaType"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.core.CurrencyPair"/>
-<fullyQualifiedTypeName name="nl.fotnys.cryptoexchange.webservice.EnigneHolder"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TradeEngineManualUpdating"/>
-<fullyQualifiedTypeName name="nl.fontys.cryptoexchange.engine.TradeEngine"/>
-<fullyQualifiedTypeName name="nl.fotnys.cryptoexchange.webservice.EngineHolder"/>
-<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
-<fullyQualifiedTypeName name="com.fontys.stuff.SOA_course"/>
-<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
-<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
-<fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>
