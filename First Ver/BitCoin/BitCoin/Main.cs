@@ -84,13 +84,36 @@ namespace BitCoin
         {
             int severLogInfo;
 
-            if ((this.tb_Email.Text == "") || (this.tb_password.Text == ""))
+            if ((this.tb_Email.Text == "") || (this.tb_Email.Text == ""))
             {
+                this.lblInfo.Visible = true;
                 this.lblInfo.Text = "Please Fill all the Field first!";
             }
             else
-            { 
-               
+            {
+                severLogInfo = F_A_proxy.logIn(this.tb_Email.Text, this.tb_Email.Text);
+                if (severLogInfo == 1)
+                {
+                    this.lblInfo.Visible = true;
+                    this.lblInfo.Text = "The username doesnt exist! please Register first!";
+                }
+                else if (severLogInfo == 2)
+                {
+                    this.lblInfo.Visible = true;
+                    this.lblInfo.Text = "Wrong Passwork! Check it and try again";
+                }
+                else if (severLogInfo == 3)
+                {
+                    this.lblInfo.Visible = true;
+                    this.lblInfo.Text = "Server problem! try again later";
+                }
+                else
+                {
+                    Profile profileForm = new Profile();
+                    this.Hide();
+                    profileForm.Show();
+
+                }
             
             }
 

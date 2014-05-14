@@ -17,6 +17,39 @@ namespace GDS_HUB
         DataProvider db = new DataProvider();
 
 
+        // this method is communicate with Account management for the login of the client
+        public int logIn(string accountName, string password)
+        {
+            int _logInfo = 3; // 3 stands for server problem, by defalt we set _logInfo to 3.
+            ICallbackToFatClient callback = OperationContext.Current.GetCallbackChannel<ICallbackToFatClient>();
+
+            try
+            {
+                _logInfo = checkIfExistedUserNameHUB(accountName);
+                if (_logInfo == 4) // checks if username exist first before we checks for password
+                {
+                    _logInfo = checkPasswordHUB(accountName, password);
+                    if (_logInfo == 4)
+                    {
+                        Client client = new Client();
+                        client.EmailAddress = accountName;
+                        client.Callback = callback;
+                        _listOnlineClient.Add(client);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return  3; // sever connection problem
+            }
+            return _logInfo;
+        }
+
+        public bool logOut(string account)
+        {
+            throw new NotImplementedException();
+        }
+
 
         // this method is for registration
         public bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate)
@@ -37,38 +70,7 @@ namespace GDS_HUB
 
 
 
-        public int logIn(string accountName, string password)
-        {
-            string _logInfo;
-            ICallbackToFatClient callback = OperationContext.Current.GetCallbackChannel<ICallbackToFatClient>();
-
-            try
-            {
-                if (db.logIn(accountName, password))
-                {
-
-                    callback.confirmation();
-                }
-                else
-                {
-                    _logInfo = "Wrong Username or password!";
-                    callback.serverInfo(_logInfo);
-                }
-
-            }
-            catch (Exception)
-            {
-                _logInfo = "Server could not respond, Please try again later!";
-                callback.serverInfo(_logInfo);
-            }
-            return 1;
-        }
-
-        public bool logOut(string account)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public void registration(string name, string residence, string password)
         {
             string _logInfo;
@@ -108,9 +110,9 @@ namespace GDS_HUB
             try
             {
                 if (H_A_proxy.checkIfExistedUserName(userName))
-                    check = 1; // username exist
+                    check = 4; // username exist
                 else
-                    check = 2; // username doesnt exist
+                    check = 1; // username doesnt exist
 
             }
             catch (NullReferenceException)
@@ -127,9 +129,9 @@ namespace GDS_HUB
             try
             {
                 if (H_A_proxy.checkPassword(userName, passWord))
-                    check = 1; // username exist
+                    check = 4; // password exist
                 else
-                    check = 2; // username doesnt exist
+                    check = 2; // password doesnt exist
 
             }
             catch (NullReferenceException)

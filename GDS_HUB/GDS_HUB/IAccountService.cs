@@ -70,6 +70,12 @@ namespace GDS_HUB
             set { _balance = value; }
         }
 
+        public ICallbackToFatClient Callback
+        {
+            get { return callBack; }
+            set {callBack = value; }
+        }
+
     }
 
    // callback to fat client from the Account service

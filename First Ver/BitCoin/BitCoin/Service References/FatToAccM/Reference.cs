@@ -15,29 +15,17 @@ namespace BitCoin.FatToAccM {
     [System.ServiceModel.ServiceContractAttribute(Namespace="GDS_HUB", ConfigurationName="FatToAccM.IFatC_to_AccM", CallbackContract=typeof(BitCoin.FatToAccM.IFatC_to_AccMCallback))]
     public interface IFatC_to_AccM {
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="GDS_HUB/IFatC_to_AccM/logIn")]
-        void logIn(string accountName, string password);
+        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/logIn", ReplyAction="GDS_HUB/IFatC_to_AccM/logInResponse")]
+        int logIn(string accountName, string password);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="GDS_HUB/IFatC_to_AccM/logIn")]
-        System.Threading.Tasks.Task logInAsync(string accountName, string password);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/checkIfExistedUserNameHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/checkIfExistedUserNameHUBResponse")]
-        bool checkIfExistedUserNameHUB(string userName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/checkIfExistedUserNameHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/checkIfExistedUserNameHUBResponse")]
-        System.Threading.Tasks.Task<bool> checkIfExistedUserNameHUBAsync(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/logIn", ReplyAction="GDS_HUB/IFatC_to_AccM/logInResponse")]
+        System.Threading.Tasks.Task<int> logInAsync(string accountName, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/addNewUserHUBResponse")]
         bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate);
         
         [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/addNewUserHUBResponse")]
         System.Threading.Tasks.Task<bool> addNewUserHUBAsync(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/checkPasswordHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/checkPasswordHUBResponse")]
-        bool checkPasswordHUB(string userName, string passWord);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/checkPasswordHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/checkPasswordHUBResponse")]
-        System.Threading.Tasks.Task<bool> checkPasswordHUBAsync(string userName, string passWord);
         
         [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/sendTransaction", ReplyAction="GDS_HUB/IFatC_to_AccM/sendTransactionResponse")]
         bool sendTransaction(string userAccount, string account, int amount);
@@ -84,20 +72,12 @@ namespace BitCoin.FatToAccM {
                 base(callbackInstance, binding, remoteAddress) {
         }
         
-        public void logIn(string accountName, string password) {
-            base.Channel.logIn(accountName, password);
+        public int logIn(string accountName, string password) {
+            return base.Channel.logIn(accountName, password);
         }
         
-        public System.Threading.Tasks.Task logInAsync(string accountName, string password) {
+        public System.Threading.Tasks.Task<int> logInAsync(string accountName, string password) {
             return base.Channel.logInAsync(accountName, password);
-        }
-        
-        public bool checkIfExistedUserNameHUB(string userName) {
-            return base.Channel.checkIfExistedUserNameHUB(userName);
-        }
-        
-        public System.Threading.Tasks.Task<bool> checkIfExistedUserNameHUBAsync(string userName) {
-            return base.Channel.checkIfExistedUserNameHUBAsync(userName);
         }
         
         public bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
@@ -106,14 +86,6 @@ namespace BitCoin.FatToAccM {
         
         public System.Threading.Tasks.Task<bool> addNewUserHUBAsync(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
             return base.Channel.addNewUserHUBAsync(userId, userName, passWord, firstName, lastName, email, joinDate);
-        }
-        
-        public bool checkPasswordHUB(string userName, string passWord) {
-            return base.Channel.checkPasswordHUB(userName, passWord);
-        }
-        
-        public System.Threading.Tasks.Task<bool> checkPasswordHUBAsync(string userName, string passWord) {
-            return base.Channel.checkPasswordHUBAsync(userName, passWord);
         }
         
         public bool sendTransaction(string userAccount, string account, int amount) {
