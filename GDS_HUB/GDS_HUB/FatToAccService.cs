@@ -8,7 +8,7 @@ using System.Text;
 namespace GDS_HUB
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-    public class FatToAccService : IFatC_to_AccM 
+    public class FatToAccService : IFatC_to_AccM
     {
         public ServiceFromAccM.HubClient H_A_proxy = new ServiceFromAccM.HubClient();
 
@@ -16,15 +16,15 @@ namespace GDS_HUB
         private List<Client> _listOnlineClient = new List<Client>();
         DataProvider db = new DataProvider();
 
-       
+
 
         // this method is for registration
-        public bool addNewUserHUB(long userId, string userName, string passWord,string firstName, string lastName, string email, string joinDate)
+        public bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate)
         {
             bool check = false;
             try
             {
-                check = H_A_proxy.addNewUser(userId,userName,passWord,firstName,lastName,email,joinDate);
+                check = H_A_proxy.addNewUser(userId, userName, passWord, firstName, lastName, email, joinDate);
 
             }
             catch (NullReferenceException)
@@ -34,39 +34,10 @@ namespace GDS_HUB
             return check;
         }
 
-        // checking if that username is available
-        public bool checkIfExistedUserNameHUB(string userName)
-        {
-            bool check = false;
-            try
-            {
-                check = H_A_proxy.checkIfExistedUserName(userName);
-
-            }
-            catch (NullReferenceException)
-            {
-                check = false;
-            }
-            return check;
-        }
-
-        // checking for the password
-        public bool checkPasswordHUB(string userName, string passWord)
-        {
-            bool check = false;
-            try
-            {
-              check = H_A_proxy.checkPassword(userName, passWord);
-
-            }catch(NullReferenceException)
-            {
-                check = false;
-            }
-            return check;
-        }
 
 
-        public void logIn(string accountName, string password)
+
+        public int logIn(string accountName, string password)
         {
             string _logInfo;
             ICallbackToFatClient callback = OperationContext.Current.GetCallbackChannel<ICallbackToFatClient>();
@@ -85,11 +56,12 @@ namespace GDS_HUB
                 }
 
             }
-            catch (Exception )
+            catch (Exception)
             {
                 _logInfo = "Server could not respond, Please try again later!";
                 callback.serverInfo(_logInfo);
-            } 
+            }
+            return 1;
         }
 
         public bool logOut(string account)
@@ -114,7 +86,7 @@ namespace GDS_HUB
                 }
 
             }
-            catch(Exception)
+            catch (Exception)
             {
                 _logInfo = "server could not respond";
                 callback.serverInfo(_logInfo);
@@ -125,7 +97,47 @@ namespace GDS_HUB
         {
             throw new NotImplementedException();
         }
+
+
         // ###### here goes all methods which are not in the contract ##############
+
+        // checking if that username is available
+        public int checkIfExistedUserNameHUB(string userName)
+        {
+            int check;
+            try
+            {
+                if (H_A_proxy.checkIfExistedUserName(userName))
+                    check = 1; // username exist
+                else
+                    check = 2; // username doesnt exist
+
+            }
+            catch (NullReferenceException)
+            {
+                check = 3; // server connection error
+            }
+            return check;
+        }
+
+        // checking for the password
+        public int checkPasswordHUB(string userName, string passWord)
+        {
+            int check;
+            try
+            {
+                if (H_A_proxy.checkPassword(userName, passWord))
+                    check = 1; // username exist
+                else
+                    check = 2; // username doesnt exist
+
+            }
+            catch (NullReferenceException)
+            {
+                check = 3; // server connection error
+            }
+            return check;
+        }
 
     }
 }

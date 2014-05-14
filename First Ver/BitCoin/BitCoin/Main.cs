@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ServiceModel;
 
 namespace BitCoin
 {
     public partial class Main : Form
     {
+        public FatToAccM.FatC_to_AccMClient F_A_proxy; // Fat client to Account Management Proxy
+        InstanceContext context;
+
         public Main()
         {
             InitializeComponent();
+
+            Acc_Mgnt_CallbackService callback1 = new Acc_Mgnt_CallbackService();
+            context = new InstanceContext(callback1);
+            F_A_proxy = new FatToAccM.FatC_to_AccMClient(context);
         }
 
         private void LL_Register_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
@@ -74,7 +82,17 @@ namespace BitCoin
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // passing the user name and password
+            int severLogInfo;
+
+            if ((this.tb_Email.Text == "") || (this.tb_password.Text == ""))
+            {
+                this.lblInfo.Text = "Please Fill all the Field first!";
+            }
+            else
+            { 
+               
+            
+            }
 
         }
     }

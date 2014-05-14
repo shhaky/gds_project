@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="GDS_HUB" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="GDS_HUB" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="GDS_HUB/Imports">
+      <xsd:import schemaLocation="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/?xsd=xsd0" namespace="GDS_HUB" />
+      <xsd:import schemaLocation="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFatC_to_AccM_logIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:logIn" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_checkIfExistedUserNameHUB_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkIfExistedUserNameHUB" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_checkIfExistedUserNameHUB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkIfExistedUserNameHUBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_addNewUserHUB_InputMessage">
+    <wsdl:part name="parameters" element="tns:addNewUserHUB" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_addNewUserHUB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addNewUserHUBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_checkPasswordHUB_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkPasswordHUB" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_checkPasswordHUB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkPasswordHUBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_sendTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_sendTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_confirmation_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:confirmation" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_serverInfo_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:serverInfo" />
+  </wsdl:message>
+  <wsdl:portType name="IFatC_to_AccM">
+    <wsdl:operation name="logIn">
+      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/logIn" message="tns:IFatC_to_AccM_logIn_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkIfExistedUserNameHUB">
+      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/checkIfExistedUserNameHUB" message="tns:IFatC_to_AccM_checkIfExistedUserNameHUB_InputMessage" />
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/checkIfExistedUserNameHUBResponse" message="tns:IFatC_to_AccM_checkIfExistedUserNameHUB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addNewUserHUB">
+      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB" message="tns:IFatC_to_AccM_addNewUserHUB_InputMessage" />
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/addNewUserHUBResponse" message="tns:IFatC_to_AccM_addNewUserHUB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkPasswordHUB">
+      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/checkPasswordHUB" message="tns:IFatC_to_AccM_checkPasswordHUB_InputMessage" />
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/checkPasswordHUBResponse" message="tns:IFatC_to_AccM_checkPasswordHUB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendTransaction">
+      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/sendTransaction" message="tns:IFatC_to_AccM_sendTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/sendTransactionResponse" message="tns:IFatC_to_AccM_sendTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmation">
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/confirmation" message="tns:IFatC_to_AccM_confirmation_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="serverInfo">
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/serverInfo" message="tns:IFatC_to_AccM_serverInfo_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

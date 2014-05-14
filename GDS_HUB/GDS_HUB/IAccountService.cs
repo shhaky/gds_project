@@ -10,19 +10,12 @@ namespace GDS_HUB
     [ServiceContract(Namespace = "GDS_HUB", CallbackContract = typeof(ICallbackToFatClient))]
     public interface IFatC_to_AccM
     {
-        [OperationContract(IsOneWay = true)]
-        void logIn(string accountName, string password);
-
         [OperationContract]
-        bool checkIfExistedUserNameHUB(string userName);
+        int logIn(string accountName, string password);
 
         [OperationContract]
         bool addNewUserHUB(long userId, string userName, string passWord,string firstName,
                            string lastName, string email, string joinDate);
-
-         [OperationContract]
-        bool checkPasswordHUB(string userName, string passWord);
-
       
         [OperationContract]
         bool sendTransaction(string userAccount, string account, int amount);

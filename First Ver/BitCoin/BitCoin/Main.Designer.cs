@@ -60,13 +60,6 @@
             this.Btn_Buy = new System.Windows.Forms.Button();
             this.Btn_Buy_cal = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.LL_Register = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.tb_Email = new System.Windows.Forms.TextBox();
-            this.tb_password = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -87,15 +80,23 @@
             this.label16 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.LL_Register = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.tb_Email = new System.Windows.Forms.TextBox();
+            this.tb_password = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblInfo = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel_Sell.SuspendLayout();
             this.panel_Buy.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -391,84 +392,6 @@
             this.tabPage2.Text = "DOGE/BTC";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(576, 437);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "PPC/BTC";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(576, 437);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "XPM/BTC";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // LL_Register
-            // 
-            this.LL_Register.AutoSize = true;
-            this.LL_Register.BackColor = System.Drawing.Color.Transparent;
-            this.LL_Register.Location = new System.Drawing.Point(724, 56);
-            this.LL_Register.Name = "LL_Register";
-            this.LL_Register.Size = new System.Drawing.Size(46, 13);
-            this.LL_Register.TabIndex = 16;
-            this.LL_Register.TabStop = true;
-            this.LL_Register.Text = "Register";
-            this.LL_Register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_Register_LinkClicked_1);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Location = new System.Drawing.Point(724, 30);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(33, 13);
-            this.linkLabel1.TabIndex = 15;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Login";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // tb_Email
-            // 
-            this.tb_Email.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_Email.Location = new System.Drawing.Point(603, 27);
-            this.tb_Email.Name = "tb_Email";
-            this.tb_Email.Size = new System.Drawing.Size(115, 20);
-            this.tb_Email.TabIndex = 13;
-            this.tb_Email.Text = "E-mail";
-            this.tb_Email.TextChanged += new System.EventHandler(this.tb_Email_TextChanged);
-            this.tb_Email.Enter += new System.EventHandler(this.tb_Email_Enter);
-            this.tb_Email.Leave += new System.EventHandler(this.tb_Email_Leave);
-            // 
-            // tb_password
-            // 
-            this.tb_password.ForeColor = System.Drawing.Color.LightGray;
-            this.tb_password.Location = new System.Drawing.Point(604, 51);
-            this.tb_password.Name = "tb_password";
-            this.tb_password.Size = new System.Drawing.Size(114, 20);
-            this.tb_password.TabIndex = 14;
-            this.tb_password.Text = "Password";
-            this.tb_password.Enter += new System.EventHandler(this.tb_password_Enter);
-            this.tb_password.Leave += new System.EventHandler(this.tb_password_Leave);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::BitCoin.Properties.Resources.logo1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -655,6 +578,94 @@
             this.button4.Text = "Calculate";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(576, 437);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "PPC/BTC";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(576, 437);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "XPM/BTC";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // LL_Register
+            // 
+            this.LL_Register.AutoSize = true;
+            this.LL_Register.BackColor = System.Drawing.Color.Transparent;
+            this.LL_Register.Location = new System.Drawing.Point(724, 56);
+            this.LL_Register.Name = "LL_Register";
+            this.LL_Register.Size = new System.Drawing.Size(46, 13);
+            this.LL_Register.TabIndex = 16;
+            this.LL_Register.TabStop = true;
+            this.LL_Register.Text = "Register";
+            this.LL_Register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LL_Register_LinkClicked_1);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Location = new System.Drawing.Point(724, 30);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(33, 13);
+            this.linkLabel1.TabIndex = 15;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Login";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // tb_Email
+            // 
+            this.tb_Email.ForeColor = System.Drawing.Color.LightGray;
+            this.tb_Email.Location = new System.Drawing.Point(603, 27);
+            this.tb_Email.Name = "tb_Email";
+            this.tb_Email.Size = new System.Drawing.Size(115, 20);
+            this.tb_Email.TabIndex = 13;
+            this.tb_Email.Text = "E-mail";
+            this.tb_Email.TextChanged += new System.EventHandler(this.tb_Email_TextChanged);
+            this.tb_Email.Enter += new System.EventHandler(this.tb_Email_Enter);
+            this.tb_Email.Leave += new System.EventHandler(this.tb_Email_Leave);
+            // 
+            // tb_password
+            // 
+            this.tb_password.ForeColor = System.Drawing.Color.LightGray;
+            this.tb_password.Location = new System.Drawing.Point(604, 51);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(114, 20);
+            this.tb_password.TabIndex = 14;
+            this.tb_password.Text = "Password";
+            this.tb_password.Enter += new System.EventHandler(this.tb_password_Enter);
+            this.tb_password.Leave += new System.EventHandler(this.tb_password_Leave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::BitCoin.Properties.Resources.logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(604, 8);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(39, 13);
+            this.lblInfo.TabIndex = 18;
+            this.lblInfo.Text = "logInfo";
+            this.lblInfo.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -663,6 +674,7 @@
             this.BackgroundImage = global::BitCoin.Properties.Resources.main1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(794, 557);
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LL_Register);
             this.Controls.Add(this.linkLabel1);
@@ -685,11 +697,11 @@
             this.panel_Buy.ResumeLayout(false);
             this.panel_Buy.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -756,6 +768,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label lblInfo;
     }
 }
 

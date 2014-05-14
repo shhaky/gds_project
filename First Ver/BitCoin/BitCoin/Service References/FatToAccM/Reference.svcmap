@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6f5757e6-70c7-49b9-88eb-67c1b18a1ab9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="1f4581d4-d1b6-43c8-85c2-9a1419d66fdb" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/?wsdl=wsdl0" />
+    <MetadataFile FileName="FatToAccService.wsdl" MetadataType="Wsdl" ID="d83a0ee0-2a6e-4896-b3a0-c1398d3a1f39" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/?wsdl" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="9b1b3990-1b77-4b53-9450-dd7b6b0870c1" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="8d5e4622-c13b-4864-b038-c7e4ab149ff3" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="f68e1da9-73b6-4f82-a7d4-df95ed6a4652" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/GDS_HUB/FatToAccService/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
