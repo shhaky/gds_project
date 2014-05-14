@@ -14,26 +14,27 @@ import javax.ws.rs.core.MediaType;
 
 import nl.fontys.cryptoexchange.core.BuyOrder;
 import nl.fontys.cryptoexchange.core.CurrencyPair;
-import nl.fontys.cryptoexchange.core.Order;
 
 
-/** Example resource class hosted at the URI path "/myresource"
- */
-@Path("/myresource")
+
+@Path("/tre")
 public class MyResource {
     
     /** Method processing HTTP GET requests, producing "text/plain" MIME media
      * type.
      * @return String that will be send back as a response of type "text/plain".
      */
+    //here I had to use a workaround because Order has final attributes and also does not have a non arg Construcor I decided to cast it to JSON with the method toJson
+    //If I would have done it with MediaType.APPLICATION_JSON I needed to create multiple adapter classes
+
     @GET 
-    @Produces(MediaType.APPLICATION_JSON)
-    public Order getIt() {
+    @Produces("text/plain")
+    public String getIt() {
         
     	BuyOrder order  = new BuyOrder(CurrencyPair.DOGE_BTC,54645, BigDecimal.ONE,BigDecimal.TEN,5346454);
     	
     	
-    	return order;
+    	return order.toJson();
     }
     
     @GET 
@@ -52,5 +53,5 @@ public class MyResource {
 			return null;
     	
     }
-    
+//    
 }

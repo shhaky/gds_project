@@ -1,5 +1,6 @@
 package nl.fontys.cryptoexchange.core;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -8,7 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @created 15-Apr-2014 03:49:28 represents a CurrencyPair witch is traded on
  *          the platform
  */
-@XmlRootElement
+@XmlRootElement(name="currencypair")
 public class CurrencyPair {
 
 	// Provide some default BTC major symbols
@@ -46,11 +47,11 @@ public class CurrencyPair {
 		this.baseSymbol = baseSymbol;
 		this.counterSymbol = counterSymbol;
 	}
-
+	@XmlAttribute
 	public Currency getBaseSymbol() {
 		return this.baseSymbol;
 	}
-
+	@XmlAttribute
 	public Currency getCounterSymbol() {
 		return this.counterSymbol;
 	}

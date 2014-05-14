@@ -7,6 +7,7 @@
 		<project>nl.fontys.cryptoexchange.core</project>
 		<project>zLib_Logging</project>
 		<project>zlib_JSON_Wrapper</project>
+		<project>JSON_Example</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -25,12 +26,12 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<name>org.eclipse.wst.validation.validationbuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.wst.validation.validationbuilder</name>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>

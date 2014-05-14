@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption;
@@ -20,7 +21,6 @@ import org.json.JSONObject;
  */
 @XmlRootElement
 public abstract class Order implements Comparable<Order> {
-
 	public Order(CurrencyPair currencyPair, long orderId, BigDecimal volume, BigDecimal price, long userId) {
 
 		this.currencyPair = currencyPair;
@@ -51,43 +51,44 @@ public abstract class Order implements Comparable<Order> {
 
 	private final long userId; //owner
 
+	@XmlAttribute
 	public CurrencyPair getCurrencyPair() {
 		return this.currencyPair;
 	}
-
+	@XmlAttribute
 	public BigDecimal getPrice() {
 		return this.price;
 	}
-
+	@XmlAttribute
 	public long getOrderId() {
 		return this.orderId;
 	}
-
-	public java.util.Date getTimeStamp() {
+	@XmlAttribute
+	public Date getTimeStamp() {
 		return this.timeStamp;
 	}
-
+	@XmlAttribute
 	public abstract OrderType getType();
-
+	@XmlAttribute
 	public BigDecimal getVolume() {
 		return this.volume;
 	}
-
+	@XmlAttribute
 	public long getUserId() {
 		return userId;
 	}
 
-	//	//TODO
-	//	public JSONObject toJson(){
-	//		
-	//		return null;
-	//	}
-	//		  @Override
-	//		  public String toString() {
-	//
-	//		    return "Order [type=" + this.getType() + ", price=" + price + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
-	//		  }
+		//TODO
+		public String toJson(){
+			
+			return new JSONObject(this).toString();
+		}
 
+		  @Override
+		  public String toString() {
+
+		    return "Order [type=" + this.getType() + ", price=" + price + ", volume=" + volume + ", currencyPair=" + currencyPair + ", id=" + orderId + ", timestamp=" + timeStamp + "]";
+		  }
 	@Override
 	public int compareTo(Order order) {
 

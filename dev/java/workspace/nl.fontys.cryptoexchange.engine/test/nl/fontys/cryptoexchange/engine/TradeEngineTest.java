@@ -30,7 +30,7 @@ public class TradeEngineTest {
 	public void testCreateMarket() {
 		engine.createMarket(CurrencyPair.ZET_BTC);
 
-		assertEquals(CurrencyPair.ZET_BTC, engine.getAvailableMarkets().get(0));
+		assertEquals(CurrencyPair.ZET_BTC, engine.getMarkets().get(0));
 	}
 
 	@Test
@@ -49,7 +49,7 @@ public class TradeEngineTest {
 		}
 
 		//if all markets have been removed again
-		assertEquals(true, engine.getAvailableMarkets().isEmpty());
+		assertEquals(true, engine.getMarkets().isEmpty());
 
 	}
 

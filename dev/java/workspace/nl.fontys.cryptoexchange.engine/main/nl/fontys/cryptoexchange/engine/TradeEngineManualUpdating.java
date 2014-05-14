@@ -281,7 +281,7 @@ public class TradeEngineManualUpdating implements TradeEngine {
 	}
 
 	@Override
-	public List<CurrencyPair> getAvailableMarkets() {
+	public List<CurrencyPair> getMarkets() {
 
 		ArrayList<CurrencyPair> list = new ArrayList<CurrencyPair>();
 
