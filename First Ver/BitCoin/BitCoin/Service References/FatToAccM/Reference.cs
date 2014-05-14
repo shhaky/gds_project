@@ -21,6 +21,12 @@ namespace BitCoin.FatToAccM {
         [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/logIn", ReplyAction="GDS_HUB/IFatC_to_AccM/logInResponse")]
         System.Threading.Tasks.Task<int> logInAsync(string accountName, string password);
         
+        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/logOut", ReplyAction="GDS_HUB/IFatC_to_AccM/logOutResponse")]
+        bool logOut();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/logOut", ReplyAction="GDS_HUB/IFatC_to_AccM/logOutResponse")]
+        System.Threading.Tasks.Task<bool> logOutAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/addNewUserHUBResponse")]
         bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate);
         
@@ -78,6 +84,14 @@ namespace BitCoin.FatToAccM {
         
         public System.Threading.Tasks.Task<int> logInAsync(string accountName, string password) {
             return base.Channel.logInAsync(accountName, password);
+        }
+        
+        public bool logOut() {
+            return base.Channel.logOut();
+        }
+        
+        public System.Threading.Tasks.Task<bool> logOutAsync() {
+            return base.Channel.logOutAsync();
         }
         
         public bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate) {

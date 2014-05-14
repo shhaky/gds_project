@@ -12,6 +12,12 @@
   <wsdl:message name="IFatC_to_AccM_logIn_OutputMessage">
     <wsdl:part name="parameters" element="tns:logInResponse" />
   </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_logOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:logOut" />
+  </wsdl:message>
+  <wsdl:message name="IFatC_to_AccM_logOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:logOutResponse" />
+  </wsdl:message>
   <wsdl:message name="IFatC_to_AccM_addNewUserHUB_InputMessage">
     <wsdl:part name="parameters" element="tns:addNewUserHUB" />
   </wsdl:message>
@@ -34,6 +40,10 @@
     <wsdl:operation name="logIn">
       <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/logIn" message="tns:IFatC_to_AccM_logIn_InputMessage" />
       <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/logInResponse" message="tns:IFatC_to_AccM_logIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="logOut">
+      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/logOut" message="tns:IFatC_to_AccM_logOut_InputMessage" />
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/logOutResponse" message="tns:IFatC_to_AccM_logOut_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="addNewUserHUB">
       <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB" message="tns:IFatC_to_AccM_addNewUserHUB_InputMessage" />

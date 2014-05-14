@@ -84,14 +84,20 @@ namespace BitCoin
         {
             int severLogInfo;
 
-            if ((this.tb_Email.Text == "") || (this.tb_Email.Text == ""))
+            if ((this.tb_Email.Text == "") || (this.tb_password.Text == ""))
             {
                 this.lblInfo.Visible = true;
                 this.lblInfo.Text = "Please Fill all the Field first!";
             }
             else
             {
-                severLogInfo = F_A_proxy.logIn(this.tb_Email.Text, this.tb_Email.Text);
+                try
+                {
+                    severLogInfo = F_A_proxy.logIn(this.tb_Email.Text, this.tb_password.Text);
+                }catch(Exception)
+                {
+                   severLogInfo = 3;
+                }
                 if (severLogInfo == 1)
                 {
                     this.lblInfo.Visible = true;

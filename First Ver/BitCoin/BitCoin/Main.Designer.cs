@@ -629,7 +629,6 @@
             this.tb_Email.Name = "tb_Email";
             this.tb_Email.Size = new System.Drawing.Size(115, 20);
             this.tb_Email.TabIndex = 13;
-            this.tb_Email.Text = "E-mail";
             this.tb_Email.TextChanged += new System.EventHandler(this.tb_Email_TextChanged);
             this.tb_Email.Enter += new System.EventHandler(this.tb_Email_Enter);
             this.tb_Email.Leave += new System.EventHandler(this.tb_Email_Leave);
@@ -641,7 +640,6 @@
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(114, 20);
             this.tb_password.TabIndex = 14;
-            this.tb_password.Text = "Password";
             this.tb_password.Enter += new System.EventHandler(this.tb_password_Enter);
             this.tb_password.Leave += new System.EventHandler(this.tb_password_Leave);
             // 

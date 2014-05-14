@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ServiceModel;
 
 namespace BitCoin
 {
     public partial class Profile : Form
     {
+        public FatToAccM.FatC_to_AccMClient F_A_proxy; // Fat client to Account Management Proxy
+        InstanceContext context;
+
         public Profile()
         {
             InitializeComponent();
+
+            Acc_Mgnt_CallbackService callback1 = new Acc_Mgnt_CallbackService();
+            context = new InstanceContext(callback1);
+            F_A_proxy = new FatToAccM.FatC_to_AccMClient(context);
         }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -25,7 +33,19 @@ namespace BitCoin
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            try
+            {
+                if (F_A_proxy.logOut())
+                {
+                    Main mainForm = new Main();
+                    this.Dispose();
+                    mainForm.Show();
+                }
+            }catch(Exception)
+            {
+                this.lbllogOutInfo.Visible = true;
+                this.lbllogOutInfo.Text = "Try again! Server Problem!";
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

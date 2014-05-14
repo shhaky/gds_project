@@ -14,7 +14,10 @@ namespace GDS_HUB
         int logIn(string accountName, string password);
 
         [OperationContract]
-        bool addNewUserHUB(long userId, string userName, string passWord,string firstName,
+        bool logOut();
+
+        [OperationContract]
+        bool register(long userId, string userName, string passWord,string firstName,
                            string lastName, string email, string joinDate);
       
         [OperationContract]

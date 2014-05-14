@@ -40,19 +40,31 @@ namespace GDS_HUB
             }
             catch (Exception)
             {
-                return  3; // sever connection problem
+                return 3; // sever connection problem
             }
             return _logInfo;
         }
 
-        public bool logOut(string account)
+        public bool logOut()
         {
-            throw new NotImplementedException();
+            bool loggedOut = false;
+            ICallbackToFatClient callback = OperationContext.Current.GetCallbackChannel
+                                            <ICallbackToFatClient>();
+            foreach (Client c in _listOnlineClient)
+            {
+                if (c.Callback == callback)
+                {
+                    _listOnlineClient.Remove(c);
+                    loggedOut = true;
+                    break;
+                }
+            }
+            return loggedOut;
         }
 
 
         // this method is for registration
-        public bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate)
+        public bool register(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate)
         {
             bool check = false;
             try
@@ -67,41 +79,15 @@ namespace GDS_HUB
             return check;
         }
 
-
-
-
-        
-        public void registration(string name, string residence, string password)
-        {
-            string _logInfo;
-            ICallbackToFatClient callback = OperationContext.Current.GetCallbackChannel<ICallbackToFatClient>();
-            try
-            {
-                if (db.registration(name, residence, password))
-                {
-                    callback.confirmation();
-                }
-                else
-                {
-                    _logInfo = "Try again with different data";
-                    callback.serverInfo(_logInfo);
-                }
-
-            }
-            catch (Exception)
-            {
-                _logInfo = "server could not respond";
-                callback.serverInfo(_logInfo);
-            }
-        }
-
+        // this method is for transfert money to one client to another
         public bool sendTransaction(string userAccount, string account, int amount)
         {
             throw new NotImplementedException();
         }
 
 
-        // ###### here goes all methods which are not in the contract ##############
+        // ########################################################################
+        // ###### HERE GOES ALL METHODS WHICH ARE NOT IN THE CONTRACT ##############
 
         // checking if that username is available
         public int checkIfExistedUserNameHUB(string userName)
@@ -115,7 +101,7 @@ namespace GDS_HUB
                     check = 1; // username doesnt exist
 
             }
-            catch (NullReferenceException)
+            catch (Exception)
             {
                 check = 3; // server connection error
             }
@@ -134,7 +120,7 @@ namespace GDS_HUB
                     check = 2; // password doesnt exist
 
             }
-            catch (NullReferenceException)
+            catch (Exception)
             {
                 check = 3; // server connection error
             }
