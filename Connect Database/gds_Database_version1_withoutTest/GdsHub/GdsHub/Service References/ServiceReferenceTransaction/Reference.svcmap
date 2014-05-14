@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a117bdc-fafe-4ec6-b538-bcd4e95e934b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CTransaction/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="049d2957-9816-4567-80ee-a8c4d8ded8f6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CTransaction/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="172710d1-0cb2-4ebe-ab9b-ba79ff6e12af" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CTransaction/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="34e58973-dfd0-4457-a349-505f16d67ce2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CTransaction/?xsd=xsd1" />
+    <MetadataFile FileName="item11.xsd" MetadataType="Schema" ID="60b34b2b-0cb8-4f94-af0b-fbac96417107" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CTransaction/?xsd=xsd2" />
+    <MetadataFile FileName="CTransaction.wsdl" MetadataType="Wsdl" ID="36632fe9-b3dd-4cd1-aadb-637bbb2125b9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CTransaction/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
