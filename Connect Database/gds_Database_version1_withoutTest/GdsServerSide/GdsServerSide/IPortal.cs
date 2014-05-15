@@ -24,6 +24,9 @@ namespace GdsServerSide
         [OperationContract]
         bool checkPassword(string userName, string passWord);
 
+        [OperationContract]
+        bool checkIfHasBalance(string userName);
+
         //================personal page===================
         [OperationContract]
         long getUserId(string userName);

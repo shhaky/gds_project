@@ -100,5 +100,9 @@ namespace GdsServerSide
                 return false;
             }
         }
+        public bool checkIfHasBalance(string userName)
+        {
+            return false;
+        }
     }
 }
