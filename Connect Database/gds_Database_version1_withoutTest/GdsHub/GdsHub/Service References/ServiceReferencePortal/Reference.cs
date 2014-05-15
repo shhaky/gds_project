@@ -33,6 +33,12 @@ namespace GdsHub.ServiceReferencePortal {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/checkPassword", ReplyAction="http://tempuri.org/IPortal/checkPasswordResponse")]
         System.Threading.Tasks.Task<bool> checkPasswordAsync(string userName, string passWord);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getBalance", ReplyAction="http://tempuri.org/IPortal/getBalanceResponse")]
+        decimal getBalance(long userId, string coinType);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getBalance", ReplyAction="http://tempuri.org/IPortal/getBalanceResponse")]
+        System.Threading.Tasks.Task<decimal> getBalanceAsync(long userId, string coinType);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getUserId", ReplyAction="http://tempuri.org/IPortal/getUserIdResponse")]
         long getUserId(string userName);
         
@@ -125,6 +131,14 @@ namespace GdsHub.ServiceReferencePortal {
         
         public System.Threading.Tasks.Task<bool> checkPasswordAsync(string userName, string passWord) {
             return base.Channel.checkPasswordAsync(userName, passWord);
+        }
+        
+        public decimal getBalance(long userId, string coinType) {
+            return base.Channel.getBalance(userId, coinType);
+        }
+        
+        public System.Threading.Tasks.Task<decimal> getBalanceAsync(long userId, string coinType) {
+            return base.Channel.getBalanceAsync(userId, coinType);
         }
         
         public long getUserId(string userName) {

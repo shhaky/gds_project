@@ -25,7 +25,7 @@ namespace GdsServerSide
         bool checkPassword(string userName, string passWord);
 
         [OperationContract]
-        bool checkIfHasBalance(string userName);
+        decimal getBalance(long userId, string coinType);
 
         //================personal page===================
         [OperationContract]

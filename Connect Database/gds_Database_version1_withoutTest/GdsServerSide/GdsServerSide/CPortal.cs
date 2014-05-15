@@ -100,9 +100,9 @@ namespace GdsServerSide
                 return false;
             }
         }
-        public bool checkIfHasBalance(string userName)
+        public decimal getBalance(long userId, string coinType)
         {
-            return false;
+            return dataHelper.getBalance(userId, coinType);
         }
     }
 }

@@ -86,6 +86,12 @@ namespace GdsClientSide.ServiceReferenceHUB {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHub/getTransInfo", ReplyAction="http://tempuri.org/IHub/getTransInfoResponse")]
         System.Threading.Tasks.Task<string[]> getTransInfoAsync(long userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHub/getBalance", ReplyAction="http://tempuri.org/IHub/getBalanceResponse")]
+        decimal getBalance(long userId, string coinType);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHub/getBalance", ReplyAction="http://tempuri.org/IHub/getBalanceResponse")]
+        System.Threading.Tasks.Task<decimal> getBalanceAsync(long userId, string coinType);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -209,6 +215,14 @@ namespace GdsClientSide.ServiceReferenceHUB {
         
         public System.Threading.Tasks.Task<string[]> getTransInfoAsync(long userId) {
             return base.Channel.getTransInfoAsync(userId);
+        }
+        
+        public decimal getBalance(long userId, string coinType) {
+            return base.Channel.getBalance(userId, coinType);
+        }
+        
+        public System.Threading.Tasks.Task<decimal> getBalanceAsync(long userId, string coinType) {
+            return base.Channel.getBalanceAsync(userId, coinType);
         }
     }
 }

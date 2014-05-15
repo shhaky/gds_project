@@ -374,5 +374,34 @@ namespace GdsServerSide
 
             return infoList;
         }
+
+        //===============================balance===========================================
+        public decimal getBalance(long userId, string coinType)
+        {
+            string sql = "SELECT Balance FROM coins WHERE UserId ='" + userId + "AND CoinType =" + coinType + "';";
+            MySqlCommand command = new MySqlCommand(sql, connection);
+            try
+            {
+                connection.Open();
+                MySqlDataReader reader = command.ExecuteReader();
+                decimal tempBalance = 0;
+                decimal temp;
+                while (reader.Read())
+                {
+                    temp= Convert.ToDecimal(reader["Balance"]);
+                    tempBalance = temp + tempBalance;
+                }
+                return tempBalance;
+            }
+            catch
+            {
+                return 0;
+            }
+            finally
+            {
+                connection.Close();
+            }
+           // return 0;
+        }
     }
 }

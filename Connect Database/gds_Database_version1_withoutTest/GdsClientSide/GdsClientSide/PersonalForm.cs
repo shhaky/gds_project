@@ -31,7 +31,7 @@ namespace GdsClientSide
             this.username = userName;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnChangePass_Click(object sender, EventArgs e)
         {
             ChangePasswordForm newChangePass = new ChangePasswordForm(username);
             this.Hide();
@@ -52,6 +52,8 @@ namespace GdsClientSide
             {
                 this.listBox.Items.Add(a);
             }
+            this.labBitBalance.Text = Convert.ToString(proxy.getBalance(userId, "Bitcoin"));
+            this.labLiteBalance.Text = Convert.ToString(proxy.getBalance(userId, "Litecoin"));
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

@@ -49,6 +49,9 @@ namespace GdsHub
 
         [OperationContract]
         List<string> getTransInfo(long userId);
+
+        [OperationContract]
+        decimal getBalance(long userId, string coinType);
     }
 
     

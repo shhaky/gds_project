@@ -54,7 +54,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnChangePass = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.labBitBalance = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.labLiteBalance = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -302,22 +306,62 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "user name: ";
             // 
-            // button1
+            // btnChangePass
             // 
-            this.button1.Location = new System.Drawing.Point(588, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 23);
-            this.button1.TabIndex = 67;
-            this.button1.Text = "change password";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnChangePass.Location = new System.Drawing.Point(588, 370);
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.Size = new System.Drawing.Size(138, 23);
+            this.btnChangePass.TabIndex = 67;
+            this.btnChangePass.Text = "change password";
+            this.btnChangePass.UseVisualStyleBackColor = true;
+            this.btnChangePass.Click += new System.EventHandler(this.btnChangePass_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(26, 96);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 13);
+            this.label8.TabIndex = 68;
+            this.label8.Text = "Bitcoin Balance:";
+            // 
+            // labBitBalance
+            // 
+            this.labBitBalance.AutoSize = true;
+            this.labBitBalance.Location = new System.Drawing.Point(116, 96);
+            this.labBitBalance.Name = "labBitBalance";
+            this.labBitBalance.Size = new System.Drawing.Size(10, 13);
+            this.labBitBalance.TabIndex = 69;
+            this.labBitBalance.Text = "-";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(275, 96);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 13);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "LiteCoin Balance:";
+            // 
+            // labLiteBalance
+            // 
+            this.labLiteBalance.AutoSize = true;
+            this.labLiteBalance.Location = new System.Drawing.Point(371, 96);
+            this.labLiteBalance.Name = "labLiteBalance";
+            this.labLiteBalance.Size = new System.Drawing.Size(10, 13);
+            this.labLiteBalance.TabIndex = 71;
+            this.labLiteBalance.Text = "-";
             // 
             // PersonalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 435);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labLiteBalance);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.labBitBalance);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnChangePass);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRefresh);
@@ -380,6 +424,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnChangePass;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labBitBalance;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labLiteBalance;
     }
 }

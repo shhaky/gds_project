@@ -121,5 +121,10 @@ namespace GdsHub
             }
             return temp;
         }
+
+        public decimal getBalance(long userId, string coinType)
+        {
+            return proxyOfPortal.getBalance(userId, coinType);
+        }
     }
 }
