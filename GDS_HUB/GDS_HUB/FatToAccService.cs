@@ -66,15 +66,21 @@ namespace GDS_HUB
         // this method is for registration
         public bool register(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate)
         {
+            int isTaken;
             bool check = false;
-            try
-            {
-                check = H_A_proxy.addNewUser(userId, userName, passWord, firstName, lastName, email, joinDate);
 
-            }
-            catch (NullReferenceException)
+            isTaken = checkIfExistedUserNameHUB(userName);
+            if (isTaken == 4)
             {
-                check = false;
+                try
+                {
+                    check = H_A_proxy.addNewUser(userId, userName, passWord, firstName, lastName, email, joinDate);
+
+                }
+                catch (Exception)
+                {
+                    check = false;
+                }
             }
             return check;
         }
@@ -96,9 +102,13 @@ namespace GDS_HUB
             try
             {
                 if (H_A_proxy.checkIfExistedUserName(userName))
+                {
                     check = 4; // username exist
+                }
                 else
+                {
                     check = 1; // username doesnt exist
+                }
 
             }
             catch (Exception)
@@ -114,7 +124,7 @@ namespace GDS_HUB
             int check;
             try
             {
-                if (H_A_proxy.checkPassword(userName, passWord))
+                if (!H_A_proxy.checkPassword(userName, passWord))
                     check = 4; // password exist
                 else
                     check = 2; // password doesnt exist

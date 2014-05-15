@@ -27,11 +27,11 @@ namespace BitCoin.FatToAccM {
         [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/logOut", ReplyAction="GDS_HUB/IFatC_to_AccM/logOutResponse")]
         System.Threading.Tasks.Task<bool> logOutAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/addNewUserHUBResponse")]
-        bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate);
+        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/register", ReplyAction="GDS_HUB/IFatC_to_AccM/registerResponse")]
+        bool register(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate);
         
-        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB", ReplyAction="GDS_HUB/IFatC_to_AccM/addNewUserHUBResponse")]
-        System.Threading.Tasks.Task<bool> addNewUserHUBAsync(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate);
+        [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/register", ReplyAction="GDS_HUB/IFatC_to_AccM/registerResponse")]
+        System.Threading.Tasks.Task<bool> registerAsync(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate);
         
         [System.ServiceModel.OperationContractAttribute(Action="GDS_HUB/IFatC_to_AccM/sendTransaction", ReplyAction="GDS_HUB/IFatC_to_AccM/sendTransactionResponse")]
         bool sendTransaction(string userAccount, string account, int amount);
@@ -94,12 +94,12 @@ namespace BitCoin.FatToAccM {
             return base.Channel.logOutAsync();
         }
         
-        public bool addNewUserHUB(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
-            return base.Channel.addNewUserHUB(userId, userName, passWord, firstName, lastName, email, joinDate);
+        public bool register(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
+            return base.Channel.register(userId, userName, passWord, firstName, lastName, email, joinDate);
         }
         
-        public System.Threading.Tasks.Task<bool> addNewUserHUBAsync(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
-            return base.Channel.addNewUserHUBAsync(userId, userName, passWord, firstName, lastName, email, joinDate);
+        public System.Threading.Tasks.Task<bool> registerAsync(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
+            return base.Channel.registerAsync(userId, userName, passWord, firstName, lastName, email, joinDate);
         }
         
         public bool sendTransaction(string userAccount, string account, int amount) {

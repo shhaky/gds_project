@@ -18,11 +18,11 @@
   <wsdl:message name="IFatC_to_AccM_logOut_OutputMessage">
     <wsdl:part name="parameters" element="tns:logOutResponse" />
   </wsdl:message>
-  <wsdl:message name="IFatC_to_AccM_addNewUserHUB_InputMessage">
-    <wsdl:part name="parameters" element="tns:addNewUserHUB" />
+  <wsdl:message name="IFatC_to_AccM_register_InputMessage">
+    <wsdl:part name="parameters" element="tns:register" />
   </wsdl:message>
-  <wsdl:message name="IFatC_to_AccM_addNewUserHUB_OutputMessage">
-    <wsdl:part name="parameters" element="tns:addNewUserHUBResponse" />
+  <wsdl:message name="IFatC_to_AccM_register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerResponse" />
   </wsdl:message>
   <wsdl:message name="IFatC_to_AccM_sendTransaction_InputMessage">
     <wsdl:part name="parameters" element="tns:sendTransaction" />
@@ -45,9 +45,9 @@
       <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/logOut" message="tns:IFatC_to_AccM_logOut_InputMessage" />
       <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/logOutResponse" message="tns:IFatC_to_AccM_logOut_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="addNewUserHUB">
-      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/addNewUserHUB" message="tns:IFatC_to_AccM_addNewUserHUB_InputMessage" />
-      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/addNewUserHUBResponse" message="tns:IFatC_to_AccM_addNewUserHUB_OutputMessage" />
+    <wsdl:operation name="register">
+      <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/register" message="tns:IFatC_to_AccM_register_InputMessage" />
+      <wsdl:output wsaw:Action="GDS_HUB/IFatC_to_AccM/registerResponse" message="tns:IFatC_to_AccM_register_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="sendTransaction">
       <wsdl:input wsaw:Action="GDS_HUB/IFatC_to_AccM/sendTransaction" message="tns:IFatC_to_AccM_sendTransaction_InputMessage" />

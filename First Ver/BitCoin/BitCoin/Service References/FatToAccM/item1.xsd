@@ -27,7 +27,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="addNewUserHUB">
+  <xs:element name="register">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="userId" type="xs:long" />
@@ -40,10 +40,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="addNewUserHUBResponse">
+  <xs:element name="registerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="addNewUserHUBResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="registerResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
