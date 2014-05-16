@@ -13,7 +13,7 @@ import org.junit.runners.Suite.SuiteClasses;
  */
 
 @RunWith(Suite.class)
-@SuiteClasses({ OrderTest.class, TradeTest.class, IdGeneratorTest.class, })
+@SuiteClasses({ OrderTest.class, CurrencyPairTest.class, TradeTest.class, IdGeneratorTest.class, })
 public class TestCoreAll {
 
 }

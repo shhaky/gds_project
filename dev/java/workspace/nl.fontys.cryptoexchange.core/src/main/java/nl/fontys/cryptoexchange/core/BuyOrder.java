@@ -18,6 +18,19 @@ public final class BuyOrder extends Order {
 		// TODO Auto-generated constructor stub
 	}
 
+
+	/**
+	 * used by XML Mapper
+	 */
+	public BuyOrder() {
+		super();
+	}
+	
+	
+	public BuyOrder(Order order) {
+		super(order);
+	}
+
 	@Override
 	public OrderType getType() {
 		return OrderType.BUY;

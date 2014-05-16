@@ -3,37 +3,46 @@ package nl.fontys.cryptoexchange.core;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import nl.fontys.cryptoexchange.core.exception.InvalidCurrencyPairException;
+
 /**
  * @author Tobias Zobrist
  * @version 1.0
  * @created 15-Apr-2014 03:49:28 represents a CurrencyPair witch is traded on
  *          the platform
  */
-@XmlRootElement(name="currencypair")
+@XmlRootElement
 public class CurrencyPair {
 
 	// Provide some default BTC major symbols
-	public static final CurrencyPair LTC_BTC = new CurrencyPair(Currency.LTC, Currency.BTC);
+	public static final CurrencyPair LTC_BTC = new CurrencyPair("LTC", "BTC");
 
-	public static final CurrencyPair PPC_BTC = new CurrencyPair(Currency.PPC, Currency.BTC);
+	public static final CurrencyPair PPC_BTC = new CurrencyPair("PPC", "BTC");
 
-	public static final CurrencyPair DOGE_BTC = new CurrencyPair(Currency.DOGE, Currency.BTC);
+	public static final CurrencyPair DOGE_BTC = new CurrencyPair("DOGE", "BTC");
 
-	public static final CurrencyPair ZET_BTC = new CurrencyPair(Currency.ZET, Currency.BTC);
+	public static final CurrencyPair ZET_BTC = new CurrencyPair("ZET", ".BTC");
 
-	public static final CurrencyPair NXT_BTC = new CurrencyPair(Currency.NXT, Currency.BTC);
+	public static final CurrencyPair NXT_BTC = new CurrencyPair("NXT", "BTC");
 
-	public static final CurrencyPair TRC_BTC = new CurrencyPair(Currency.TRC, Currency.BTC);
+	public static final CurrencyPair TRC_BTC = new CurrencyPair("TRC", "BTC");
 
 	/**
 	 * this will create a new Currency pair. I f base symbol not specified BTC
 	 * will be taken
 	 * 
 	 * @param counterSymbol
+	 * @throws InvalidCurrencyPairException 
 	 */
-	public CurrencyPair(Currency counterSymbol) {
-		this.counterSymbol = counterSymbol;
-		this.baseSymbol = Currency.BTC;
+	public CurrencyPair(String pair) throws InvalidCurrencyPairException {
+		
+		try{
+		this.counterSymbol = pair.split("/")[0].toUpperCase();
+		this.baseSymbol = pair.split("/")[1].toUpperCase();
+		}
+		catch(Exception e){
+			throw new InvalidCurrencyPairException(pair);
+		}
 	}
 
 	/**
@@ -42,17 +51,25 @@ public class CurrencyPair {
 	 * 
 	 * @param counterSymbol
 	 */
-	public CurrencyPair(Currency counterSymbol, Currency baseSymbol) {
+	public CurrencyPair(String counterSymbol, String baseSymbol) {
 
-		this.baseSymbol = baseSymbol;
-		this.counterSymbol = counterSymbol;
+		this.baseSymbol = baseSymbol.toUpperCase();
+		this.counterSymbol = counterSymbol.toUpperCase();
 	}
+	
+
+	/**
+	 * used by XML Mapper
+	 */
+	public CurrencyPair() {
+	}
+	
 	@XmlAttribute
-	public Currency getBaseSymbol() {
+	public String getBaseSymbol() {
 		return this.baseSymbol;
 	}
 	@XmlAttribute
-	public Currency getCounterSymbol() {
+	public String getCounterSymbol() {
 		return this.counterSymbol;
 	}
 
@@ -74,19 +91,20 @@ public class CurrencyPair {
 		if (getClass() != obj.getClass())
 			return false;
 		CurrencyPair other = (CurrencyPair) obj;
-		if (baseSymbol != other.baseSymbol)
+		if (!baseSymbol.equals(other.baseSymbol))
 			return false;
-		if (counterSymbol != other.counterSymbol)
+		if (!counterSymbol.equals(other.counterSymbol))
 			return false;
 		return true;
 	}
 
+	@XmlAttribute
 	@Override
 	public String toString() {
 		return counterSymbol + "/" + baseSymbol;
 	}
 
-	private final Currency baseSymbol;
+	private  String baseSymbol;
 
-	private final Currency counterSymbol;
+	private String counterSymbol;
 }
