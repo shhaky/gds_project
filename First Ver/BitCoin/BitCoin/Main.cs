@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.ServiceModel;
 using System.Windows.Forms.DataVisualization.Charting;
 
+
 namespace BitCoin
 {
     public partial class Main : Form
@@ -231,6 +232,21 @@ namespace BitCoin
         {
             setTime();
             Main_Load(sender, e);
+        }
+
+        private void Btn_Buy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Sell_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_SendMessage_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
