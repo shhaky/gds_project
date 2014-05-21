@@ -12,7 +12,8 @@ namespace Hub_test
         [TestMethod]
         public void TestMethod1()
         {
-            int result = obj.checkIfExistedUserNameHUB("username", "password");
+            int result = obj.checkIfExistedUserNameHUB("username");
+
         }
     }
 }
