@@ -30,7 +30,6 @@
   <xs:element name="register">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="userId" type="xs:long" />
         <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="passWord" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />

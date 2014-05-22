@@ -10,7 +10,7 @@ namespace GDS_HUB
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class FatToAccService : IFatC_to_AccM
     {
-        public ServiceFromAccM.HubClient H_A_proxy = new ServiceFromAccM.HubClient();
+        public ServiceFromAccM.PortalClient H_A_proxy = new ServiceFromAccM.PortalClient();
 
         // list of all client who are online for being updated when something changes
         private List<Client> _listOnlineClient = new List<Client>();
@@ -64,7 +64,7 @@ namespace GDS_HUB
 
 
         // this method is for registration
-        public bool register(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate)
+        public bool register( string userName, string passWord, string firstName, string lastName, string email, string joinDate)
         {
             int isTaken;
             bool check = false;
@@ -74,7 +74,7 @@ namespace GDS_HUB
             {
                 try
                 {
-                    check = H_A_proxy.addNewUser(userId, userName, passWord, firstName, lastName, email, joinDate);
+                    check = H_A_proxy.addNewUser(userName, passWord, firstName, lastName, email, joinDate);
 
                 }
                 catch (Exception)

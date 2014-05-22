@@ -32,6 +32,7 @@ namespace BitCoin
         {
             Form reg = new Register();
             reg.Show();
+            
         }
 
         private void tb_Email_TextChanged(object sender, EventArgs e)
