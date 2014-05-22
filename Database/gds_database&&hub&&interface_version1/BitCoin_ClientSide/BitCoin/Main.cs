@@ -21,6 +21,7 @@ namespace BitCoin
 
         Random r = new Random(123457);
         private Chart currentChart;
+        string chartname = null;
         private double[] high, low, open, close;
         List<dbdata> list = new List<dbdata>();
         public Main()
@@ -106,35 +107,35 @@ namespace BitCoin
             // remove all previous series
             currentChart.Series.Clear();
 
-            Series price = new Series("price"); // <<== make sure to name the series "price"
+            Series price = new Series(chartname); 
             currentChart.Series.Add(price);
 
             // Set series chart type
-            currentChart.Series["price"].ChartType = SeriesChartType.Candlestick;
+            currentChart.Series[chartname].ChartType = SeriesChartType.Candlestick;
 
             // Set the style of the open-close marks
-            currentChart.Series["price"]["OpenCloseStyle"] = "Triangle";
+            currentChart.Series[chartname]["OpenCloseStyle"] = "Triangle";
 
             // Show both open and close marks
-            currentChart.Series["price"]["ShowOpenClose"] = "Both";
+            currentChart.Series[chartname]["ShowOpenClose"] = "Both";
 
             // Set point width
-            currentChart.Series["price"]["PointWidth"] = "0.5";
+            currentChart.Series[chartname]["PointWidth"] = "0.5";
 
             // Set colors bars
-            currentChart.Series["price"]["PriceUpColor"] = "Green"; // <<== use text indexer for series
-            currentChart.Series["price"]["PriceDownColor"] = "Red"; // <<== use text indexer for series
+            currentChart.Series[chartname]["PriceUpColor"] = "Green"; // <<== use text indexer for series
+            currentChart.Series[chartname]["PriceDownColor"] = "Red"; // <<== use text indexer for series
 
             for (int i = 0; i < list.Count; i++)
             {
                 // adding date and high
-                currentChart.Series["price"].Points.AddXY(list[i].date, list[i].up);
+                currentChart.Series[chartname].Points.AddXY(list[i].date, list[i].up);
                 // adding low
-                currentChart.Series["price"].Points[i].YValues[1] = list[i].down;
+                currentChart.Series[chartname].Points[i].YValues[1] = list[i].down;
                 //adding open
-                currentChart.Series["price"].Points[i].YValues[2] = list[i].PriceOpen;
+                currentChart.Series[chartname].Points[i].YValues[2] = list[i].PriceOpen;
                 // adding close
-                currentChart.Series["price"].Points[i].YValues[3] = list[i].PriceClose;
+                currentChart.Series[chartname].Points[i].YValues[3] = list[i].PriceClose;
             }
 
 
@@ -145,6 +146,7 @@ namespace BitCoin
         private void Main_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            chartname = "LTC";
             currentChart = chart1;
             chartUpdate(30);
             textBox2.Text = Math.Round(list[29].up, 2).ToString();
@@ -199,17 +201,9 @@ namespace BitCoin
         }
 
 
-   
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-            currentChart = chart1;
-            chartUpdate(5);
-
-        }
-
-
         private void tabPage3_Enter(object sender, EventArgs e)
         {
+            chartname = "PPC";
             currentChart = chart3;
             chartUpdate(5);
             textBox17.Text = Math.Round(list[29].up, 2).ToString();
@@ -218,6 +212,7 @@ namespace BitCoin
 
         private void tabPage2_Enter(object sender, EventArgs e)
         {
+            chartname = "DOGE";
             currentChart = chart2;
             chartUpdate(5);
             textBox11.Text = Math.Round(list[29].up, 2).ToString();
@@ -226,6 +221,7 @@ namespace BitCoin
 
         private void tabPage1_Enter(object sender, EventArgs e)
         {
+            chartname = "LTC";
             currentChart = chart1;
             chartUpdate(5);
             textBox2.Text = Math.Round(list[29].up, 2).ToString();
@@ -234,6 +230,7 @@ namespace BitCoin
 
         private void tabPage4_Enter(object sender, EventArgs e)
         {
+            chartname = "XPM";
             currentChart = chart4;
             chartUpdate(5);
             textBox23.Text = Math.Round(list[29].up, 2).ToString();
@@ -429,6 +426,8 @@ namespace BitCoin
             profileForm.Show();
 
         }
+
+      
 
         //private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         //{
