@@ -3,6 +3,7 @@ package nl.fontys.cryptoexchange.engine;
 import static org.junit.Assert.*;
 import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.OrderTest;
+import nl.fontys.cryptoexchange.core.exception.InvalidCurrencyPairException;
 import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
 
 import org.junit.Before;
@@ -27,14 +28,14 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testCreateMarket() {
+	public void testCreateMarket() throws InvalidCurrencyPairException {
 		engine.createMarket(CurrencyPair.ZET_BTC);
 
 		assertEquals(CurrencyPair.ZET_BTC, engine.getMarkets().get(0));
 	}
 
 	@Test
-	public void testRemoveMarket() {
+	public void testRemoveMarket() throws InvalidCurrencyPairException {
 		engine.createMarket(CurrencyPair.ZET_BTC);
 		engine.createMarket(CurrencyPair.LTC_BTC);
 		engine.createMarket(CurrencyPair.DOGE_BTC);
@@ -65,28 +66,40 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testAddBidOrder() {
+	public void testAddBidOrder() throws InvalidCurrencyPairException, MarketNotAvailableException {
 
 		engine.createMarket(CurrencyPair.LTC_BTC);
 
 		engine.placeOrder(OrderTest.ORDER_BUY_HIGH_USER1);
 
 		try {
-			assertEquals(OrderTest.ORDER_BUY_HIGH_USER1, engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER1.getCurrencyPair()).get(0));
-		} catch (MarketNotAvailableException e) {
+			assertEquals(OrderTest.ORDER_BUY_HIGH_USER1.getPrice(), engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER1.getCurrencyPair()).get(0).getPrice());
+			assertEquals(OrderTest.ORDER_BUY_HIGH_USER1.getVolume(), engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER1.getCurrencyPair()).get(0).getVolume());
+			assertEquals(OrderTest.ORDER_BUY_HIGH_USER1.getType(), engine.getBidDepth(OrderTest.ORDER_BUY_HIGH_USER1.getCurrencyPair()).get(0).getType());
+			} catch (MarketNotAvailableException e) {
 			e.printStackTrace();
 			fail();
 		}
 	}
 
 	@Test
-	public void testAddAskOrder() {
+	public void testAddAskOrder() throws InvalidCurrencyPairException, MarketNotAvailableException {
 
 		engine.createMarket(CurrencyPair.LTC_BTC);
-		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
 
+		engine.placeOrder(OrderTest.ORDER_SELL_HIGH_USER1);
+		//ID will be different because ID is setted by the system
 		try {
-			assertEquals(OrderTest.ORDER_SELL_HIGH_USER1, engine.getAskDepth(OrderTest.ORDER_SELL_HIGH_USER1.getCurrencyPair()).get(0));
+			assertEquals(OrderTest.ORDER_SELL_HIGH_USER1.getPrice(), engine.getAskDepth(OrderTest.ORDER_SELL_HIGH_USER1.getCurrencyPair()).get(0).getPrice());
+			assertEquals(OrderTest.ORDER_SELL_HIGH_USER1.getVolume(), engine.getAskDepth(OrderTest.ORDER_SELL_HIGH_USER1.getCurrencyPair()).get(0).getVolume());
+			assertEquals(OrderTest.ORDER_SELL_HIGH_USER1.getType(), engine.getAskDepth(OrderTest.ORDER_SELL_HIGH_USER1.getCurrencyPair()).get(0).getType());
+			
+		
+		
+		
+		
+		
+		
 		} catch (MarketNotAvailableException e) {
 			e.printStackTrace();
 			fail();
@@ -94,7 +107,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testGetBidDepthAsJSON() throws MarketNotAvailableException {
+	public void testGetBidDepthAsJSON() throws MarketNotAvailableException, InvalidCurrencyPairException {
 
 		final String expected = "[{\"price\":";
 
@@ -111,7 +124,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testGetAskDepthAsJSON() throws MarketNotAvailableException {
+	public void testGetAskDepthAsJSON() throws MarketNotAvailableException, InvalidCurrencyPairException {
 
 		final String expected = "[{\"price\":";
 
@@ -128,7 +141,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testOrderExecutionWithMatchingOrdersAndSameVolume() {
+	public void testOrderExecutionWithMatchingOrdersAndSameVolume() throws InvalidCurrencyPairException, MarketNotAvailableException {
 
 		engine.createMarket(CurrencyPair.LTC_BTC);
 
@@ -149,7 +162,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testOrderExecutionWithMatchingOrdersButDifferentVolume() {
+	public void testOrderExecutionWithMatchingOrdersButDifferentVolume() throws InvalidCurrencyPairException, MarketNotAvailableException {
 
 		engine.createMarket(CurrencyPair.LTC_BTC);
 		//create other market to make it more interesting
@@ -175,7 +188,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testAddTwoNonMatchingOrdersOfTheSameMarket() {
+	public void testAddTwoNonMatchingOrdersOfTheSameMarket() throws InvalidCurrencyPairException, MarketNotAvailableException {
 
 		engine.createMarket(CurrencyPair.LTC_BTC);
 
@@ -198,7 +211,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testAddTwoMatchingOrdersOfDifferentMarkets() {
+	public void testAddTwoMatchingOrdersOfDifferentMarkets() throws InvalidCurrencyPairException, MarketNotAvailableException {
 
 		engine.createMarket(CurrencyPair.LTC_BTC);
 		engine.createMarket(CurrencyPair.DOGE_BTC);
@@ -224,7 +237,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testAddManyOrdersSameVolume() {
+	public void testAddManyOrdersSameVolume() throws InvalidCurrencyPairException, MarketNotAvailableException {
 		int orders = 2000;
 
 		engine.createMarket(CurrencyPair.LTC_BTC);
@@ -254,7 +267,7 @@ public class TradeEngineTest {
 	}
 
 	@Test
-	public void testAddManyOrdersDifferentVolume() {
+	public void testAddManyOrdersDifferentVolume() throws InvalidCurrencyPairException, MarketNotAvailableException {
 		int orders = 2000;
 
 		engine.createMarket(CurrencyPair.LTC_BTC);

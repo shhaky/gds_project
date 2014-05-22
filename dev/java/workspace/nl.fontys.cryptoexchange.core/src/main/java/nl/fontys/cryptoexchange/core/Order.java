@@ -32,9 +32,25 @@ public abstract class Order implements Comparable<Order> {
 
 	}
 
-	private final CurrencyPair currencyPair;
+	/**
+	 * used by XML Mapper
+	 */
+	public Order() {
+	}
+	
+	public Order(Order order) {
 
-	private final long orderId;
+		this.currencyPair = order.getCurrencyPair();
+		this.volume = order.getVolume();
+		this.price = order.getPrice();
+		this.timeStamp = Calendar.getInstance().getTime();
+		this.userId = IdGenerator.getInstance().getOrderId();
+
+	}
+
+	private  CurrencyPair currencyPair;
+
+	private  long orderId;
 
 	private Logger log = Logger.getLogger(Order.class);
 
@@ -43,13 +59,13 @@ public abstract class Order implements Comparable<Order> {
 	/**
 	 * creation date of the instance
 	 */
-	private final Date timeStamp;
+	private Date timeStamp;
 
-	private final BigDecimal volume;
+	private BigDecimal volume;
 
-	private final BigDecimal price;
+	private  BigDecimal price;
 
-	private final long userId; //owner
+	private long userId; //owner
 
 	@XmlAttribute
 	public CurrencyPair getCurrencyPair() {

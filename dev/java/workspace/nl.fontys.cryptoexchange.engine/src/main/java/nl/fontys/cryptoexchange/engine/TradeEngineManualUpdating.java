@@ -9,13 +9,16 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 
+import nl.fontys.cryptoexchange.core.BuyOrder;
 import nl.fontys.cryptoexchange.core.CurrencyPair;
 import nl.fontys.cryptoexchange.core.Order;
 import nl.fontys.cryptoexchange.core.OrderType;
+import nl.fontys.cryptoexchange.core.SellOrder;
 import nl.fontys.cryptoexchange.core.Trade;
 import nl.fontys.cryptoexchange.core.exception.IllegalOrderCloneExeption;
 import nl.fontys.cryptoexchange.core.exception.IllegalOrderException;
 import nl.fontys.cryptoexchange.core.exception.IllegalTradeException;
+import nl.fontys.cryptoexchange.core.exception.InvalidCurrencyPairException;
 import nl.fontys.cryptoexchange.core.exception.MarketNotAvailableException;
 import nl.fontys.cryptoexchange.core.exception.NoMatchingPriceException;
 import nl.fontys.cryptoexchange.engine.exception.UnableToDeleteOrderException;
@@ -97,10 +100,24 @@ public class TradeEngineManualUpdating implements TradeEngine {
 
 	}
 
+	
+
+	@Override
+	public List<Order> getAskDepth(CurrencyPair pair) throws MarketNotAvailableException {
+
+		return this.getAskDepth(pair.toString());
+	}
+	
 	@Override
 	public List<Order> getBidDepth(CurrencyPair pair) throws MarketNotAvailableException {
 
-		OrderBook orderBook = orderBookMap.get(pair.toString());
+		return this.getBidDepth(pair.toString());
+	}
+
+	@Override
+	public List<Order> getBidDepth(String pair)
+			throws MarketNotAvailableException {
+		OrderBook orderBook = orderBookMap.get(pair);
 
 		if (orderBook == null) {
 			throw new MarketNotAvailableException(pair);
@@ -110,9 +127,9 @@ public class TradeEngineManualUpdating implements TradeEngine {
 	}
 
 	@Override
-	public List<Order> getAskDepth(CurrencyPair pair) throws MarketNotAvailableException {
-
-		OrderBook orderBook = orderBookMap.get(pair.toString());
+	public List<Order> getAskDepth(String pair)
+			throws MarketNotAvailableException {
+		OrderBook orderBook = orderBookMap.get(pair);
 
 		if (orderBook == null) {
 			throw new MarketNotAvailableException(pair);
@@ -146,7 +163,18 @@ public class TradeEngineManualUpdating implements TradeEngine {
 	@Override
 	public String getAskDepthAsJSON(CurrencyPair pair) throws MarketNotAvailableException {
 
-		JSONArray jsonArray = new JSONArray(this.getAskDepth(pair));
+		return this.getAskDepthAsJSON(pair.toString());
+	}
+
+	@Override
+	public String getBidDepthAsJSON(CurrencyPair market) throws MarketNotAvailableException {
+		return this.getBidDepthAsJSON(market.toString());
+	}
+
+	@Override
+	public String getAskDepthAsJSON(String market)
+			throws MarketNotAvailableException {
+		JSONArray jsonArray = new JSONArray(this.getAskDepth(market));
 
 		String response = jsonArray.toString();
 
@@ -155,7 +183,8 @@ public class TradeEngineManualUpdating implements TradeEngine {
 	}
 
 	@Override
-	public String getBidDepthAsJSON(CurrencyPair market) throws MarketNotAvailableException {
+	public String getBidDepthAsJSON(String market)
+			throws MarketNotAvailableException {
 		JSONArray jsonArray = new JSONArray(this.getBidDepth(market));
 
 		String response = jsonArray.toString();
@@ -170,17 +199,32 @@ public class TradeEngineManualUpdating implements TradeEngine {
 	 * part of the volume of the order is executable then it will execute the part
 	 * and clone the Order and add the Order with the remaining volume to the
 	 * Orderbook
+	 * @throws MarketNotAvailableException 
 	 */
 
 	@Override
-	public synchronized void placeOrder(Order order) {
+	public synchronized long placeOrder(Order orderIncoming) throws MarketNotAvailableException {
 
+		
+		Order order;
+		//give orderId
+		if(orderIncoming.getType() == OrderType.BUY)
+		{
+			order = new BuyOrder(orderIncoming);
+		}
+		else
+		{
+			order = new SellOrder(orderIncoming);
+		}
+		
+		long orderId = order.getOrderId();
+		
 		Order restOrder = null;
 		OrderBook orderBook = orderBookMap.get(order.getCurrencyPair().toString());
 
 		if (orderBook == null) {
 			log.error("Orderbook " + order.getCurrencyPair().toString() + " does not exist can not place order ID " + order.getOrderId());
-			return;
+			throw new MarketNotAvailableException(order.getCurrencyPair());
 		}
 
 		if (order.getType() == OrderType.BUY && orderBook.peekBestAskOffer() != null
@@ -211,7 +255,7 @@ public class TradeEngineManualUpdating implements TradeEngine {
 					e1.printStackTrace();
 				}
 				e.printStackTrace();
-				return;
+				return orderId;
 			}
 
 			//add trade to history
@@ -248,7 +292,7 @@ public class TradeEngineManualUpdating implements TradeEngine {
 				}
 				log.error("unable to place Order");
 				e.printStackTrace();
-				return;
+				return orderId;
 			}
 			//add trade to history
 			orderBook.getTradeHistory().addTrade(trade);
@@ -268,6 +312,7 @@ public class TradeEngineManualUpdating implements TradeEngine {
 		if (restOrder != null) {
 			this.placeOrder(restOrder);
 		}
+		return orderId;
 	}
 
 	/**
@@ -291,6 +336,14 @@ public class TradeEngineManualUpdating implements TradeEngine {
 			list.add(orderBookMap.get(keys.next()).getCurrencyPair());
 		}
 		return list;
+	}
+
+	@Override
+	public void createMarket(String pair) throws InvalidCurrencyPairException {
+		
+		CurrencyPair cp = new CurrencyPair(pair);
+		this.createMarket(cp);
+		
 	}
 
 	/**
@@ -317,17 +370,26 @@ public class TradeEngineManualUpdating implements TradeEngine {
 	}
 
 	@Override
-	public synchronized void removeMarket(CurrencyPair pair) throws MarketNotAvailableException {
-
-		if (keySet.isEmpty() || orderBookMap.get(pair.toString()) == null) {
+	public synchronized void removeMarket(String pair) throws MarketNotAvailableException {
+		if (keySet.isEmpty() || orderBookMap.get(pair) == null) {
 			throw new MarketNotAvailableException(pair);
 		} else {
-			keySet.remove(pair.toString());
-			orderBookMap.remove(pair.toString());
+			keySet.remove(pair);
+			orderBookMap.remove(pair);
 
 			log.trace(pair.toString() + " sucsessfully removed from TradeEngine");
 		}
+	}
 
+	@Override
+	public synchronized void removeMarket(CurrencyPair pair) throws MarketNotAvailableException {
+		this.removeMarket(pair.toString());
+
+	}
+
+	@Override
+	public String getVersion() {
+		return "Trade Engine manual updating, Version 0.8";
 	}
 
 }

@@ -8,6 +8,12 @@ public class MarketNotAvailableException extends Exception {
 		super("Market: " + pair.toString() + " does not exist yet please create first");
 
 	}
+	
+	public MarketNotAvailableException(String pair) {
+
+		super("Market: " + pair + " does not exist yet please create first");
+
+	}
 
 	/**
 	 * 

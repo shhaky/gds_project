@@ -18,6 +18,19 @@ public final class SellOrder extends Order {
 		// TODO Auto-generated constructor stub
 	}
 
+	public SellOrder(Order order) {
+		
+		super(order);
+	}
+	
+	/**
+	 * used by XML Mapper
+	 */
+
+	public SellOrder() {
+	}
+	
+	
 	@Override
 	public OrderType getType() {
 		return OrderType.SELL;

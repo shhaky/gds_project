@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0dbb787e-e72b-4d6d-aa14-87c332d6038e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/GdsHub/CHub/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CHub.wsdl" MetadataType="Wsdl" ID="fa2c9068-90a8-4bd6-8f63-f57703f5ee75" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsHub/CHub/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="e2fcedf9-bcc5-479e-90de-6fd6bd0fcba8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsHub/CHub/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="050272e9-0973-4826-acb4-e72075b7edde" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsHub/CHub/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="86a48025-dda1-4421-b053-20fc06b15ab0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsHub/CHub/?xsd=xsd1" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="6a1eadfb-a71b-4325-9bca-42e668be13e1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsHub/CHub/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

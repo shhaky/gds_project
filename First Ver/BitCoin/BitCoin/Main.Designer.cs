@@ -225,6 +225,7 @@
             this.bt_SendMessage.TabIndex = 9;
             this.bt_SendMessage.Text = "Send";
             this.bt_SendMessage.UseVisualStyleBackColor = true;
+            this.bt_SendMessage.Click += new System.EventHandler(this.bt_SendMessage_Click);
             // 
             // tabControl1
             // 
@@ -409,6 +410,7 @@
             this.Btn_Sell.TabIndex = 2;
             this.Btn_Sell.Text = "Sell";
             this.Btn_Sell.UseVisualStyleBackColor = true;
+            this.Btn_Sell.Click += new System.EventHandler(this.Btn_Sell_Click);
             // 
             // Btn_Sel_Cal
             // 
@@ -502,6 +504,7 @@
             this.Btn_Buy.TabIndex = 1;
             this.Btn_Buy.Text = "Buy";
             this.Btn_Buy.UseVisualStyleBackColor = true;
+            this.Btn_Buy.Click += new System.EventHandler(this.Btn_Buy_Click);
             // 
             // Btn_Buy_cal
             // 
@@ -919,7 +922,10 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "XPM/BTC";
             this.tabPage4.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+=======
+>>>>>>> 6bf853886a2a29b67ecae914803379ae817f21b1
             // 
             // panel5
             // 
