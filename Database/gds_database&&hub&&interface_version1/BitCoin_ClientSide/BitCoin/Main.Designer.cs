@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea34 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend34 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea35 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend35 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea36 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend36 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea33 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend33 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -182,6 +182,7 @@
             this.tradeToolStripMenuItem.Name = "tradeToolStripMenuItem";
             this.tradeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.tradeToolStripMenuItem.Text = "Profile";
+            this.tradeToolStripMenuItem.Click += new System.EventHandler(this.tradeToolStripMenuItem_Click_1);
             // 
             // newsToolStripMenuItem
             // 
@@ -262,10 +263,10 @@
             // 
             // chart1
             // 
-            chartArea34.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea34);
-            legend34.Name = "Legend1";
-            this.chart1.Legends.Add(legend34);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(7, 7);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(563, 156);
@@ -478,10 +479,10 @@
             // 
             // chart2
             // 
-            chartArea35.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea35);
-            legend35.Name = "Legend1";
-            this.chart2.Legends.Add(legend35);
+            chartArea6.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart2.Legends.Add(legend6);
             this.chart2.Location = new System.Drawing.Point(7, 6);
             this.chart2.Name = "chart2";
             this.chart2.Size = new System.Drawing.Size(563, 156);
@@ -694,10 +695,10 @@
             // 
             // chart3
             // 
-            chartArea36.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea36);
-            legend36.Name = "Legend1";
-            this.chart3.Legends.Add(legend36);
+            chartArea7.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart3.Legends.Add(legend7);
             this.chart3.Location = new System.Drawing.Point(7, 6);
             this.chart3.Name = "chart3";
             this.chart3.Size = new System.Drawing.Size(563, 156);
@@ -910,10 +911,10 @@
             // 
             // chart4
             // 
-            chartArea33.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea33);
-            legend33.Name = "Legend1";
-            this.chart4.Legends.Add(legend33);
+            chartArea8.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart4.Legends.Add(legend8);
             this.chart4.Location = new System.Drawing.Point(7, 7);
             this.chart4.Name = "chart4";
             this.chart4.Size = new System.Drawing.Size(563, 156);

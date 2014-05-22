@@ -85,7 +85,8 @@ namespace BitCoin
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form home = new Main();
+            Form home = new Main(username);
+            this.Hide();
             home.Show();
         }
 

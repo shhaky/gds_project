@@ -30,11 +30,16 @@ namespace BitCoin
             proxy = new ServiceReferenceHUB.HubClient();
         }
 
-        public Main(string username)
+        public Main(string userName)
         {
             InitializeComponent();
-            
             proxy = new ServiceReferenceHUB.HubClient();
+            txtPassWord.Visible = false;
+            txtUserName.Visible = false;
+            linkBtnRegister.Visible = false;
+            lblInfo.Visible = true;
+            lblInfo.Text = "Welcome " + userName;
+            linkBtnLogin.Text = "Logout";
         }
 
         class dbdata
@@ -55,24 +60,42 @@ namespace BitCoin
 
         private void linkBtnLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.userName = txtUserName.Text;
-            this.password = txtPassWord.Text;
-            if (proxy.checkIfExistedUserName(this.userName))
+            if (linkBtnLogin.Text == "Login")
             {
-                if (proxy.checkPassword(this.userName, this.password))
+                this.userName = txtUserName.Text;
+                this.password = txtPassWord.Text;
+                if (proxy.checkIfExistedUserName(this.userName))
                 {
-                    Profile newProfile = new Profile(this.userName);
-                    this.Hide();
-                    newProfile.Show();
+                    if (proxy.checkPassword(this.userName, this.password))
+                    {
+                        txtPassWord.Visible = false;
+                        txtUserName.Visible = false;
+                        linkBtnRegister.Visible = false;
+                        lblInfo.Visible = true;
+                        lblInfo.Text = "Welcome " + userName;
+                        linkBtnLogin.Text = "Logout";
+                        //Profile newProfile = new Profile(this.userName);
+                        //this.Hide();
+                        //newProfile.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("please check your password.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("please check your password.");
+                    MessageBox.Show("please check your username,or register a new account.");
                 }
             }
             else
             {
-                MessageBox.Show("please check your username,or register a new account.");
+                txtPassWord.Visible = true;
+                txtUserName.Visible = true;
+                linkBtnRegister.Visible = true;
+                lblInfo.Visible = false;
+                linkBtnLogin.Text = "Login";
+
             }
         }
 
@@ -124,6 +147,8 @@ namespace BitCoin
             timer1.Enabled = true;
             currentChart = chart1;
             chartUpdate(30);
+            textBox2.Text = Math.Round(list[29].up, 2).ToString();
+            textBox5.Text = Math.Round(list[29].down, 2).ToString();
         }
         private void CreateData(int n)
         {
@@ -395,6 +420,14 @@ namespace BitCoin
             {
                 MessageBox.Show("Insert value");
             }
+        }
+
+        private void tradeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Profile profileForm = new Profile(userName);
+            this.Hide();
+            profileForm.Show();
+
         }
 
         //private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
