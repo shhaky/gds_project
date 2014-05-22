@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea34 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend34 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea35 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend35 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea36 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend36 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea33 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend33 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -262,10 +262,10 @@
             // 
             // chart1
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea34.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea34);
+            legend34.Name = "Legend1";
+            this.chart1.Legends.Add(legend34);
             this.chart1.Location = new System.Drawing.Point(7, 7);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(563, 156);
@@ -310,6 +310,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(124, 53);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 13;
             // 
@@ -364,6 +365,7 @@
             this.Btn_Sel_Cal.TabIndex = 1;
             this.Btn_Sel_Cal.Text = "Calculate";
             this.Btn_Sel_Cal.UseVisualStyleBackColor = true;
+            this.Btn_Sel_Cal.Click += new System.EventHandler(this.Btn_Sel_Cal_Click);
             // 
             // panel_Buy
             // 
@@ -403,6 +405,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(124, 53);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
             // 
@@ -457,6 +460,7 @@
             this.Btn_Buy_cal.TabIndex = 0;
             this.Btn_Buy_cal.Text = "Calculate";
             this.Btn_Buy_cal.UseVisualStyleBackColor = true;
+            this.Btn_Buy_cal.Click += new System.EventHandler(this.Btn_Buy_cal_Click);
             // 
             // tabPage2
             // 
@@ -474,10 +478,10 @@
             // 
             // chart2
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart2.Legends.Add(legend6);
+            chartArea35.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea35);
+            legend35.Name = "Legend1";
+            this.chart2.Legends.Add(legend35);
             this.chart2.Location = new System.Drawing.Point(7, 6);
             this.chart2.Name = "chart2";
             this.chart2.Size = new System.Drawing.Size(563, 156);
@@ -522,6 +526,7 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(124, 53);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 13;
             // 
@@ -576,6 +581,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Calculate";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
@@ -615,6 +621,7 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(124, 53);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(100, 20);
             this.textBox11.TabIndex = 6;
             // 
@@ -669,6 +676,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Calculate";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tabPage3
             // 
@@ -686,10 +694,10 @@
             // 
             // chart3
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart3.Legends.Add(legend7);
+            chartArea36.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea36);
+            legend36.Name = "Legend1";
+            this.chart3.Legends.Add(legend36);
             this.chart3.Location = new System.Drawing.Point(7, 6);
             this.chart3.Name = "chart3";
             this.chart3.Size = new System.Drawing.Size(563, 156);
@@ -734,6 +742,7 @@
             // 
             this.textBox14.Location = new System.Drawing.Point(124, 53);
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(100, 20);
             this.textBox14.TabIndex = 13;
             // 
@@ -788,6 +797,7 @@
             this.button6.TabIndex = 1;
             this.button6.Text = "Calculate";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel4
             // 
@@ -827,6 +837,7 @@
             // 
             this.textBox17.Location = new System.Drawing.Point(124, 53);
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(100, 20);
             this.textBox17.TabIndex = 6;
             // 
@@ -881,6 +892,7 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "Calculate";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // tabPage4
             // 
@@ -898,10 +910,10 @@
             // 
             // chart4
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart4.Legends.Add(legend8);
+            chartArea33.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea33);
+            legend33.Name = "Legend1";
+            this.chart4.Legends.Add(legend33);
             this.chart4.Location = new System.Drawing.Point(7, 7);
             this.chart4.Name = "chart4";
             this.chart4.Size = new System.Drawing.Size(563, 156);
@@ -946,6 +958,7 @@
             // 
             this.textBox20.Location = new System.Drawing.Point(124, 53);
             this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(100, 20);
             this.textBox20.TabIndex = 13;
             // 
@@ -1000,6 +1013,7 @@
             this.button10.TabIndex = 1;
             this.button10.Text = "Calculate";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // panel6
             // 
@@ -1039,6 +1053,7 @@
             // 
             this.textBox23.Location = new System.Drawing.Point(124, 53);
             this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(100, 20);
             this.textBox23.TabIndex = 6;
             // 
@@ -1093,6 +1108,7 @@
             this.button12.TabIndex = 0;
             this.button12.Text = "Calculate";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // linkBtnRegister
             // 

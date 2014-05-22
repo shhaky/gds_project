@@ -20,10 +20,9 @@ namespace BitCoin
         private ServiceReferenceHUB.HubClient proxy;
 
         Random r = new Random(123457);
-        private Chart Chartnow;
+        private Chart currentChart;
         private double[] high, low, open, close;
         List<dbdata> list = new List<dbdata>();
-
         public Main()
         {
             InitializeComponent();
@@ -38,7 +37,14 @@ namespace BitCoin
             proxy = new ServiceReferenceHUB.HubClient();
         }
 
-
+        class dbdata
+        {
+            public string date;
+            public double up;
+            public double down;
+            public double PriceOpen;
+            public double PriceClose;
+        }
 
         private void linkBtnRegister_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)//done
         {
@@ -75,55 +81,48 @@ namespace BitCoin
             
         CreateData(n);
             // remove all previous series
-            Chartnow.Series.Clear();
+            currentChart.Series.Clear();
 
             Series price = new Series("price"); // <<== make sure to name the series "price"
-            Chartnow.Series.Add(price);
+            currentChart.Series.Add(price);
 
             // Set series chart type
-            Chartnow.Series["price"].ChartType = SeriesChartType.Candlestick;
+            currentChart.Series["price"].ChartType = SeriesChartType.Candlestick;
 
             // Set the style of the open-close marks
-            Chartnow.Series["price"]["OpenCloseStyle"] = "Triangle";
+            currentChart.Series["price"]["OpenCloseStyle"] = "Triangle";
 
             // Show both open and close marks
-            Chartnow.Series["price"]["ShowOpenClose"] = "Both";
+            currentChart.Series["price"]["ShowOpenClose"] = "Both";
 
             // Set point width
-            Chartnow.Series["price"]["PointWidth"] = "0.5";
+            currentChart.Series["price"]["PointWidth"] = "0.5";
 
             // Set colors bars
-            Chartnow.Series["price"]["PriceUpColor"] = "Green"; // <<== use text indexer for series
-            Chartnow.Series["price"]["PriceDownColor"] = "Red"; // <<== use text indexer for series
+            currentChart.Series["price"]["PriceUpColor"] = "Green"; // <<== use text indexer for series
+            currentChart.Series["price"]["PriceDownColor"] = "Red"; // <<== use text indexer for series
 
             for (int i = 0; i < list.Count; i++)
             {
                 // adding date and high
-                Chartnow.Series["price"].Points.AddXY(list[i].date, list[i].up);
+                currentChart.Series["price"].Points.AddXY(list[i].date, list[i].up);
                 // adding low
-                Chartnow.Series["price"].Points[i].YValues[1] = list[i].down;
+                currentChart.Series["price"].Points[i].YValues[1] = list[i].down;
                 //adding open
-                Chartnow.Series["price"].Points[i].YValues[2] = list[i].PriceOpen;
+                currentChart.Series["price"].Points[i].YValues[2] = list[i].PriceOpen;
                 // adding close
-                Chartnow.Series["price"].Points[i].YValues[3] = list[i].PriceClose;
+                currentChart.Series["price"].Points[i].YValues[3] = list[i].PriceClose;
             }
 
 
         }
 
-        class dbdata
-        {
-            public string date;
-            public double up;
-            public double down;
-            public double PriceOpen;
-            public double PriceClose;
-        }
+        
 
         private void Main_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            Chartnow = chart1;
+            currentChart = chart1;
             chartUpdate(30);
         }
         private void CreateData(int n)
@@ -178,33 +177,42 @@ namespace BitCoin
    
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            Chartnow = chart1;
+            currentChart = chart1;
             chartUpdate(5);
+
         }
 
 
         private void tabPage3_Enter(object sender, EventArgs e)
         {
-            Chartnow = chart3;
+            currentChart = chart3;
             chartUpdate(5);
+            textBox17.Text = Math.Round(list[29].up, 2).ToString();
+            textBox14.Text = Math.Round(list[29].down, 2).ToString();
         }
 
         private void tabPage2_Enter(object sender, EventArgs e)
         {
-            Chartnow = chart2;
+            currentChart = chart2;
             chartUpdate(5);
+            textBox11.Text = Math.Round(list[29].up, 2).ToString();
+            textBox8.Text = Math.Round(list[29].down, 2).ToString();
         }
 
         private void tabPage1_Enter(object sender, EventArgs e)
         {
-            Chartnow = chart1;
+            currentChart = chart1;
             chartUpdate(5);
+            textBox2.Text = Math.Round(list[29].up, 2).ToString();
+            textBox5.Text = Math.Round(list[29].down, 2).ToString();
         }
 
         private void tabPage4_Enter(object sender, EventArgs e)
         {
-            Chartnow = chart4;
+            currentChart = chart4;
             chartUpdate(5);
+            textBox23.Text = Math.Round(list[29].up, 2).ToString();
+            textBox20.Text = Math.Round(list[29].down, 2).ToString();
         }
 
         private void Main_Leave(object sender, EventArgs e)
@@ -275,6 +283,118 @@ namespace BitCoin
             
             Form profile = new Profile(userName);
             profile.Show();
+        }
+
+        private void Btn_Buy_cal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox3.Text =
+              (Convert.ToDouble(textBox1.Text) *
+              Convert.ToDouble(textBox2.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void Btn_Sel_Cal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox4.Text =
+              (Convert.ToDouble(textBox6.Text) *
+              Convert.ToDouble(textBox5.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox10.Text =
+              (Convert.ToDouble(textBox11.Text) *
+              Convert.ToDouble(textBox12.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox7.Text =
+              (Convert.ToDouble(textBox8.Text) *
+              Convert.ToDouble(textBox9.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox16.Text =
+              (Convert.ToDouble(textBox17.Text) *
+              Convert.ToDouble(textBox18.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox13.Text =
+              (Convert.ToDouble(textBox14.Text) *
+              Convert.ToDouble(textBox15.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox22.Text =
+              (Convert.ToDouble(textBox23.Text) *
+              Convert.ToDouble(textBox24.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox19.Text =
+              (Convert.ToDouble(textBox20.Text) *
+              Convert.ToDouble(textBox21.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
         }
 
         //private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
