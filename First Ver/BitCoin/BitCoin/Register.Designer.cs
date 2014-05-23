@@ -41,6 +41,7 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.bt_Register = new System.Windows.Forms.Button();
+            this.lblINfoRegister = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -162,6 +163,14 @@
             this.bt_Register.UseVisualStyleBackColor = false;
             this.bt_Register.Click += new System.EventHandler(this.bt_Register_Click);
             // 
+            // lblINfoRegister
+            // 
+            this.lblINfoRegister.AutoSize = true;
+            this.lblINfoRegister.Location = new System.Drawing.Point(66, 290);
+            this.lblINfoRegister.Name = "lblINfoRegister";
+            this.lblINfoRegister.Size = new System.Drawing.Size(0, 15);
+            this.lblINfoRegister.TabIndex = 13;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
@@ -169,6 +178,7 @@
             this.BackgroundImage = global::BitCoin.Properties.Resources.reg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(320, 315);
+            this.Controls.Add(this.lblINfoRegister);
             this.Controls.Add(this.bt_Register);
             this.Controls.Add(this.txtPasswordConf);
             this.Controls.Add(this.txtPassword);
@@ -208,5 +218,6 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Button bt_Register;
+        private System.Windows.Forms.Label lblINfoRegister;
     }
 }

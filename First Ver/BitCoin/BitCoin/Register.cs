@@ -31,23 +31,44 @@ namespace BitCoin
 
         private void bt_Register_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text != "" ||txtFirstName.Text != "" ||txtLastName.Text!= ""
-                ||txtEmail.Text!= "" ||txtPassword.Text!= "" || txtPasswordConf.Text !="")
+            bool severLogInfo = false;
+            if ((txtUsername.Text != "" )& (txtFirstName.Text != "") & (txtLastName.Text != "") & 
+                (txtEmail.Text != "") & (txtPassword.Text != "") & (txtPasswordConf.Text != ""))
             {
-                if(txtPassword.Text == txtPasswordConf.Text)
+                if (txtPassword.Text == txtPasswordConf.Text)
                 {
                     try
                     {
-                        F_A_proxy.register(txtUsername.Text, txtPassword.Text, txtFirstName.Text, txtLastName.Text, txtEmail.Text, Convert.ToString(System.DateTime.Now) );
-                    }catch(Exception)
-                    {
-                
+                       severLogInfo = F_A_proxy.register(txtUsername.Text, txtPassword.Text, txtFirstName.Text, txtLastName.Text, txtEmail.Text,System.DateTime.Now.ToString());
                     }
-                }else
+                    catch (Exception)
+                    {
+                        lblINfoRegister.Text = "Sever problem, try again later!";
+                        return;
+                    }
+                    if (!severLogInfo)
+                    {
+                        this.lblINfoRegister.Text = "Try with different userName!";
+                    }
+                    
+                    else
+                    {
+                        Profile profileForm = new Profile();
+                        this.Hide();
+                        profileForm.Show();
+
+                    }
+                }
+                else
                 {
+                    lblINfoRegister.Text = "Password doesnt match!";
                 }
 
-             }
-        }
+            }
+            else 
+                lblINfoRegister.Text = "Please fill all the field!";
+          }
+          
+       
     }
 }
