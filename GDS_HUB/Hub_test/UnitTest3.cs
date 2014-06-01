@@ -1,10 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject
+namespace Hub_test
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest3
     {
         [TestMethod]
         public void TestMethod1()
