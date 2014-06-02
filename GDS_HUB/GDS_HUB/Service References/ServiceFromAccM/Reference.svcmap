@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bfdab84c-a83e-44b7-a4fc-dc602e2dedfa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d0464d47-77d8-46c6-8676-95125406410b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/_Exchange_ServerSide/CService/ " Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="0e952bf0-28eb-4f05-ac65-d6b8cfe66881" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/_Exchange_ServerSide/CService/?disco" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="2bd3e505-cff6-40c7-93a0-033b121d6b8e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/_Exchange_ServerSide/CService/?xsd=xsd1" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="41ae5ae0-8992-4610-a9fe-fc78e2f00489" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/_Exchange_ServerSide/CService/?xsd=xsd0" />
-    <MetadataFile FileName="CService.wsdl" MetadataType="Wsdl" ID="b0a9a0fd-c82b-41af-82d4-94c4cea0260f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/_Exchange_ServerSide/CService/?wsdl" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="72b359f1-8925-4480-8d62-bbffe126ea04" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="b1edac12-e2e8-4a20-b92f-56d26a6698ea" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/?disco" />
+    <MetadataFile FileName="CPortal.wsdl" MetadataType="Wsdl" ID="42d552ea-b9b9-40bd-99ea-78a65fc7318b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="29c77dde-20ce-4010-95d1-54c96dc40f6a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

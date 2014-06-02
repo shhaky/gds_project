@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="1279" key="dialogWidth"/>
-		<item value="708" key="dialogHeight"/>
+		<item value="1154" key="dialogWidth"/>
+		<item value="655" key="dialogHeight"/>
 		<list key="orderedProviders">
 		</list>
 		<list key="textArray">
@@ -32,7 +32,6 @@
 			<item value="org.eclipse.jst.ejb.ui"/>
 			<item value="org.eclipse.equinox.p2.category"/>
 			<item value="org.eclipse.jst.j2ee.internal"/>
-			<item value="org.eclipse.m2e"/>
 		</list>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.jst.ejb.ui"/>

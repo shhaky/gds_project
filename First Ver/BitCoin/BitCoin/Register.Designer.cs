@@ -34,13 +34,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtPasswordConf = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.bt_Register = new System.Windows.Forms.Button();
+            this.lblINfoRegister = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -109,47 +110,47 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Confirm password";
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(173, 119);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 21);
-            this.textBox4.TabIndex = 9;
+            this.txtEmail.Location = new System.Drawing.Point(173, 119);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 21);
+            this.txtEmail.TabIndex = 9;
             // 
-            // textBox5
+            // txtPassword
             // 
-            this.textBox5.Location = new System.Drawing.Point(173, 149);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 21);
-            this.textBox5.TabIndex = 10;
+            this.txtPassword.Location = new System.Drawing.Point(173, 149);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(100, 21);
+            this.txtPassword.TabIndex = 10;
             // 
-            // textBox6
+            // txtPasswordConf
             // 
-            this.textBox6.Location = new System.Drawing.Point(173, 179);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 21);
-            this.textBox6.TabIndex = 11;
+            this.txtPasswordConf.Location = new System.Drawing.Point(173, 179);
+            this.txtPasswordConf.Name = "txtPasswordConf";
+            this.txtPasswordConf.Size = new System.Drawing.Size(100, 21);
+            this.txtPasswordConf.TabIndex = 11;
             // 
-            // textBox7
+            // txtUsername
             // 
-            this.textBox7.Location = new System.Drawing.Point(173, 29);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 21);
-            this.textBox7.TabIndex = 6;
+            this.txtUsername.Location = new System.Drawing.Point(173, 29);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(100, 21);
+            this.txtUsername.TabIndex = 6;
             // 
-            // textBox8
+            // txtFirstName
             // 
-            this.textBox8.Location = new System.Drawing.Point(173, 59);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 21);
-            this.textBox8.TabIndex = 7;
+            this.txtFirstName.Location = new System.Drawing.Point(173, 59);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(100, 21);
+            this.txtFirstName.TabIndex = 7;
             // 
-            // textBox9
+            // txtLastName
             // 
-            this.textBox9.Location = new System.Drawing.Point(173, 89);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 21);
-            this.textBox9.TabIndex = 8;
+            this.txtLastName.Location = new System.Drawing.Point(173, 89);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(100, 21);
+            this.txtLastName.TabIndex = 8;
             // 
             // bt_Register
             // 
@@ -160,6 +161,15 @@
             this.bt_Register.TabIndex = 12;
             this.bt_Register.Text = "Register";
             this.bt_Register.UseVisualStyleBackColor = false;
+            this.bt_Register.Click += new System.EventHandler(this.bt_Register_Click);
+            // 
+            // lblINfoRegister
+            // 
+            this.lblINfoRegister.AutoSize = true;
+            this.lblINfoRegister.Location = new System.Drawing.Point(66, 290);
+            this.lblINfoRegister.Name = "lblINfoRegister";
+            this.lblINfoRegister.Size = new System.Drawing.Size(0, 15);
+            this.lblINfoRegister.TabIndex = 13;
             // 
             // Register
             // 
@@ -168,13 +178,14 @@
             this.BackgroundImage = global::BitCoin.Properties.Resources.reg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(320, 315);
+            this.Controls.Add(this.lblINfoRegister);
             this.Controls.Add(this.bt_Register);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtPasswordConf);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -200,12 +211,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtPasswordConf;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Button bt_Register;
+        private System.Windows.Forms.Label lblINfoRegister;
     }
 }

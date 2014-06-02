@@ -67,7 +67,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceFromAccM\CService.wsdl" />
+    <None Include="Service References\ServiceFromAccM\CPortal.wsdl" />
     <None Include="Service References\ServiceFromAccM\item.xsd">
       <SubType>Designer</SubType>
     </None>
