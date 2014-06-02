@@ -71,6 +71,8 @@ namespace BitCoin
                     {
                         txtPassWord.Visible = false;
                         txtUserName.Visible = false;
+                        txtPassWord.Text = null;
+                        txtUserName.Text = null;
                         linkBtnRegister.Visible = false;
                         lblInfo.Visible = true;
                         lblInfo.Text = "Welcome " + userName;
