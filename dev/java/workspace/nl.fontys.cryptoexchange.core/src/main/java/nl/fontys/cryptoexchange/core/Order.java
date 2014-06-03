@@ -108,7 +108,6 @@ public abstract class Order implements Comparable<Order> {
 	@Override
 	public int compareTo(Order order) {
 
-		//TODO we should find a more proper solution here, problem cause of override we cant declare that this method should throw an exeption!
 		if (!this.currencyPair.equals(order.getCurrencyPair())) {
 
 			log.warn("orders with different CurrencyPairs have been compared!");

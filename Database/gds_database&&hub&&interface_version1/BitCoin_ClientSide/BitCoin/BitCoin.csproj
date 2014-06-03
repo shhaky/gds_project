@@ -63,18 +63,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.cs">
+    <Compile Include="RegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
-      <DependentUpon>Register.cs</DependentUpon>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Service References\FatToAccM\Reference.cs">
+    <Compile Include="Service References\ServiceReferenceHUB\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="ServiceReferenceHUB.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,8 +90,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Register.resx">
-      <DependentUpon>Register.cs</DependentUpon>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,12 +102,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\FatToAccM\FatToAccService.wsdl" />
-    <None Include="Service References\FatToAccM\item.wsdl" />
-    <None Include="Service References\FatToAccM\item.xsd">
+    <None Include="Service References\ServiceReferenceHUB\CHub.wsdl" />
+    <None Include="Service References\ServiceReferenceHUB\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\FatToAccM\item1.xsd">
+    <None Include="Service References\ServiceReferenceHUB\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHUB\item2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -134,19 +135,19 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\FatToAccM\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceHUB\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\FatToAccM\item.disco" />
+    <None Include="Service References\ServiceReferenceHUB\item.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\FatToAccM\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceHUB\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\FatToAccM\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceHUB\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\FatToAccM\Reference.svcmap">
+    <None Include="Service References\ServiceReferenceHUB\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

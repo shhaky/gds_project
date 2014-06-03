@@ -88,7 +88,7 @@ namespace GdsServerSide
         //=====================================add new user to database====================================
         public bool addNewUser(long userId, string userName, string passWord, string firstName, string lastName, string email, string joinDate)
         {
-            string sql = "INSERT INTO user (UserId,UserName, PassWord, FirstName, LastName, Email, JoinDate, LastLoginTime) VALUES('" + userId + "','" + userName + "','" + passWord + "','" + firstName + "','" + lastName + "','" + email + "','" + joinDate + ","  + "')";
+            string sql = "INSERT INTO user (UserId,UserName, PassWord, FirstName, LastName, Email, JoinDate) VALUES('" + userId + "','" + userName + "','" + passWord + "','" + firstName + "','" + lastName + "','" + email + "','" + joinDate + ","  + "')";
             MySqlCommand com = new MySqlCommand(sql, connection);
             connection.Open();
             com.ExecuteNonQuery();
