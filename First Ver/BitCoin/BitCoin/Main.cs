@@ -11,6 +11,7 @@ using System.ServiceModel;
 using System.Windows.Forms.DataVisualization.Charting;
 
 
+
 namespace BitCoin
 {
     public partial class Main : Form
@@ -18,6 +19,12 @@ namespace BitCoin
         private int TimeSplit = 5;
         public FatToAccM.FatC_to_AccMClient F_A_proxy; // Fat client to Account Management Proxy
         InstanceContext context;
+
+        Random r = new Random(123457);
+        private Chart currentChart;
+        string chartname = null;
+        private double[] high, low, open, close;
+        List<dbdata> list = new List<dbdata>();
 
         public Main()
         {
@@ -235,31 +242,149 @@ namespace BitCoin
             Main_Load(sender, e);
         }
 
-<<<<<<< HEAD
+
         private void chart1_Click(object sender, EventArgs e)
-=======
+        { 
+}
+
         private void Btn_Buy_Click(object sender, EventArgs e)
->>>>>>> 6bf853886a2a29b67ecae914803379ae817f21b1
+
         {
 
         }
 
-<<<<<<< HEAD
+
         private void tabPage4_Click(object sender, EventArgs e)
-=======
+        {
+        
+        }
         private void Btn_Sell_Click(object sender, EventArgs e)
->>>>>>> 6bf853886a2a29b67ecae914803379ae817f21b1
+
         {
 
         }
 
-<<<<<<< HEAD
+
         private void groupBox1_Enter(object sender, EventArgs e)
-=======
+        {
+        }
+
         private void bt_SendMessage_Click(object sender, EventArgs e)
->>>>>>> 6bf853886a2a29b67ecae914803379ae817f21b1
+
         {
 
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox3.Text =
+              (Convert.ToDouble(textBox1.Text) *
+              Convert.ToDouble(textBox2.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void Btn_Buy_cal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox3.Text =
+              (Convert.ToDouble(textBox1.Text) *
+              Convert.ToDouble(textBox2.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void Btn_Sel_Cal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox4.Text =
+              (Convert.ToDouble(textBox6.Text) *
+              Convert.ToDouble(textBox5.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox10.Text =
+              (Convert.ToDouble(textBox11.Text) *
+              Convert.ToDouble(textBox12.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox7.Text =
+              (Convert.ToDouble(textBox8.Text) *
+              Convert.ToDouble(textBox9.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox16.Text =
+              (Convert.ToDouble(textBox17.Text) *
+              Convert.ToDouble(textBox18.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox22.Text =
+              (Convert.ToDouble(textBox23.Text) *
+              Convert.ToDouble(textBox24.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox19.Text =
+              (Convert.ToDouble(textBox20.Text) *
+              Convert.ToDouble(textBox21.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert value");
+            }
         }
 
     }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -225,7 +225,6 @@
             this.bt_SendMessage.TabIndex = 9;
             this.bt_SendMessage.Text = "Send";
             this.bt_SendMessage.UseVisualStyleBackColor = true;
-            this.bt_SendMessage.Click += new System.EventHandler(this.bt_SendMessage_Click);
             // 
             // tabControl1
             // 
@@ -265,7 +264,6 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Time";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton4
             // 
@@ -316,10 +314,10 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea7.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart1.Legends.Add(legend7);
             this.chart1.Location = new System.Drawing.Point(7, 7);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(563, 156);
@@ -410,7 +408,6 @@
             this.Btn_Sell.TabIndex = 2;
             this.Btn_Sell.Text = "Sell";
             this.Btn_Sell.UseVisualStyleBackColor = true;
-            this.Btn_Sell.Click += new System.EventHandler(this.Btn_Sell_Click);
             // 
             // Btn_Sel_Cal
             // 
@@ -420,6 +417,7 @@
             this.Btn_Sel_Cal.TabIndex = 1;
             this.Btn_Sel_Cal.Text = "Calculate";
             this.Btn_Sel_Cal.UseVisualStyleBackColor = true;
+            this.Btn_Sel_Cal.Click += new System.EventHandler(this.Btn_Sel_Cal_Click);
             // 
             // panel_Buy
             // 
@@ -454,6 +452,7 @@
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 7;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -514,6 +513,7 @@
             this.Btn_Buy_cal.TabIndex = 0;
             this.Btn_Buy_cal.Text = "Calculate";
             this.Btn_Buy_cal.UseVisualStyleBackColor = true;
+            this.Btn_Buy_cal.Click += new System.EventHandler(this.Btn_Buy_cal_Click);
             // 
             // tabPage2
             // 
@@ -619,6 +619,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Calculate";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
@@ -712,6 +713,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Calculate";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tabPage3
             // 
@@ -910,6 +912,7 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "Calculate";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // tabPage4
             // 
@@ -922,10 +925,6 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "XPM/BTC";
             this.tabPage4.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
-=======
->>>>>>> 6bf853886a2a29b67ecae914803379ae817f21b1
             // 
             // panel5
             // 
@@ -1019,6 +1018,7 @@
             this.button10.TabIndex = 1;
             this.button10.Text = "Calculate";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // panel6
             // 
@@ -1112,6 +1112,7 @@
             this.button12.TabIndex = 0;
             this.button12.Text = "Calculate";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // LL_Register
             // 
