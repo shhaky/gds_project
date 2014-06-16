@@ -264,161 +264,12 @@ namespace BitCoin
 
         //}
 
-        private void tb_Email_Enter(object sender, EventArgs e)
-        {
-            if (txtUserName.Text == "E-mail")
-            {
-                txtUserName.Text = string.Empty;
-                txtUserName.ForeColor = Color.Black;
-            }
-        }
-
-        private void tb_Email_Leave(object sender, EventArgs e)
-        {
-            if (txtUserName.Text == string.Empty)
-            {
-                txtUserName.Text = "E-mail";
-                txtUserName.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void tb_password_Enter(object sender, EventArgs e)
-        {
-            if (txtPassWord.Text == "Password")
-            {
-                txtPassWord.Text = string.Empty;
-                txtPassWord.ForeColor = Color.Black;
-                txtPassWord.PasswordChar = '*';
-            }
-        }
-
-        private void tb_password_Leave(object sender, EventArgs e)
-        {
-            if (txtPassWord.Text == string.Empty)
-            {
-                txtPassWord.Text = "Password";
-                txtPassWord.ForeColor = Color.LightGray;
-                txtPassWord.PasswordChar = '\0';
-            }
-        }
-
+        
         private void tradeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
             Form profile = new Profile(userName);
             profile.Show();
-        }
-
-        private void Btn_Buy_cal_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox3.Text =
-              (Convert.ToDouble(textBox1.Text) *
-              Convert.ToDouble(textBox2.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
-        }
-
-        private void Btn_Sel_Cal_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox4.Text =
-              (Convert.ToDouble(textBox6.Text) *
-              Convert.ToDouble(textBox5.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox10.Text =
-              (Convert.ToDouble(textBox11.Text) *
-              Convert.ToDouble(textBox12.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox7.Text =
-              (Convert.ToDouble(textBox8.Text) *
-              Convert.ToDouble(textBox9.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox16.Text =
-              (Convert.ToDouble(textBox17.Text) *
-              Convert.ToDouble(textBox18.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox13.Text =
-              (Convert.ToDouble(textBox14.Text) *
-              Convert.ToDouble(textBox15.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox22.Text =
-              (Convert.ToDouble(textBox23.Text) *
-              Convert.ToDouble(textBox24.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox19.Text =
-              (Convert.ToDouble(textBox20.Text) *
-              Convert.ToDouble(textBox21.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Insert value");
-            }
         }
 
         private void tradeToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -428,6 +279,161 @@ namespace BitCoin
             profileForm.Show();
 
         }
+
+        private void txtPassWord_Enter_1(object sender, EventArgs e)
+        {
+            if (txtPassWord.Text == "Password")
+            {
+                txtPassWord.Text = string.Empty;
+                txtPassWord.ForeColor = Color.Black;
+                txtPassWord.PasswordChar = '*';
+            }
+        }
+
+        private void txtPassWord_Leave(object sender, EventArgs e)
+        {
+            if (txtPassWord.Text == string.Empty)
+            {
+                txtPassWord.Text = "Password";
+                txtPassWord.ForeColor = Color.LightGray;
+                txtPassWord.PasswordChar = '\0';
+            }
+        }
+
+        private void txtUserName_Leave(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == string.Empty)
+            {
+                txtUserName.Text = "E-mail";
+                txtUserName.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtUserName_Enter(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == "E-mail")
+            {
+                txtUserName.Text = string.Empty;
+                txtUserName.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox3.Text =
+              (Convert.ToDouble(textBox1.Text) *
+              Convert.ToDouble(textBox2.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox4.Text =
+              (Convert.ToDouble(textBox6.Text) *
+              Convert.ToDouble(textBox5.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox10.Text =
+              (Convert.ToDouble(textBox9.Text) *
+              Convert.ToDouble(textBox11.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox7.Text =
+              (Convert.ToDouble(textBox12.Text) *
+              Convert.ToDouble(textBox8.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox16.Text =
+              (Convert.ToDouble(textBox15.Text) *
+              Convert.ToDouble(textBox17.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox13.Text =
+              (Convert.ToDouble(textBox18.Text) *
+              Convert.ToDouble(textBox14.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+        private void textBox21_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox22.Text =
+              (Convert.ToDouble(textBox21.Text) *
+              Convert.ToDouble(textBox23.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+        private void textBox24_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox19.Text =
+              (Convert.ToDouble(textBox24.Text) *
+              Convert.ToDouble(textBox20.Text)).ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insert right value");
+            }
+        }
+
+       
+
+    
+    
 
       
 

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea94 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend94 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea95 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend95 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea96 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend96 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea93 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend93 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,88 +53,72 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Btn_Sell = new System.Windows.Forms.Button();
-            this.Btn_Sel_Cal = new System.Windows.Forms.Button();
             this.panel_Buy = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Btn_Buy = new System.Windows.Forms.Button();
-            this.Btn_Buy_cal = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.linkBtnRegister = new System.Windows.Forms.LinkLabel();
             this.linkBtnLogin = new System.Windows.Forms.LinkLabel();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -142,6 +126,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -262,31 +254,30 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(7, 7);
+            chartArea94.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea94);
+            legend94.Name = "Legend1";
+            this.chart1.Legends.Add(legend94);
+            this.chart1.Location = new System.Drawing.Point(7, 30);
             this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(563, 156);
+            this.chart1.Size = new System.Drawing.Size(563, 160);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
-             // 
+            // 
             // panel_Sell
             // 
             this.panel_Sell.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel_Sell.Controls.Add(this.textBox6);
             this.panel_Sell.Controls.Add(this.label5);
             this.panel_Sell.Controls.Add(this.textBox4);
             this.panel_Sell.Controls.Add(this.textBox5);
-            this.panel_Sell.Controls.Add(this.textBox6);
             this.panel_Sell.Controls.Add(this.label6);
             this.panel_Sell.Controls.Add(this.label7);
             this.panel_Sell.Controls.Add(this.label8);
             this.panel_Sell.Controls.Add(this.Btn_Sell);
-            this.panel_Sell.Controls.Add(this.Btn_Sel_Cal);
-            this.panel_Sell.Location = new System.Drawing.Point(298, 169);
+            this.panel_Sell.Location = new System.Drawing.Point(298, 215);
             this.panel_Sell.Name = "panel_Sell";
-            this.panel_Sell.Size = new System.Drawing.Size(272, 262);
+            this.panel_Sell.Size = new System.Drawing.Size(272, 215);
             this.panel_Sell.TabIndex = 1;
             // 
             // label5
@@ -313,13 +304,6 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 13;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(123, 15);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 12;
             // 
             // label6
             // 
@@ -350,38 +334,27 @@
             // 
             // Btn_Sell
             // 
-            this.Btn_Sell.Location = new System.Drawing.Point(163, 228);
+            this.Btn_Sell.Location = new System.Drawing.Point(97, 147);
             this.Btn_Sell.Name = "Btn_Sell";
             this.Btn_Sell.Size = new System.Drawing.Size(75, 23);
             this.Btn_Sell.TabIndex = 2;
             this.Btn_Sell.Text = "Sell";
             this.Btn_Sell.UseVisualStyleBackColor = true;
             // 
-            // Btn_Sel_Cal
-            // 
-            this.Btn_Sel_Cal.Location = new System.Drawing.Point(28, 228);
-            this.Btn_Sel_Cal.Name = "Btn_Sel_Cal";
-            this.Btn_Sel_Cal.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Sel_Cal.TabIndex = 1;
-            this.Btn_Sel_Cal.Text = "Calculate";
-            this.Btn_Sel_Cal.UseVisualStyleBackColor = true;
-            this.Btn_Sel_Cal.Click += new System.EventHandler(this.Btn_Sel_Cal_Click);
-            // 
             // panel_Buy
             // 
             this.panel_Buy.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel_Buy.Controls.Add(this.textBox1);
             this.panel_Buy.Controls.Add(this.label4);
             this.panel_Buy.Controls.Add(this.textBox3);
             this.panel_Buy.Controls.Add(this.textBox2);
-            this.panel_Buy.Controls.Add(this.textBox1);
             this.panel_Buy.Controls.Add(this.label3);
             this.panel_Buy.Controls.Add(this.label2);
             this.panel_Buy.Controls.Add(this.label1);
             this.panel_Buy.Controls.Add(this.Btn_Buy);
-            this.panel_Buy.Controls.Add(this.Btn_Buy_cal);
-            this.panel_Buy.Location = new System.Drawing.Point(6, 169);
+            this.panel_Buy.Location = new System.Drawing.Point(6, 215);
             this.panel_Buy.Name = "panel_Buy";
-            this.panel_Buy.Size = new System.Drawing.Size(272, 262);
+            this.panel_Buy.Size = new System.Drawing.Size(272, 215);
             this.panel_Buy.TabIndex = 0;
             // 
             // label4
@@ -408,13 +381,6 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(123, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
             // 
             // label3
             // 
@@ -445,22 +411,12 @@
             // 
             // Btn_Buy
             // 
-            this.Btn_Buy.Location = new System.Drawing.Point(169, 228);
+            this.Btn_Buy.Location = new System.Drawing.Point(92, 147);
             this.Btn_Buy.Name = "Btn_Buy";
             this.Btn_Buy.Size = new System.Drawing.Size(75, 23);
             this.Btn_Buy.TabIndex = 1;
             this.Btn_Buy.Text = "Buy";
             this.Btn_Buy.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Buy_cal
-            // 
-            this.Btn_Buy_cal.Location = new System.Drawing.Point(28, 228);
-            this.Btn_Buy_cal.Name = "Btn_Buy_cal";
-            this.Btn_Buy_cal.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Buy_cal.TabIndex = 0;
-            this.Btn_Buy_cal.Text = "Calculate";
-            this.Btn_Buy_cal.UseVisualStyleBackColor = true;
-            this.Btn_Buy_cal.Click += new System.EventHandler(this.Btn_Buy_cal_Click);
             // 
             // tabPage2
             // 
@@ -478,31 +434,30 @@
             // 
             // chart2
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(7, 6);
+            chartArea95.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea95);
+            legend95.Name = "Legend1";
+            this.chart2.Legends.Add(legend95);
+            this.chart2.Location = new System.Drawing.Point(7, 30);
             this.chart2.Name = "chart2";
-            this.chart2.Size = new System.Drawing.Size(563, 156);
+            this.chart2.Size = new System.Drawing.Size(563, 160);
             this.chart2.TabIndex = 4;
             this.chart2.Text = "chart2";
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.textBox12);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox9);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(298, 169);
+            this.panel1.Location = new System.Drawing.Point(298, 215);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 262);
+            this.panel1.Size = new System.Drawing.Size(272, 215);
             this.panel1.TabIndex = 3;
             // 
             // label9
@@ -529,13 +484,6 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 13;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(123, 15);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 12;
             // 
             // label10
             // 
@@ -566,38 +514,27 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(163, 228);
+            this.button1.Location = new System.Drawing.Point(93, 154);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Sell";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(28, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Calculate";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.textBox9);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.textBox10);
             this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Controls.Add(this.textBox12);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Location = new System.Drawing.Point(6, 169);
+            this.panel2.Location = new System.Drawing.Point(6, 215);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(272, 262);
+            this.panel2.Size = new System.Drawing.Size(272, 215);
             this.panel2.TabIndex = 2;
             // 
             // label13
@@ -624,13 +561,6 @@
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(100, 20);
             this.textBox11.TabIndex = 6;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(123, 15);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 5;
             // 
             // label14
             // 
@@ -661,22 +591,12 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(169, 228);
+            this.button3.Location = new System.Drawing.Point(89, 154);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 1;
             this.button3.Text = "Buy";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(28, 228);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Calculate";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tabPage3
             // 
@@ -694,31 +614,30 @@
             // 
             // chart3
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(7, 6);
+            chartArea96.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea96);
+            legend96.Name = "Legend1";
+            this.chart3.Legends.Add(legend96);
+            this.chart3.Location = new System.Drawing.Point(7, 30);
             this.chart3.Name = "chart3";
-            this.chart3.Size = new System.Drawing.Size(563, 156);
+            this.chart3.Size = new System.Drawing.Size(563, 160);
             this.chart3.TabIndex = 4;
             this.chart3.Text = "chart3";
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.textBox18);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.textBox13);
             this.panel3.Controls.Add(this.textBox14);
-            this.panel3.Controls.Add(this.textBox15);
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Location = new System.Drawing.Point(298, 169);
+            this.panel3.Location = new System.Drawing.Point(298, 215);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(272, 262);
+            this.panel3.Size = new System.Drawing.Size(272, 215);
             this.panel3.TabIndex = 3;
             // 
             // label17
@@ -745,13 +664,6 @@
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(100, 20);
             this.textBox14.TabIndex = 13;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(123, 15);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 12;
             // 
             // label18
             // 
@@ -782,38 +694,27 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(163, 228);
+            this.button5.Location = new System.Drawing.Point(85, 150);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 2;
             this.button5.Text = "Sell";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(28, 228);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Calculate";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.textBox15);
             this.panel4.Controls.Add(this.label21);
             this.panel4.Controls.Add(this.textBox16);
             this.panel4.Controls.Add(this.textBox17);
-            this.panel4.Controls.Add(this.textBox18);
             this.panel4.Controls.Add(this.label22);
             this.panel4.Controls.Add(this.label23);
             this.panel4.Controls.Add(this.label24);
             this.panel4.Controls.Add(this.button7);
-            this.panel4.Controls.Add(this.button8);
-            this.panel4.Location = new System.Drawing.Point(6, 169);
+            this.panel4.Location = new System.Drawing.Point(6, 215);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(272, 262);
+            this.panel4.Size = new System.Drawing.Size(272, 215);
             this.panel4.TabIndex = 2;
             // 
             // label21
@@ -840,13 +741,6 @@
             this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(100, 20);
             this.textBox17.TabIndex = 6;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(123, 15);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 5;
             // 
             // label22
             // 
@@ -877,22 +771,12 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(169, 228);
+            this.button7.Location = new System.Drawing.Point(85, 150);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 1;
             this.button7.Text = "Buy";
             this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(28, 228);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Calculate";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // tabPage4
             // 
@@ -910,31 +794,30 @@
             // 
             // chart4
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart4.Legends.Add(legend4);
-            this.chart4.Location = new System.Drawing.Point(7, 7);
+            chartArea93.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea93);
+            legend93.Name = "Legend1";
+            this.chart4.Legends.Add(legend93);
+            this.chart4.Location = new System.Drawing.Point(7, 30);
             this.chart4.Name = "chart4";
-            this.chart4.Size = new System.Drawing.Size(563, 156);
+            this.chart4.Size = new System.Drawing.Size(563, 160);
             this.chart4.TabIndex = 4;
             this.chart4.Text = "chart4";
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.textBox24);
             this.panel5.Controls.Add(this.label25);
             this.panel5.Controls.Add(this.textBox19);
             this.panel5.Controls.Add(this.textBox20);
-            this.panel5.Controls.Add(this.textBox21);
             this.panel5.Controls.Add(this.label26);
             this.panel5.Controls.Add(this.label27);
             this.panel5.Controls.Add(this.label28);
             this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.button10);
-            this.panel5.Location = new System.Drawing.Point(298, 169);
+            this.panel5.Location = new System.Drawing.Point(298, 215);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(272, 262);
+            this.panel5.Size = new System.Drawing.Size(272, 215);
             this.panel5.TabIndex = 3;
             // 
             // label25
@@ -961,13 +844,6 @@
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(100, 20);
             this.textBox20.TabIndex = 13;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(123, 15);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 12;
             // 
             // label26
             // 
@@ -998,38 +874,27 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(163, 228);
+            this.button9.Location = new System.Drawing.Point(91, 156);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 2;
             this.button9.Text = "Sell";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(28, 228);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Calculate";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.textBox21);
             this.panel6.Controls.Add(this.label29);
             this.panel6.Controls.Add(this.textBox22);
             this.panel6.Controls.Add(this.textBox23);
-            this.panel6.Controls.Add(this.textBox24);
             this.panel6.Controls.Add(this.label30);
             this.panel6.Controls.Add(this.label31);
             this.panel6.Controls.Add(this.label32);
             this.panel6.Controls.Add(this.button11);
-            this.panel6.Controls.Add(this.button12);
-            this.panel6.Location = new System.Drawing.Point(6, 169);
+            this.panel6.Location = new System.Drawing.Point(6, 215);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(272, 262);
+            this.panel6.Size = new System.Drawing.Size(272, 215);
             this.panel6.TabIndex = 2;
             // 
             // label29
@@ -1056,13 +921,6 @@
             this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(100, 20);
             this.textBox23.TabIndex = 6;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(123, 15);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(100, 20);
-            this.textBox24.TabIndex = 5;
             // 
             // label30
             // 
@@ -1093,22 +951,12 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(169, 228);
+            this.button11.Location = new System.Drawing.Point(91, 156);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 1;
             this.button11.Text = "Buy";
             this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(28, 228);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Calculate";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // linkBtnRegister
             // 
@@ -1141,15 +989,20 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(115, 20);
             this.txtUserName.TabIndex = 13;
+            this.txtUserName.Text = "E-mail";
+            this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
+            this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
             // 
             // txtPassWord
             // 
             this.txtPassWord.ForeColor = System.Drawing.Color.LightGray;
             this.txtPassWord.Location = new System.Drawing.Point(604, 51);
             this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.PasswordChar = '*';
             this.txtPassWord.Size = new System.Drawing.Size(114, 20);
             this.txtPassWord.TabIndex = 14;
+            this.txtPassWord.Text = "Password";
+            this.txtPassWord.Enter += new System.EventHandler(this.txtPassWord_Enter_1);
+            this.txtPassWord.Leave += new System.EventHandler(this.txtPassWord_Leave);
             // 
             // pictureBox1
             // 
@@ -1174,8 +1027,72 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 10000;
+            this.timer1.Interval = 99999999;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(124, 14);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(124, 16);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 17;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(124, 16);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 9;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(124, 16);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.TabIndex = 18;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(124, 16);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 20);
+            this.textBox15.TabIndex = 19;
+            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(124, 16);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(100, 20);
+            this.textBox18.TabIndex = 20;
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(124, 16);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(100, 20);
+            this.textBox21.TabIndex = 21;
+            this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(124, 16);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(100, 20);
+            this.textBox24.TabIndex = 22;
+            this.textBox24.TextChanged += new System.EventHandler(this.textBox24_TextChanged);
             // 
             // Main
             // 
@@ -1257,44 +1174,36 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel_Sell;
         private System.Windows.Forms.Button Btn_Sell;
-        private System.Windows.Forms.Button Btn_Sel_Cal;
         private System.Windows.Forms.Panel panel_Buy;
         private System.Windows.Forms.Button Btn_Buy;
-        private System.Windows.Forms.Button Btn_Buy_cal;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
@@ -1303,44 +1212,44 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox24;
     }
 }
 
