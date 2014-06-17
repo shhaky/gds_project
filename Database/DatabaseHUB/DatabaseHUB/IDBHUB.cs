@@ -13,6 +13,8 @@ namespace DatabaseHUB
     {
         //---register part---
         [OperationContract]
+        bool checkUserName(string userName);
+        [OperationContract]
         bool registerAsUser(string userName, string firstName, string lastName, string eMail, string passWord);
 
         //---login part---
