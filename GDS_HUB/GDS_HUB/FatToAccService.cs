@@ -10,7 +10,7 @@ namespace GDS_HUB
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class FatToAccService : IFatC_to_AccM
     {
-        public ServiceFromAccM.PortalClient H_A_proxy = new ServiceFromAccM.PortalClient();
+        public ServiceFromAccM.DBHUBClient H_A_proxy = new ServiceFromAccM.DBHUBClient();
 
         // list of all client who are online for being updated when something changes
         private List<Client> _listOnlineClient = new List<Client>();
@@ -26,10 +26,10 @@ namespace GDS_HUB
             try
             {
                 _logInfo = checkIfExistedUserNameHUB(accountName);
-                if (_logInfo == 4) // checks if username exist first before we checks for password
+                if (_logInfo == 1) // checks if username exist first before we checks for password
                 {
                     _logInfo = checkPasswordHUB(accountName, password);
-                    if (_logInfo == 4)
+                    if (_logInfo == 1)
                     {
                         Client client = new Client();
                         client.EmailAddress = accountName;
@@ -64,25 +64,26 @@ namespace GDS_HUB
 
 
         // this method is for registration
-        public bool register( string userName, string passWord, string firstName, string lastName, string email, string joinDate)
+        public int register( string userName, string passWord, string firstName, string lastName, string email, string joinDate)
         {
             int isTaken;
             bool check = false;
 
             isTaken = checkIfExistedUserNameHUB(userName);
-            if (isTaken == 4)
+            if (isTaken == 2) // username is not in use and not server error
             {
                 try
                 {
-                    check = H_A_proxy.addNewUser(userName, passWord, firstName, lastName, email, joinDate);
-
+                    check = H_A_proxy.registerAsUser(userName, firstName, lastName, email, passWord);
+                    if (check == false)
+                        isTaken = 3;
                 }
                 catch (Exception)
                 {
-                    check = false;
+                    isTaken = 3; // server error
                 }
             }
-            return check;
+            return isTaken;
         }
 
         // this method is for transfert money to one client to another
@@ -101,13 +102,13 @@ namespace GDS_HUB
             int check;
             try
             {
-                if (H_A_proxy.checkIfExistedUserName(userName))
+                if (H_A_proxy.checkUserName(userName))
                 {
-                    check = 4; // username exist
+                    check = 1; // username exist
                 }
                 else
                 {
-                    check = 1; // username doesnt exist
+                    check = 2; // username doesnt exist
                 }
 
             }
@@ -124,8 +125,8 @@ namespace GDS_HUB
             int check;
             try
             {
-                if (!H_A_proxy.checkPassword(userName, passWord))
-                    check = 4; // password exist
+                if (H_A_proxy.login(userName, passWord))
+                    check = 1; // password exist
                 else
                     check = 2; // password doesnt exist
 

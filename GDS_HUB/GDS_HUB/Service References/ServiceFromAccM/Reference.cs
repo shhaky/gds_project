@@ -12,217 +12,161 @@ namespace GDS_HUB.ServiceFromAccM {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceFromAccM.IPortal", SessionMode=System.ServiceModel.SessionMode.Required)]
-    public interface IPortal {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceFromAccM.IDBHUB")]
+    public interface IDBHUB {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/checkIfExistedUserName", ReplyAction="http://tempuri.org/IPortal/checkIfExistedUserNameResponse")]
-        bool checkIfExistedUserName(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/checkUserName", ReplyAction="http://tempuri.org/IDBHUB/checkUserNameResponse")]
+        bool checkUserName(string userName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/checkIfExistedUserName", ReplyAction="http://tempuri.org/IPortal/checkIfExistedUserNameResponse")]
-        System.Threading.Tasks.Task<bool> checkIfExistedUserNameAsync(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/checkUserName", ReplyAction="http://tempuri.org/IDBHUB/checkUserNameResponse")]
+        System.Threading.Tasks.Task<bool> checkUserNameAsync(string userName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/addNewUser", ReplyAction="http://tempuri.org/IPortal/addNewUserResponse")]
-        bool addNewUser(string userName, string passWord, string firstName, string lastName, string email, string joinDate);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/registerAsUser", ReplyAction="http://tempuri.org/IDBHUB/registerAsUserResponse")]
+        bool registerAsUser(string userName, string firstName, string lastName, string eMail, string passWord);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/addNewUser", ReplyAction="http://tempuri.org/IPortal/addNewUserResponse")]
-        System.Threading.Tasks.Task<bool> addNewUserAsync(string userName, string passWord, string firstName, string lastName, string email, string joinDate);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/registerAsUser", ReplyAction="http://tempuri.org/IDBHUB/registerAsUserResponse")]
+        System.Threading.Tasks.Task<bool> registerAsUserAsync(string userName, string firstName, string lastName, string eMail, string passWord);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/checkPassword", ReplyAction="http://tempuri.org/IPortal/checkPasswordResponse")]
-        bool checkPassword(string userName, string passWord);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/login", ReplyAction="http://tempuri.org/IDBHUB/loginResponse")]
+        bool login(string userName, string passWord);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/checkPassword", ReplyAction="http://tempuri.org/IPortal/checkPasswordResponse")]
-        System.Threading.Tasks.Task<bool> checkPasswordAsync(string userName, string passWord);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/login", ReplyAction="http://tempuri.org/IDBHUB/loginResponse")]
+        System.Threading.Tasks.Task<bool> loginAsync(string userName, string passWord);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/updateLoginTime", ReplyAction="http://tempuri.org/IPortal/updateLoginTimeResponse")]
-        void updateLoginTime(string userName, string time);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showUserID", ReplyAction="http://tempuri.org/IDBHUB/showUserIDResponse")]
+        long showUserID(string userName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/updateLoginTime", ReplyAction="http://tempuri.org/IPortal/updateLoginTimeResponse")]
-        System.Threading.Tasks.Task updateLoginTimeAsync(string userName, string time);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showUserID", ReplyAction="http://tempuri.org/IDBHUB/showUserIDResponse")]
+        System.Threading.Tasks.Task<long> showUserIDAsync(string userName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getLastLoginTime", ReplyAction="http://tempuri.org/IPortal/getLastLoginTimeResponse")]
-        string getLastLoginTime(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showUserName", ReplyAction="http://tempuri.org/IDBHUB/showUserNameResponse")]
+        string showUserName(long userId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getLastLoginTime", ReplyAction="http://tempuri.org/IPortal/getLastLoginTimeResponse")]
-        System.Threading.Tasks.Task<string> getLastLoginTimeAsync(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showUserName", ReplyAction="http://tempuri.org/IDBHUB/showUserNameResponse")]
+        System.Threading.Tasks.Task<string> showUserNameAsync(long userId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getUserId", ReplyAction="http://tempuri.org/IPortal/getUserIdResponse")]
-        long getUserId(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showEmail", ReplyAction="http://tempuri.org/IDBHUB/showEmailResponse")]
+        string showEmail(long userId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getUserId", ReplyAction="http://tempuri.org/IPortal/getUserIdResponse")]
-        System.Threading.Tasks.Task<long> getUserIdAsync(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showEmail", ReplyAction="http://tempuri.org/IDBHUB/showEmailResponse")]
+        System.Threading.Tasks.Task<string> showEmailAsync(long userId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getPassWord", ReplyAction="http://tempuri.org/IPortal/getPassWordResponse")]
-        string getPassWord(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/updateLoginTime", ReplyAction="http://tempuri.org/IDBHUB/updateLoginTimeResponse")]
+        void updateLoginTime(long userId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getPassWord", ReplyAction="http://tempuri.org/IPortal/getPassWordResponse")]
-        System.Threading.Tasks.Task<string> getPassWordAsync(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/updateLoginTime", ReplyAction="http://tempuri.org/IDBHUB/updateLoginTimeResponse")]
+        System.Threading.Tasks.Task updateLoginTimeAsync(long userId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getFirstName", ReplyAction="http://tempuri.org/IPortal/getFirstNameResponse")]
-        string getFirstName(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/changePass", ReplyAction="http://tempuri.org/IDBHUB/changePassResponse")]
+        bool changePass(long userId, string oldPass, string newPass);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getFirstName", ReplyAction="http://tempuri.org/IPortal/getFirstNameResponse")]
-        System.Threading.Tasks.Task<string> getFirstNameAsync(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/changePass", ReplyAction="http://tempuri.org/IDBHUB/changePassResponse")]
+        System.Threading.Tasks.Task<bool> changePassAsync(long userId, string oldPass, string newPass);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getLastName", ReplyAction="http://tempuri.org/IPortal/getLastNameResponse")]
-        string getLastName(string userName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showBalance", ReplyAction="http://tempuri.org/IDBHUB/showBalanceResponse")]
+        decimal showBalance(long userId, string coinType);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getLastName", ReplyAction="http://tempuri.org/IPortal/getLastNameResponse")]
-        System.Threading.Tasks.Task<string> getLastNameAsync(string userName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getEmail", ReplyAction="http://tempuri.org/IPortal/getEmailResponse")]
-        string getEmail(string userName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getEmail", ReplyAction="http://tempuri.org/IPortal/getEmailResponse")]
-        System.Threading.Tasks.Task<string> getEmailAsync(string userName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getJoinDate", ReplyAction="http://tempuri.org/IPortal/getJoinDateResponse")]
-        string getJoinDate(string userName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getJoinDate", ReplyAction="http://tempuri.org/IPortal/getJoinDateResponse")]
-        System.Threading.Tasks.Task<string> getJoinDateAsync(string userName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/changePassword", ReplyAction="http://tempuri.org/IPortal/changePasswordResponse")]
-        bool changePassword(string userName, string password);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/changePassword", ReplyAction="http://tempuri.org/IPortal/changePasswordResponse")]
-        System.Threading.Tasks.Task<bool> changePasswordAsync(string userName, string password);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getBalance", ReplyAction="http://tempuri.org/IPortal/getBalanceResponse")]
-        decimal getBalance(long userId, string coinType);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPortal/getBalance", ReplyAction="http://tempuri.org/IPortal/getBalanceResponse")]
-        System.Threading.Tasks.Task<decimal> getBalanceAsync(long userId, string coinType);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDBHUB/showBalance", ReplyAction="http://tempuri.org/IDBHUB/showBalanceResponse")]
+        System.Threading.Tasks.Task<decimal> showBalanceAsync(long userId, string coinType);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IPortalChannel : GDS_HUB.ServiceFromAccM.IPortal, System.ServiceModel.IClientChannel {
+    public interface IDBHUBChannel : GDS_HUB.ServiceFromAccM.IDBHUB, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class PortalClient : System.ServiceModel.ClientBase<GDS_HUB.ServiceFromAccM.IPortal>, GDS_HUB.ServiceFromAccM.IPortal {
+    public partial class DBHUBClient : System.ServiceModel.ClientBase<GDS_HUB.ServiceFromAccM.IDBHUB>, GDS_HUB.ServiceFromAccM.IDBHUB {
         
-        public PortalClient() {
+        public DBHUBClient() {
         }
         
-        public PortalClient(string endpointConfigurationName) : 
+        public DBHUBClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public PortalClient(string endpointConfigurationName, string remoteAddress) : 
+        public DBHUBClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public PortalClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public DBHUBClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public PortalClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public DBHUBClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public bool checkIfExistedUserName(string userName) {
-            return base.Channel.checkIfExistedUserName(userName);
+        public bool checkUserName(string userName) {
+            return base.Channel.checkUserName(userName);
         }
         
-        public System.Threading.Tasks.Task<bool> checkIfExistedUserNameAsync(string userName) {
-            return base.Channel.checkIfExistedUserNameAsync(userName);
+        public System.Threading.Tasks.Task<bool> checkUserNameAsync(string userName) {
+            return base.Channel.checkUserNameAsync(userName);
         }
         
-        public bool addNewUser(string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
-            return base.Channel.addNewUser(userName, passWord, firstName, lastName, email, joinDate);
+        public bool registerAsUser(string userName, string firstName, string lastName, string eMail, string passWord) {
+            return base.Channel.registerAsUser(userName, firstName, lastName, eMail, passWord);
         }
         
-        public System.Threading.Tasks.Task<bool> addNewUserAsync(string userName, string passWord, string firstName, string lastName, string email, string joinDate) {
-            return base.Channel.addNewUserAsync(userName, passWord, firstName, lastName, email, joinDate);
+        public System.Threading.Tasks.Task<bool> registerAsUserAsync(string userName, string firstName, string lastName, string eMail, string passWord) {
+            return base.Channel.registerAsUserAsync(userName, firstName, lastName, eMail, passWord);
         }
         
-        public bool checkPassword(string userName, string passWord) {
-            return base.Channel.checkPassword(userName, passWord);
+        public bool login(string userName, string passWord) {
+            return base.Channel.login(userName, passWord);
         }
         
-        public System.Threading.Tasks.Task<bool> checkPasswordAsync(string userName, string passWord) {
-            return base.Channel.checkPasswordAsync(userName, passWord);
+        public System.Threading.Tasks.Task<bool> loginAsync(string userName, string passWord) {
+            return base.Channel.loginAsync(userName, passWord);
         }
         
-        public void updateLoginTime(string userName, string time) {
-            base.Channel.updateLoginTime(userName, time);
+        public long showUserID(string userName) {
+            return base.Channel.showUserID(userName);
         }
         
-        public System.Threading.Tasks.Task updateLoginTimeAsync(string userName, string time) {
-            return base.Channel.updateLoginTimeAsync(userName, time);
+        public System.Threading.Tasks.Task<long> showUserIDAsync(string userName) {
+            return base.Channel.showUserIDAsync(userName);
         }
         
-        public string getLastLoginTime(string userName) {
-            return base.Channel.getLastLoginTime(userName);
+        public string showUserName(long userId) {
+            return base.Channel.showUserName(userId);
         }
         
-        public System.Threading.Tasks.Task<string> getLastLoginTimeAsync(string userName) {
-            return base.Channel.getLastLoginTimeAsync(userName);
+        public System.Threading.Tasks.Task<string> showUserNameAsync(long userId) {
+            return base.Channel.showUserNameAsync(userId);
         }
         
-        public long getUserId(string userName) {
-            return base.Channel.getUserId(userName);
+        public string showEmail(long userId) {
+            return base.Channel.showEmail(userId);
         }
         
-        public System.Threading.Tasks.Task<long> getUserIdAsync(string userName) {
-            return base.Channel.getUserIdAsync(userName);
+        public System.Threading.Tasks.Task<string> showEmailAsync(long userId) {
+            return base.Channel.showEmailAsync(userId);
         }
         
-        public string getPassWord(string userName) {
-            return base.Channel.getPassWord(userName);
+        public void updateLoginTime(long userId) {
+            base.Channel.updateLoginTime(userId);
         }
         
-        public System.Threading.Tasks.Task<string> getPassWordAsync(string userName) {
-            return base.Channel.getPassWordAsync(userName);
+        public System.Threading.Tasks.Task updateLoginTimeAsync(long userId) {
+            return base.Channel.updateLoginTimeAsync(userId);
         }
         
-        public string getFirstName(string userName) {
-            return base.Channel.getFirstName(userName);
+        public bool changePass(long userId, string oldPass, string newPass) {
+            return base.Channel.changePass(userId, oldPass, newPass);
         }
         
-        public System.Threading.Tasks.Task<string> getFirstNameAsync(string userName) {
-            return base.Channel.getFirstNameAsync(userName);
+        public System.Threading.Tasks.Task<bool> changePassAsync(long userId, string oldPass, string newPass) {
+            return base.Channel.changePassAsync(userId, oldPass, newPass);
         }
         
-        public string getLastName(string userName) {
-            return base.Channel.getLastName(userName);
+        public decimal showBalance(long userId, string coinType) {
+            return base.Channel.showBalance(userId, coinType);
         }
         
-        public System.Threading.Tasks.Task<string> getLastNameAsync(string userName) {
-            return base.Channel.getLastNameAsync(userName);
-        }
-        
-        public string getEmail(string userName) {
-            return base.Channel.getEmail(userName);
-        }
-        
-        public System.Threading.Tasks.Task<string> getEmailAsync(string userName) {
-            return base.Channel.getEmailAsync(userName);
-        }
-        
-        public string getJoinDate(string userName) {
-            return base.Channel.getJoinDate(userName);
-        }
-        
-        public System.Threading.Tasks.Task<string> getJoinDateAsync(string userName) {
-            return base.Channel.getJoinDateAsync(userName);
-        }
-        
-        public bool changePassword(string userName, string password) {
-            return base.Channel.changePassword(userName, password);
-        }
-        
-        public System.Threading.Tasks.Task<bool> changePasswordAsync(string userName, string password) {
-            return base.Channel.changePasswordAsync(userName, password);
-        }
-        
-        public decimal getBalance(long userId, string coinType) {
-            return base.Channel.getBalance(userId, coinType);
-        }
-        
-        public System.Threading.Tasks.Task<decimal> getBalanceAsync(long userId, string coinType) {
-            return base.Channel.getBalanceAsync(userId, coinType);
+        public System.Threading.Tasks.Task<decimal> showBalanceAsync(long userId, string coinType) {
+            return base.Channel.showBalanceAsync(userId, coinType);
         }
     }
 }

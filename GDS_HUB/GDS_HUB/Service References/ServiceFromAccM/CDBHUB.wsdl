@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CPortal" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_policy">
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CDBHUB" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
@@ -103,7 +103,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_checkIfExistedUserName_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_checkUserName_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -126,7 +126,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_checkIfExistedUserName_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_checkUserName_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -149,7 +149,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_addNewUser_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_registerAsUser_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -172,7 +172,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_addNewUser_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_registerAsUser_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -195,7 +195,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_checkPassword_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_login_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -218,7 +218,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_checkPassword_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_login_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -241,7 +241,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_updateLoginTime_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showUserID_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -264,7 +264,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_updateLoginTime_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showUserID_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -287,7 +287,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getLastLoginTime_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showUserName_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -310,7 +310,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getLastLoginTime_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showUserName_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -333,7 +333,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getUserId_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showEmail_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -356,7 +356,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getUserId_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showEmail_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -379,7 +379,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getPassWord_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_updateLoginTime_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -402,7 +402,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getPassWord_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_updateLoginTime_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -425,7 +425,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getFirstName_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_changePass_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -448,7 +448,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getFirstName_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_changePass_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -471,7 +471,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getLastName_Input_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showBalance_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -494,191 +494,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getLastName_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getEmail_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getEmail_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getJoinDate_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getJoinDate_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_changePassword_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_changePassword_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getBalance_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="Sequence" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="SequenceAcknowledgement" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="AckRequested" Namespace="http://schemas.xmlsoap.org/ws/2005/02/rm" />
-          <sp:Header Name="ChannelInstance" Namespace="http://schemas.microsoft.com/ws/2005/02/duplex" />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSDualHttpBinding_IPortal_getBalance_output_policy">
+  <wsp:Policy wsu:Id="WSDualHttpBinding_IDBHUB_showBalance_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -703,294 +519,210 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IPortal_checkIfExistedUserName_InputMessage">
-    <wsdl:part name="parameters" element="tns:checkIfExistedUserName" />
+  <wsdl:message name="IDBHUB_checkUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkUserName" />
   </wsdl:message>
-  <wsdl:message name="IPortal_checkIfExistedUserName_OutputMessage">
-    <wsdl:part name="parameters" element="tns:checkIfExistedUserNameResponse" />
+  <wsdl:message name="IDBHUB_checkUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkUserNameResponse" />
   </wsdl:message>
-  <wsdl:message name="IPortal_addNewUser_InputMessage">
-    <wsdl:part name="parameters" element="tns:addNewUser" />
+  <wsdl:message name="IDBHUB_registerAsUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerAsUser" />
   </wsdl:message>
-  <wsdl:message name="IPortal_addNewUser_OutputMessage">
-    <wsdl:part name="parameters" element="tns:addNewUserResponse" />
+  <wsdl:message name="IDBHUB_registerAsUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerAsUserResponse" />
   </wsdl:message>
-  <wsdl:message name="IPortal_checkPassword_InputMessage">
-    <wsdl:part name="parameters" element="tns:checkPassword" />
+  <wsdl:message name="IDBHUB_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:login" />
   </wsdl:message>
-  <wsdl:message name="IPortal_checkPassword_OutputMessage">
-    <wsdl:part name="parameters" element="tns:checkPasswordResponse" />
+  <wsdl:message name="IDBHUB_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
   </wsdl:message>
-  <wsdl:message name="IPortal_updateLoginTime_InputMessage">
+  <wsdl:message name="IDBHUB_showUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:showUserID" />
+  </wsdl:message>
+  <wsdl:message name="IDBHUB_showUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBHUB_showUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:showUserName" />
+  </wsdl:message>
+  <wsdl:message name="IDBHUB_showUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBHUB_showEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:showEmail" />
+  </wsdl:message>
+  <wsdl:message name="IDBHUB_showEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBHUB_updateLoginTime_InputMessage">
     <wsdl:part name="parameters" element="tns:updateLoginTime" />
   </wsdl:message>
-  <wsdl:message name="IPortal_updateLoginTime_OutputMessage">
+  <wsdl:message name="IDBHUB_updateLoginTime_OutputMessage">
     <wsdl:part name="parameters" element="tns:updateLoginTimeResponse" />
   </wsdl:message>
-  <wsdl:message name="IPortal_getLastLoginTime_InputMessage">
-    <wsdl:part name="parameters" element="tns:getLastLoginTime" />
+  <wsdl:message name="IDBHUB_changePass_InputMessage">
+    <wsdl:part name="parameters" element="tns:changePass" />
   </wsdl:message>
-  <wsdl:message name="IPortal_getLastLoginTime_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getLastLoginTimeResponse" />
+  <wsdl:message name="IDBHUB_changePass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:changePassResponse" />
   </wsdl:message>
-  <wsdl:message name="IPortal_getUserId_InputMessage">
-    <wsdl:part name="parameters" element="tns:getUserId" />
+  <wsdl:message name="IDBHUB_showBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:showBalance" />
   </wsdl:message>
-  <wsdl:message name="IPortal_getUserId_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getUserIdResponse" />
+  <wsdl:message name="IDBHUB_showBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showBalanceResponse" />
   </wsdl:message>
-  <wsdl:message name="IPortal_getPassWord_InputMessage">
-    <wsdl:part name="parameters" element="tns:getPassWord" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getPassWord_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getPassWordResponse" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getFirstName_InputMessage">
-    <wsdl:part name="parameters" element="tns:getFirstName" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getFirstName_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getFirstNameResponse" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getLastName_InputMessage">
-    <wsdl:part name="parameters" element="tns:getLastName" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getLastName_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getLastNameResponse" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getEmail_InputMessage">
-    <wsdl:part name="parameters" element="tns:getEmail" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getEmail_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getEmailResponse" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getJoinDate_InputMessage">
-    <wsdl:part name="parameters" element="tns:getJoinDate" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getJoinDate_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getJoinDateResponse" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_changePassword_InputMessage">
-    <wsdl:part name="parameters" element="tns:changePassword" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_changePassword_OutputMessage">
-    <wsdl:part name="parameters" element="tns:changePasswordResponse" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getBalance_InputMessage">
-    <wsdl:part name="parameters" element="tns:getBalance" />
-  </wsdl:message>
-  <wsdl:message name="IPortal_getBalance_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getBalanceResponse" />
-  </wsdl:message>
-  <wsdl:portType msc:usingSession="true" name="IPortal">
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="checkIfExistedUserName">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/checkIfExistedUserName" message="tns:IPortal_checkIfExistedUserName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/checkIfExistedUserNameResponse" message="tns:IPortal_checkIfExistedUserName_OutputMessage" />
+  <wsdl:portType name="IDBHUB">
+    <wsdl:operation name="checkUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/checkUserName" message="tns:IDBHUB_checkUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/checkUserNameResponse" message="tns:IDBHUB_checkUserName_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="addNewUser">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/addNewUser" message="tns:IPortal_addNewUser_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/addNewUserResponse" message="tns:IPortal_addNewUser_OutputMessage" />
+    <wsdl:operation name="registerAsUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/registerAsUser" message="tns:IDBHUB_registerAsUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/registerAsUserResponse" message="tns:IDBHUB_registerAsUser_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="checkPassword">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/checkPassword" message="tns:IPortal_checkPassword_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/checkPasswordResponse" message="tns:IPortal_checkPassword_OutputMessage" />
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/login" message="tns:IDBHUB_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/loginResponse" message="tns:IDBHUB_login_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="updateLoginTime">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/updateLoginTime" message="tns:IPortal_updateLoginTime_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/updateLoginTimeResponse" message="tns:IPortal_updateLoginTime_OutputMessage" />
+    <wsdl:operation name="showUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/showUserID" message="tns:IDBHUB_showUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/showUserIDResponse" message="tns:IDBHUB_showUserID_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getLastLoginTime">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getLastLoginTime" message="tns:IPortal_getLastLoginTime_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getLastLoginTimeResponse" message="tns:IPortal_getLastLoginTime_OutputMessage" />
+    <wsdl:operation name="showUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/showUserName" message="tns:IDBHUB_showUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/showUserNameResponse" message="tns:IDBHUB_showUserName_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getUserId">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getUserId" message="tns:IPortal_getUserId_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getUserIdResponse" message="tns:IPortal_getUserId_OutputMessage" />
+    <wsdl:operation name="showEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/showEmail" message="tns:IDBHUB_showEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/showEmailResponse" message="tns:IDBHUB_showEmail_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getPassWord">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getPassWord" message="tns:IPortal_getPassWord_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getPassWordResponse" message="tns:IPortal_getPassWord_OutputMessage" />
+    <wsdl:operation name="updateLoginTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/updateLoginTime" message="tns:IDBHUB_updateLoginTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/updateLoginTimeResponse" message="tns:IDBHUB_updateLoginTime_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getFirstName">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getFirstName" message="tns:IPortal_getFirstName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getFirstNameResponse" message="tns:IPortal_getFirstName_OutputMessage" />
+    <wsdl:operation name="changePass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/changePass" message="tns:IDBHUB_changePass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/changePassResponse" message="tns:IDBHUB_changePass_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getLastName">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getLastName" message="tns:IPortal_getLastName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getLastNameResponse" message="tns:IPortal_getLastName_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getEmail">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getEmail" message="tns:IPortal_getEmail_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getEmailResponse" message="tns:IPortal_getEmail_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getJoinDate">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getJoinDate" message="tns:IPortal_getJoinDate_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getJoinDateResponse" message="tns:IPortal_getJoinDate_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="changePassword">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/changePassword" message="tns:IPortal_changePassword_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/changePasswordResponse" message="tns:IPortal_changePassword_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="getBalance">
-      <wsdl:input wsaw:Action="http://tempuri.org/IPortal/getBalance" message="tns:IPortal_getBalance_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IPortal/getBalanceResponse" message="tns:IPortal_getBalance_OutputMessage" />
+    <wsdl:operation name="showBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBHUB/showBalance" message="tns:IDBHUB_showBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBHUB/showBalanceResponse" message="tns:IDBHUB_showBalance_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="WSDualHttpBinding_IPortal" type="tns:IPortal">
-    <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_policy" />
+  <wsdl:binding name="WSDualHttpBinding_IDBHUB" type="tns:IDBHUB">
+    <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="checkIfExistedUserName">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/checkIfExistedUserName" style="document" />
+    <wsdl:operation name="checkUserName">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/checkUserName" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_checkIfExistedUserName_Input_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_checkUserName_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_checkIfExistedUserName_output_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_checkUserName_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="addNewUser">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/addNewUser" style="document" />
+    <wsdl:operation name="registerAsUser">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/registerAsUser" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_addNewUser_Input_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_registerAsUser_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_addNewUser_output_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_registerAsUser_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="checkPassword">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/checkPassword" style="document" />
+    <wsdl:operation name="login">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/login" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_checkPassword_Input_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_login_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_checkPassword_output_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_login_output_policy" />
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showUserID">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/showUserID" style="document" />
+      <wsdl:input>
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showUserID_Input_policy" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showUserID_output_policy" />
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showUserName">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/showUserName" style="document" />
+      <wsdl:input>
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showUserName_Input_policy" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showUserName_output_policy" />
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showEmail">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/showEmail" style="document" />
+      <wsdl:input>
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showEmail_Input_policy" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showEmail_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="updateLoginTime">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/updateLoginTime" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/updateLoginTime" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_updateLoginTime_Input_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_updateLoginTime_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_updateLoginTime_output_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_updateLoginTime_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="getLastLoginTime">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getLastLoginTime" style="document" />
+    <wsdl:operation name="changePass">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/changePass" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getLastLoginTime_Input_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_changePass_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getLastLoginTime_output_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_changePass_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="getUserId">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getUserId" style="document" />
+    <wsdl:operation name="showBalance">
+      <soap12:operation soapAction="http://tempuri.org/IDBHUB/showBalance" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getUserId_Input_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showBalance_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getUserId_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getPassWord">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getPassWord" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getPassWord_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getPassWord_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getFirstName">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getFirstName" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getFirstName_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getFirstName_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getLastName">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getLastName" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getLastName_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getLastName_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getEmail">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getEmail" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getEmail_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getEmail_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getJoinDate">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getJoinDate" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getJoinDate_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getJoinDate_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="changePassword">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/changePassword" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_changePassword_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_changePassword_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getBalance">
-      <soap12:operation soapAction="http://tempuri.org/IPortal/getBalance" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getBalance_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSDualHttpBinding_IPortal_getBalance_output_policy" />
+        <wsp:PolicyReference URI="#WSDualHttpBinding_IDBHUB_showBalance_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="CPortal">
-    <wsdl:port name="WSDualHttpBinding_IPortal" binding="tns:WSDualHttpBinding_IPortal">
-      <soap12:address location="http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/" />
+  <wsdl:service name="CDBHUB">
+    <wsdl:port name="WSDualHttpBinding_IDBHUB" binding="tns:WSDualHttpBinding_IDBHUB">
+      <soap12:address location="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/" />
       <wsa10:EndpointReference>
-        <wsa10:Address>http://localhost:8733/Design_Time_Addresses/GdsServerSide/CPortal/</wsa10:Address>
+        <wsa10:Address>http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <Dns>localhost</Dns>
         </Identity>

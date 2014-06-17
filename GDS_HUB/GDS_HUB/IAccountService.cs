@@ -17,7 +17,7 @@ namespace GDS_HUB
         bool logOut();
 
         [OperationContract]
-        bool register(string userName, string passWord,string firstName,
+        int register(string userName, string passWord,string firstName,
                            string lastName, string email, string joinDate);
       
         [OperationContract]
