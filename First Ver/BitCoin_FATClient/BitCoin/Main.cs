@@ -430,6 +430,11 @@ namespace BitCoin
             }
         }
 
+        private void Btn_Buy_Click(object sender, EventArgs e)
+        {
+
+        }
+
        
 
     

@@ -84,14 +84,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.labLastLoginTime = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtShowEmail = new System.Windows.Forms.TextBox();
             this.txtShowUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.labLastLoginTime = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage6.SuspendLayout();
@@ -327,7 +327,7 @@
             this.btnWithdrawGenerate.Name = "btnWithdrawGenerate";
             this.btnWithdrawGenerate.Size = new System.Drawing.Size(75, 23);
             this.btnWithdrawGenerate.TabIndex = 7;
-            this.btnWithdrawGenerate.Text = "Generate";
+            this.btnWithdrawGenerate.Text = "withdraw";
             this.btnWithdrawGenerate.UseVisualStyleBackColor = true;
             this.btnWithdrawGenerate.Click += new System.EventHandler(this.btnWithdrawGenerate_Click);
             // 
@@ -673,6 +673,24 @@
             this.tabPage1.Text = "Information";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // labLastLoginTime
+            // 
+            this.labLastLoginTime.AutoSize = true;
+            this.labLastLoginTime.Location = new System.Drawing.Point(112, 100);
+            this.labLastLoginTime.Name = "labLastLoginTime";
+            this.labLastLoginTime.Size = new System.Drawing.Size(10, 13);
+            this.labLastLoginTime.TabIndex = 7;
+            this.labLastLoginTime.Text = "-";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(13, 100);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(84, 13);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Last login Time: ";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -722,24 +740,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 100);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 13);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Last login Time: ";
-            // 
-            // labLastLoginTime
-            // 
-            this.labLastLoginTime.AutoSize = true;
-            this.labLastLoginTime.Location = new System.Drawing.Point(112, 100);
-            this.labLastLoginTime.Name = "labLastLoginTime";
-            this.labLastLoginTime.Size = new System.Drawing.Size(10, 13);
-            this.labLastLoginTime.TabIndex = 7;
-            this.labLastLoginTime.Text = "-";
             // 
             // Profile
             // 
