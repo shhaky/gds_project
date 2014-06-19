@@ -21,12 +21,6 @@ namespace DatabaseHUB.ServiceReferenceSDB {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISDB/getLastestExistedUserId", ReplyAction="http://tempuri.org/ISDB/getLastestExistedUserIdResponse")]
         System.Threading.Tasks.Task<long> getLastestExistedUserIdAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISDB/showUserName", ReplyAction="http://tempuri.org/ISDB/showUserNameResponse")]
-        string showUserName(long userId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISDB/showUserName", ReplyAction="http://tempuri.org/ISDB/showUserNameResponse")]
-        System.Threading.Tasks.Task<string> showUserNameAsync(long userId);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISDB/checkUserName", ReplyAction="http://tempuri.org/ISDB/checkUserNameResponse")]
         bool checkUserName(string userName);
         
@@ -44,6 +38,12 @@ namespace DatabaseHUB.ServiceReferenceSDB {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISDB/showUserId", ReplyAction="http://tempuri.org/ISDB/showUserIdResponse")]
         System.Threading.Tasks.Task<long> showUserIdAsync(string userName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISDB/showUserName", ReplyAction="http://tempuri.org/ISDB/showUserNameResponse")]
+        string showUserName(long userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISDB/showUserName", ReplyAction="http://tempuri.org/ISDB/showUserNameResponse")]
+        System.Threading.Tasks.Task<string> showUserNameAsync(long userId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -81,14 +81,6 @@ namespace DatabaseHUB.ServiceReferenceSDB {
             return base.Channel.getLastestExistedUserIdAsync();
         }
         
-        public string showUserName(long userId) {
-            return base.Channel.showUserName(userId);
-        }
-        
-        public System.Threading.Tasks.Task<string> showUserNameAsync(long userId) {
-            return base.Channel.showUserNameAsync(userId);
-        }
-        
         public bool checkUserName(string userName) {
             return base.Channel.checkUserName(userName);
         }
@@ -111,6 +103,14 @@ namespace DatabaseHUB.ServiceReferenceSDB {
         
         public System.Threading.Tasks.Task<long> showUserIdAsync(string userName) {
             return base.Channel.showUserIdAsync(userName);
+        }
+        
+        public string showUserName(long userId) {
+            return base.Channel.showUserName(userId);
+        }
+        
+        public System.Threading.Tasks.Task<string> showUserNameAsync(long userId) {
+            return base.Channel.showUserNameAsync(userId);
         }
     }
 }

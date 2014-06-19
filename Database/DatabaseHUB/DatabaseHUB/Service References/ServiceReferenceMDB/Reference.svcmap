@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="626501f0-369e-4b6d-a12e-689629ae7fd0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="be7ec8bb-93c6-4808-9802-331e6bb8f1e8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/MainDataBase/CMDB/" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8783/Design_Time_Addresses/MainDataBase/CMDB/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CMDB.wsdl" MetadataType="Wsdl" ID="200771b8-0806-4e71-b171-792ab9634264" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MainDataBase/CMDB/?wsdl" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="15507185-6247-4ec2-9f30-5c0239b007d1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MainDataBase/CMDB/?disco" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="6c4ad7c8-17fd-4514-a8ae-15952a2d7086" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MainDataBase/CMDB/?xsd=xsd1" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="a384e7ff-31c6-496e-ab80-e67bff0dd836" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MainDataBase/CMDB/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="0fed24e9-2e05-4db5-bff3-4fb7f23f1337" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/MainDataBase/CMDB/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="591734f1-295e-4b92-b523-85817990e801" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/MainDataBase/CMDB/?xsd=xsd0" />
+    <MetadataFile FileName="CMDB.wsdl" MetadataType="Wsdl" ID="aa33b6c4-b345-4ea7-b610-913c1cd15d4c" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/MainDataBase/CMDB/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="ce967cdb-7dfd-492d-be1b-28c5ad6f162e" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/MainDataBase/CMDB/?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

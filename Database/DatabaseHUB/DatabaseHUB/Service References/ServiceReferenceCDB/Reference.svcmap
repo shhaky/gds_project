@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c0aa0b62-dbf3-4a3d-81c3-45c91c3b0bf4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1b4e4ec8-f4fa-4d29-abfa-124be6ab445e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/ChangeableDataBase/CCDB/" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8783/Design_Time_Addresses/ChangeableDataBase/CCDB/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="c0fedc3d-69bd-4c0b-9905-787dc9c967fb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ChangeableDataBase/CCDB/?xsd=xsd1" />
-    <MetadataFile FileName="CCDB.wsdl" MetadataType="Wsdl" ID="7ace77ff-6d2e-4b2f-8d4f-a431a2cb918c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ChangeableDataBase/CCDB/?wsdl" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="0bc19d73-8de0-4af7-8b10-456e4a643522" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ChangeableDataBase/CCDB/?disco" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="10640716-dbc4-42d3-b5f9-4b8e839d428f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ChangeableDataBase/CCDB/?xsd=xsd0" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="e860763b-3541-457a-8b30-fb08833b7655" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/ChangeableDataBase/CCDB/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="3efe3a64-180c-4234-994c-d542b2bee204" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/ChangeableDataBase/CCDB/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="41ff73be-d47e-41ec-aff3-3fd49791f096" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/ChangeableDataBase/CCDB/?disco" />
+    <MetadataFile FileName="CCDB.wsdl" MetadataType="Wsdl" ID="438952d9-3e01-45d9-9e3c-75f32ed6dd0b" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/ChangeableDataBase/CCDB/?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

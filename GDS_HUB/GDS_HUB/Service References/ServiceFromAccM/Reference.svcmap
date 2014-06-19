@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="844cca1c-16a5-4bbe-8d4a-9dedb8548d68" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cfea17e0-b0e8-405d-892b-79607e42daa1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8783/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CDBHUB.wsdl" MetadataType="Wsdl" ID="bda9a762-7a20-4eb3-b8dd-9419ca651ed2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?wsdl" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="8a0ef3c4-6302-4e23-91fb-c81d32091817" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?xsd=xsd1" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="59ccc828-a46f-46ec-9f67-af27c3ff8943" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?disco" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="63d683ca-cbdd-4fb7-bd82-caf054d55bd0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?xsd=xsd0" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="686e0177-9abe-40a5-8366-a8c278b3941f" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?xsd=xsd0" />
+    <MetadataFile FileName="CDBHUB.wsdl" MetadataType="Wsdl" ID="a85c3efd-3c4e-4c40-a73f-1d465607ee84" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="cbf20a8d-24fc-44b1-8334-67f14c52ac22" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="c3c9cbc4-fd8f-428b-b65a-f2d25c3e326e" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/DatabaseHUB/CDatabaseHUB/?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

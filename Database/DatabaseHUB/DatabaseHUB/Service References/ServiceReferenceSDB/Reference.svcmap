@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c54d76f1-3413-4e46-bae0-11ac37ec7022" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dc42c3da-d07c-4903-9d98-75bd1e3b251b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/SubTDataBase/CSDB" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8783/Design_Time_Addresses/SubTDataBase/CSDB" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CSDB.xsd" MetadataType="Schema" ID="7e8f4192-b5ab-4900-b417-f1c4ea036515" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SubTDataBase/CSDB?xsd=xsd0" />
-    <MetadataFile FileName="CSDB.disco" MetadataType="Disco" ID="514706aa-683d-4b1d-abd4-9c9c667bddaa" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SubTDataBase/CSDB?disco" />
-    <MetadataFile FileName="CSDB1.xsd" MetadataType="Schema" ID="f9eeb288-a5e5-4d76-872a-2ccbd62407c1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SubTDataBase/CSDB?xsd=xsd1" />
-    <MetadataFile FileName="CSDB.wsdl" MetadataType="Wsdl" ID="ab4a5cb4-ab60-451b-936a-f2673d3eb272" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SubTDataBase/CSDB?wsdl" />
+    <MetadataFile FileName="CSDB.disco" MetadataType="Disco" ID="e4264bb4-9114-4d66-969a-6ee5a51908d5" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/SubTDataBase/CSDB?disco" />
+    <MetadataFile FileName="CSDB.xsd" MetadataType="Schema" ID="013d8aae-479c-45e5-bed9-6790d1daae28" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/SubTDataBase/CSDB?xsd=xsd1" />
+    <MetadataFile FileName="CSDB1.xsd" MetadataType="Schema" ID="a0aa5c35-5884-41dc-8577-ed7c20a3084a" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/SubTDataBase/CSDB?xsd=xsd0" />
+    <MetadataFile FileName="CSDB.wsdl" MetadataType="Wsdl" ID="32bc53eb-f90c-42f1-a54b-2717f8b788c1" SourceId="1" SourceUrl="http://localhost:8783/Design_Time_Addresses/SubTDataBase/CSDB?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
