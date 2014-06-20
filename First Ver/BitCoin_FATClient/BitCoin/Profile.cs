@@ -131,6 +131,11 @@ namespace BitCoin
             textBox11.Clear();
         }
 
+        private void txtBTC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
 
             //try

@@ -633,6 +633,7 @@
             this.txtBTC.ReadOnly = true;
             this.txtBTC.Size = new System.Drawing.Size(100, 20);
             this.txtBTC.TabIndex = 1;
+            this.txtBTC.TextChanged += new System.EventHandler(this.txtBTC_TextChanged);
             // 
             // label8
             // 
