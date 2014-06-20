@@ -327,7 +327,7 @@
             this.btnWithdrawGenerate.Name = "btnWithdrawGenerate";
             this.btnWithdrawGenerate.Size = new System.Drawing.Size(75, 23);
             this.btnWithdrawGenerate.TabIndex = 7;
-            this.btnWithdrawGenerate.Text = "withdraw";
+            this.btnWithdrawGenerate.Text = "Withdraw";
             this.btnWithdrawGenerate.UseVisualStyleBackColor = true;
             this.btnWithdrawGenerate.Click += new System.EventHandler(this.btnWithdrawGenerate_Click);
             // 

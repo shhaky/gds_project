@@ -75,6 +75,7 @@ namespace BitCoin
                         txtUserName.Text = null;
                         linkBtnRegister.Visible = false;
                         lblInfo.Visible = true;
+                        tradeToolStripMenuItem.Enabled = true;
                         lblInfo.Text = "Welcome " + userName;
                         linkBtnLogin.Text = "Logout";
                         //Profile newProfile = new Profile(this.userName);
@@ -98,6 +99,7 @@ namespace BitCoin
                 linkBtnRegister.Visible = true;
                 lblInfo.Visible = false;
                 linkBtnLogin.Text = "Login";
+                tradeToolStripMenuItem.Enabled = false;
 
             }
         }

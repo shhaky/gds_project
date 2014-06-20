@@ -171,6 +171,7 @@
             // 
             // tradeToolStripMenuItem
             // 
+            this.tradeToolStripMenuItem.Enabled = false;
             this.tradeToolStripMenuItem.Name = "tradeToolStripMenuItem";
             this.tradeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.tradeToolStripMenuItem.Text = "Profile";

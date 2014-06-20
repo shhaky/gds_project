@@ -44,6 +44,27 @@ namespace BitCoin
 
         }
 
+
+        private string codeGenerate()
+        {
+            string code = "";
+            Random newNumber = new Random(DateTime.Today.DayOfYear + DateTime.Now.Second);
+            string allowedString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#!$";
+            for (int i = 0; i < 32; i++)
+            {
+                if (i == 0)
+                {
+                    code = allowedString.Substring(newNumber.Next(1, 65), 1);
+                }
+                else
+                {
+                    code = code + allowedString.Substring(newNumber.Next(1, 65), 1);
+                }
+
+            }
+            return code;
+
+        }
         private void btnOk_Click(object sender, EventArgs e)
         {
             this.oldPass = txtOldPass.Text;
@@ -92,22 +113,22 @@ namespace BitCoin
 
         private void btnDepositGenerate_Click(object sender, EventArgs e)
         {
-
+            textBox11.Text = codeGenerate();
         }
 
         private void btnDepositClear_Click(object sender, EventArgs e)
         {
-
+            textBox11.Clear();
         }
 
         private void btnWithdrawGenerate_Click(object sender, EventArgs e)
         {
-
+            txtAdd.Text = codeGenerate();
         }
 
         private void btnWithdrawClear_Click(object sender, EventArgs e)
         {
-
+            textBox11.Clear();
         }
 
         
